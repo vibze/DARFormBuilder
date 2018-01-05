@@ -9,7 +9,7 @@
 import Foundation
 
 
-protocol FormControllerDataSource: class {
+public protocol FormControllerDataSource: class {
     func formController(_ formController: FormController, intValueForKey key: String) -> Int?
     func formController(_ formController: FormController, stringValueForKey key: String) -> String?
     func formController(_ formController: FormController, boolValueForKey key: String) -> Bool?
@@ -17,7 +17,7 @@ protocol FormControllerDataSource: class {
 }
 
 
-extension FormControllerDataSource {
+public extension FormControllerDataSource {
     func formController(_ formController: FormController, intValueForKey key: String) -> Int? {
         return 0
     }

@@ -9,7 +9,7 @@
 import UIKit
 
 
-protocol FormControllerDelegate: class {
+public protocol FormControllerDelegate: class {
     func formController(_ formController: FormController, didChangeIntValueForKey key: String, value: Int)
     func formController(_ formController: FormController, didChangeStringValueForKey key: String, value: String)
     func formController(_ formController: FormController, didChangeBoolValueForKey key: String, value: Bool)

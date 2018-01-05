@@ -9,7 +9,7 @@
 import UIKit
 
 
-protocol FormControllerScrollDelegate: class {
+public protocol FormControllerScrollDelegate: class {
     func scrollViewDidScroll(_ scrollView: UIScrollView)
 }
 
@@ -23,9 +23,9 @@ protocol FormControllerScrollDelegate: class {
  Просто передаете в параметр items список айтемов, каждый из которых представляет какой-то
  элемент формы.
  */
-class FormController: UITableViewController {
+public class FormController: UITableViewController {
     
-    enum Item {
+    public enum Item {
         case title(text: String)
         case description(text: String)
         case staticValue(label: String, value: String)
@@ -35,11 +35,11 @@ class FormController: UITableViewController {
         case switchInput(label: String, key: String)
     }
     
-    weak var scrollDelegate: FormControllerScrollDelegate?
-    weak var dataSource: FormControllerDataSource?
-    weak var delegate: FormControllerDelegate?
+    public weak var scrollDelegate: FormControllerScrollDelegate?
+    public weak var dataSource: FormControllerDataSource?
+    public weak var delegate: FormControllerDelegate?
     
-    var items: [Item] = [] {
+    public var items: [Item] = [] {
         didSet {
             tableView.reloadData()
         }
@@ -62,15 +62,15 @@ class FormController: UITableViewController {
         tableView.register(SwitchInputCell.self,forCellReuseIdentifier: "labeledSwitch")
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
     }
     
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let item = items[indexPath.row]
         
         let cell: UITableViewCell = {
@@ -90,7 +90,7 @@ class FormController: UITableViewController {
         return cell
     }
     
-    override func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         scrollDelegate?.scrollViewDidScroll(scrollView)
     }
     
