@@ -8,16 +8,89 @@
 
 /* Begin PBXBuildFile section */
 		1866DF231FFF6E610047158D /* DARFormBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1866DF211FFF6E610047158D /* DARFormBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1866DF2A1FFF711E0047158D /* FormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF291FFF711E0047158D /* FormController.swift */; };
+		1866DF2D1FFF71B00047158D /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF2C1FFF71B00047158D /* BaseCell.swift */; };
+		1866DF2F1FFF71E60047158D /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF2E1FFF71E60047158D /* TitleCell.swift */; };
+		1866DF311FFF72DE0047158D /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF301FFF72DE0047158D /* DescriptionCell.swift */; };
+		1866DF331FFF73930047158D /* StaticValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF321FFF73930047158D /* StaticValueCell.swift */; };
+		1866DF351FFF74350047158D /* NumDialInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF341FFF74350047158D /* NumDialInputCell.swift */; };
+		1866DF3F1FFF79060047158D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF3E1FFF79060047158D /* AppDelegate.swift */; };
+		1866DF411FFF79060047158D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF401FFF79060047158D /* ViewController.swift */; };
+		1866DF441FFF79060047158D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1866DF421FFF79060047158D /* Main.storyboard */; };
+		1866DF461FFF79060047158D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1866DF451FFF79060047158D /* Assets.xcassets */; };
+		1866DF491FFF79060047158D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1866DF471FFF79060047158D /* LaunchScreen.storyboard */; };
+		1866DF541FFF79060047158D /* DARFormBuilderExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF531FFF79060047158D /* DARFormBuilderExampleUITests.swift */; };
+		1866DF5C1FFF79230047158D /* FormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF291FFF711E0047158D /* FormController.swift */; };
+		1866DF5D1FFF7A1B0047158D /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF2C1FFF71B00047158D /* BaseCell.swift */; };
+		1866DF5E1FFF7A1B0047158D /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF2E1FFF71E60047158D /* TitleCell.swift */; };
+		1866DF5F1FFF7A1B0047158D /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF301FFF72DE0047158D /* DescriptionCell.swift */; };
+		1866DF601FFF7A1B0047158D /* StaticValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF321FFF73930047158D /* StaticValueCell.swift */; };
+		1866DF611FFF7A1B0047158D /* NumDialInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF341FFF74350047158D /* NumDialInputCell.swift */; };
+		1866DF631FFF7ABD0047158D /* TextInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF621FFF7ABD0047158D /* TextInputCell.swift */; };
+		1866DF651FFF7B5C0047158D /* DateInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF641FFF7B5C0047158D /* DateInputCell.swift */; };
+		1866DF671FFF7B770047158D /* SwitchInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF661FFF7B770047158D /* SwitchInputCell.swift */; };
+		1866DF681FFF7BC60047158D /* TextInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF621FFF7ABD0047158D /* TextInputCell.swift */; };
+		1866DF691FFF7BC60047158D /* DateInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF641FFF7B5C0047158D /* DateInputCell.swift */; };
+		1866DF6A1FFF7BC60047158D /* SwitchInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF661FFF7B770047158D /* SwitchInputCell.swift */; };
+		1866DF6C1FFF86FE0047158D /* FormControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF6B1FFF86FE0047158D /* FormControllerDelegate.swift */; };
+		1866DF6E1FFF87150047158D /* FormControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF6D1FFF87150047158D /* FormControllerDataSource.swift */; };
+		1866DF6F1FFF88830047158D /* FormControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF6B1FFF86FE0047158D /* FormControllerDelegate.swift */; };
+		1866DF701FFF88830047158D /* FormControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF6D1FFF87150047158D /* FormControllerDataSource.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1866DF501FFF79060047158D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1866DF151FFF6E610047158D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1866DF3B1FFF79060047158D;
+			remoteInfo = DARFormBuilderExample;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		1866DF1E1FFF6E610047158D /* DARFormBuilder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DARFormBuilder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1866DF211FFF6E610047158D /* DARFormBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DARFormBuilder.h; sourceTree = "<group>"; };
 		1866DF221FFF6E610047158D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1866DF291FFF711E0047158D /* FormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormController.swift; sourceTree = "<group>"; };
+		1866DF2C1FFF71B00047158D /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
+		1866DF2E1FFF71E60047158D /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
+		1866DF301FFF72DE0047158D /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
+		1866DF321FFF73930047158D /* StaticValueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticValueCell.swift; sourceTree = "<group>"; };
+		1866DF341FFF74350047158D /* NumDialInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumDialInputCell.swift; sourceTree = "<group>"; };
+		1866DF3C1FFF79060047158D /* DARFormBuilderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DARFormBuilderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1866DF3E1FFF79060047158D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1866DF401FFF79060047158D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1866DF431FFF79060047158D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1866DF451FFF79060047158D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1866DF481FFF79060047158D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1866DF4A1FFF79060047158D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1866DF4F1FFF79060047158D /* DARFormBuilderExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DARFormBuilderExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1866DF531FFF79060047158D /* DARFormBuilderExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DARFormBuilderExampleUITests.swift; sourceTree = "<group>"; };
+		1866DF551FFF79060047158D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1866DF621FFF7ABD0047158D /* TextInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputCell.swift; sourceTree = "<group>"; };
+		1866DF641FFF7B5C0047158D /* DateInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputCell.swift; sourceTree = "<group>"; };
+		1866DF661FFF7B770047158D /* SwitchInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchInputCell.swift; sourceTree = "<group>"; };
+		1866DF6B1FFF86FE0047158D /* FormControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormControllerDelegate.swift; sourceTree = "<group>"; };
+		1866DF6D1FFF87150047158D /* FormControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormControllerDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1866DF1A1FFF6E610047158D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1866DF391FFF79060047158D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1866DF4C1FFF79060047158D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -31,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				1866DF201FFF6E610047158D /* DARFormBuilder */,
+				1866DF3D1FFF79060047158D /* DARFormBuilderExample */,
+				1866DF521FFF79060047158D /* DARFormBuilderExampleUITests */,
 				1866DF1F1FFF6E610047158D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -39,6 +114,8 @@
 			isa = PBXGroup;
 			children = (
 				1866DF1E1FFF6E610047158D /* DARFormBuilder.framework */,
+				1866DF3C1FFF79060047158D /* DARFormBuilderExample.app */,
+				1866DF4F1FFF79060047158D /* DARFormBuilderExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -46,10 +123,51 @@
 		1866DF201FFF6E610047158D /* DARFormBuilder */ = {
 			isa = PBXGroup;
 			children = (
+				1866DF291FFF711E0047158D /* FormController.swift */,
+				1866DF6B1FFF86FE0047158D /* FormControllerDelegate.swift */,
+				1866DF6D1FFF87150047158D /* FormControllerDataSource.swift */,
+				1866DF2B1FFF71900047158D /* Cells */,
 				1866DF211FFF6E610047158D /* DARFormBuilder.h */,
 				1866DF221FFF6E610047158D /* Info.plist */,
 			);
 			path = DARFormBuilder;
+			sourceTree = "<group>";
+		};
+		1866DF2B1FFF71900047158D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				1866DF2C1FFF71B00047158D /* BaseCell.swift */,
+				1866DF2E1FFF71E60047158D /* TitleCell.swift */,
+				1866DF301FFF72DE0047158D /* DescriptionCell.swift */,
+				1866DF321FFF73930047158D /* StaticValueCell.swift */,
+				1866DF341FFF74350047158D /* NumDialInputCell.swift */,
+				1866DF621FFF7ABD0047158D /* TextInputCell.swift */,
+				1866DF641FFF7B5C0047158D /* DateInputCell.swift */,
+				1866DF661FFF7B770047158D /* SwitchInputCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		1866DF3D1FFF79060047158D /* DARFormBuilderExample */ = {
+			isa = PBXGroup;
+			children = (
+				1866DF3E1FFF79060047158D /* AppDelegate.swift */,
+				1866DF401FFF79060047158D /* ViewController.swift */,
+				1866DF421FFF79060047158D /* Main.storyboard */,
+				1866DF451FFF79060047158D /* Assets.xcassets */,
+				1866DF471FFF79060047158D /* LaunchScreen.storyboard */,
+				1866DF4A1FFF79060047158D /* Info.plist */,
+			);
+			path = DARFormBuilderExample;
+			sourceTree = "<group>";
+		};
+		1866DF521FFF79060047158D /* DARFormBuilderExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1866DF531FFF79060047158D /* DARFormBuilderExampleUITests.swift */,
+				1866DF551FFF79060047158D /* Info.plist */,
+			);
+			path = DARFormBuilderExampleUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,18 +202,64 @@
 			productReference = 1866DF1E1FFF6E610047158D /* DARFormBuilder.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		1866DF3B1FFF79060047158D /* DARFormBuilderExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1866DF561FFF79060047158D /* Build configuration list for PBXNativeTarget "DARFormBuilderExample" */;
+			buildPhases = (
+				1866DF381FFF79060047158D /* Sources */,
+				1866DF391FFF79060047158D /* Frameworks */,
+				1866DF3A1FFF79060047158D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DARFormBuilderExample;
+			productName = DARFormBuilderExample;
+			productReference = 1866DF3C1FFF79060047158D /* DARFormBuilderExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1866DF4E1FFF79060047158D /* DARFormBuilderExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1866DF591FFF79060047158D /* Build configuration list for PBXNativeTarget "DARFormBuilderExampleUITests" */;
+			buildPhases = (
+				1866DF4B1FFF79060047158D /* Sources */,
+				1866DF4C1FFF79060047158D /* Frameworks */,
+				1866DF4D1FFF79060047158D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1866DF511FFF79060047158D /* PBXTargetDependency */,
+			);
+			name = DARFormBuilderExampleUITests;
+			productName = DARFormBuilderExampleUITests;
+			productReference = 1866DF4F1FFF79060047158D /* DARFormBuilderExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		1866DF151FFF6E610047158D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = DAR;
 				TargetAttributes = {
 					1866DF1D1FFF6E610047158D = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
+					};
+					1866DF3B1FFF79060047158D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					1866DF4E1FFF79060047158D = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1866DF3B1FFF79060047158D;
 					};
 				};
 			};
@@ -105,6 +269,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 1866DF141FFF6E610047158D;
 			productRefGroup = 1866DF1F1FFF6E610047158D /* Products */;
@@ -112,12 +277,31 @@
 			projectRoot = "";
 			targets = (
 				1866DF1D1FFF6E610047158D /* DARFormBuilder */,
+				1866DF3B1FFF79060047158D /* DARFormBuilderExample */,
+				1866DF4E1FFF79060047158D /* DARFormBuilderExampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		1866DF1C1FFF6E610047158D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1866DF3A1FFF79060047158D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1866DF491FFF79060047158D /* LaunchScreen.storyboard in Resources */,
+				1866DF461FFF79060047158D /* Assets.xcassets in Resources */,
+				1866DF441FFF79060047158D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1866DF4D1FFF79060047158D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -131,10 +315,76 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1866DF311FFF72DE0047158D /* DescriptionCell.swift in Sources */,
+				1866DF6E1FFF87150047158D /* FormControllerDataSource.swift in Sources */,
+				1866DF671FFF7B770047158D /* SwitchInputCell.swift in Sources */,
+				1866DF6C1FFF86FE0047158D /* FormControllerDelegate.swift in Sources */,
+				1866DF2F1FFF71E60047158D /* TitleCell.swift in Sources */,
+				1866DF2A1FFF711E0047158D /* FormController.swift in Sources */,
+				1866DF351FFF74350047158D /* NumDialInputCell.swift in Sources */,
+				1866DF651FFF7B5C0047158D /* DateInputCell.swift in Sources */,
+				1866DF2D1FFF71B00047158D /* BaseCell.swift in Sources */,
+				1866DF331FFF73930047158D /* StaticValueCell.swift in Sources */,
+				1866DF631FFF7ABD0047158D /* TextInputCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1866DF381FFF79060047158D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1866DF5D1FFF7A1B0047158D /* BaseCell.swift in Sources */,
+				1866DF601FFF7A1B0047158D /* StaticValueCell.swift in Sources */,
+				1866DF691FFF7BC60047158D /* DateInputCell.swift in Sources */,
+				1866DF411FFF79060047158D /* ViewController.swift in Sources */,
+				1866DF611FFF7A1B0047158D /* NumDialInputCell.swift in Sources */,
+				1866DF6A1FFF7BC60047158D /* SwitchInputCell.swift in Sources */,
+				1866DF5F1FFF7A1B0047158D /* DescriptionCell.swift in Sources */,
+				1866DF681FFF7BC60047158D /* TextInputCell.swift in Sources */,
+				1866DF5E1FFF7A1B0047158D /* TitleCell.swift in Sources */,
+				1866DF3F1FFF79060047158D /* AppDelegate.swift in Sources */,
+				1866DF6F1FFF88830047158D /* FormControllerDelegate.swift in Sources */,
+				1866DF701FFF88830047158D /* FormControllerDataSource.swift in Sources */,
+				1866DF5C1FFF79230047158D /* FormController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1866DF4B1FFF79060047158D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1866DF541FFF79060047158D /* DARFormBuilderExampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1866DF511FFF79060047158D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1866DF3B1FFF79060047158D /* DARFormBuilderExample */;
+			targetProxy = 1866DF501FFF79060047158D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1866DF421FFF79060047158D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1866DF431FFF79060047158D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1866DF471FFF79060047158D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1866DF481FFF79060047158D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1866DF241FFF6E610047158D /* Debug */ = {
@@ -253,6 +503,30 @@
 		1866DF271FFF6E610047158D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = R87MWZ88KR;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = DARFormBuilder/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kz.darecosystem.ios.DARFormBuilder;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1866DF281FFF6E610047158D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -269,26 +543,67 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Release;
 		};
-		1866DF281FFF6E610047158D /* Release */ = {
+		1866DF571FFF79060047158D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = R87MWZ88KR;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = DARFormBuilder/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = kz.darecosystem.ios.DARFormBuilder;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
+				INFOPLIST_FILE = DARFormBuilderExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kz.darecosystem.ios.DARFormBuilderExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1866DF581FFF79060047158D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R87MWZ88KR;
+				INFOPLIST_FILE = DARFormBuilderExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kz.darecosystem.ios.DARFormBuilderExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1866DF5A1FFF79060047158D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R87MWZ88KR;
+				INFOPLIST_FILE = DARFormBuilderExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kz.darecosystem.ios.DARFormBuilderExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DARFormBuilderExample;
+			};
+			name = Debug;
+		};
+		1866DF5B1FFF79060047158D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R87MWZ88KR;
+				INFOPLIST_FILE = DARFormBuilderExampleUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = kz.darecosystem.ios.DARFormBuilderExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = DARFormBuilderExample;
 			};
 			name = Release;
 		};
@@ -309,6 +624,24 @@
 			buildConfigurations = (
 				1866DF271FFF6E610047158D /* Debug */,
 				1866DF281FFF6E610047158D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1866DF561FFF79060047158D /* Build configuration list for PBXNativeTarget "DARFormBuilderExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1866DF571FFF79060047158D /* Debug */,
+				1866DF581FFF79060047158D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1866DF591FFF79060047158D /* Build configuration list for PBXNativeTarget "DARFormBuilderExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1866DF5A1FFF79060047158D /* Debug */,
+				1866DF5B1FFF79060047158D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
