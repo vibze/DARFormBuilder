@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.summary      = "A library created to build forms faster"
   s.description  = "Uses UITableVIew and a set of cells to construct a form for any requirement."
   s.homepage     = "https://github.com/vibze/DARFormBuilder"
-  s.license      = "MIT"
+  s.license      = "LICENSE"
 
   s.author             = { "Viktor Ten" => "ten.viktor@gmail.com" }
   s.social_media_url   = "https://github.com/vibze"
