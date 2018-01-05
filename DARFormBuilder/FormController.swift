@@ -45,7 +45,7 @@ public class FormController: UITableViewController {
         }
     }
     
-    init() {
+    public init() {
         super.init(style: .plain)
         
         tableView.tableFooterView = UIView()
