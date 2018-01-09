@@ -53,6 +53,8 @@ public class FormController: UITableViewController {
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = cells[indexPath.row]
         cell.configureCell()
+        cell.delegate = self
+
         return cell
     }
     
@@ -61,3 +63,9 @@ public class FormController: UITableViewController {
     }
 }
 
+extension FormController: FormBuilderCellDelegate {
+    func formBuilderCellDidUpdateHeight() {
+        tableView.beginUpdates()
+        tableView.endUpdates()
+    }
+}

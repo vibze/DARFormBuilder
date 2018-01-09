@@ -8,6 +8,9 @@
 
 import UIKit
 
+protocol FormBuilderCellDelegate: class {
+    func formBuilderCellDidUpdateHeight()
+}
 
 public class BaseCell: UITableViewCell {
     
@@ -19,8 +22,12 @@ public class BaseCell: UITableViewCell {
         return false
     }
     
+    weak var delegate: FormBuilderCellDelegate?
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        selectionStyle = .none
         
         configureSubviews()
         addSubviews()

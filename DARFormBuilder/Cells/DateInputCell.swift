@@ -13,12 +13,12 @@ public class DateInputCell: TextInputCell {
     
     var onDateChange: ((Date) -> Void)?
     
-    var dateValue: Date? = Date() {
+    var dateValue: Date? = nil {
         didSet {
             datePickerView.date = dateValue ?? Date()
             
             if let date = dateValue {
-                textField.text = dateFormatter.string(from: date)
+                textView.text = dateFormatter.string(from: date)
             }
         }
     }
@@ -38,7 +38,7 @@ public class DateInputCell: TextInputCell {
         dateFormatter.dateFormat = "HH:mm DD/MM/YYYY"
         
         datePickerView.datePickerMode = .dateAndTime
-        textField.inputView = datePickerView
+        textView.inputView = datePickerView
         
         datePickerView.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
     }
@@ -48,14 +48,20 @@ public class DateInputCell: TextInputCell {
         
         if let date = dateValue {
             onDateChange?(date)
+            placeholderLabel.isHidden = true
         }
     }
     
     override func configureCell() {
+        super.configureCell()
         datePickerView.date = dateValue ?? Date()
         
         if let date = dateValue {
-            textField.text = dateFormatter.string(from: date)
+            textView.text = dateFormatter.string(from: date)
         }
+    }
+    
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        datePickerValueChanged(sender: datePickerView)
     }
 }
