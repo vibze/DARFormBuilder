@@ -25,13 +25,19 @@ class ViewController: UIViewController {
             NumDialInputCell(label: "Amount", value: 5, range: 1..<25) { amount in
                 print(amount)
             },
-            TextInputCell(placeholder: "Letters, words", keyboardType: .default, maxLength: 60) { text in
+            TextInputCell(placeholder: "Letters, words") { text in
+                print(text)
+            },
+            TextInputCell(placeholder: "Letters, words", maxLength: 60) { text in
                 print(text)
             },
             DateInputCell(placeholder: "Date", value: nil) { date in
                 print(date)
             },
             SwitchInputCell(label: "Yes/No?", value: true) { value in
+                print(value)
+            },
+            SwitchInputCell(label: "При звонке не сообщать, что это доставка цветов", value: true) { value in
                 print(value)
             },
             ClickableCell(label: "Click me") {

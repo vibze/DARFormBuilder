@@ -49,7 +49,7 @@ public class SwitchInputCell: BaseCell {
         NSLayoutConstraint.activate([
             NSLayoutConstraint(item: switchView, attribute: .top, relatedBy: .equal, toItem: contentView, attribute: .top, multiplier: 1, constant: padding.top),
             NSLayoutConstraint(item: switchView, attribute: .trailing, relatedBy: .equal, toItem: contentView, attribute: .trailing, multiplier: 1, constant: -padding.right),
-            NSLayoutConstraint(item: switchView, attribute: .bottom, relatedBy: .equal, toItem: contentView, attribute: .bottom, multiplier: 1, constant: -padding.bottom)
+            NSLayoutConstraint(item: switchView, attribute: .bottom, relatedBy: .lessThanOrEqual, toItem: contentView, attribute: .bottom, multiplier: 1, constant: -padding.bottom)
             ])
         
         NSLayoutConstraint.activate([

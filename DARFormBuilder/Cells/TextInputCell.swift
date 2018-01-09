@@ -87,11 +87,10 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
         
         if maxLength != 0 {
             guard currentLength <= maxLength else { return }
+            countLabel.text = "\(currentLength)/\(maxLength)"
         }
         
         placeholderLabel.isHidden = currentLength > 0
-        
-        countLabel.text = "\(currentLength)/\(maxLength)"
         onTextChange?(textView.text)
     }
     
@@ -111,13 +110,14 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
     public func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         let currentLength = textView.text.count
         
-        let newText = (textView.text as! NSString).replacingCharacters(in: range, with: text)
+        let newText = (textView.text! as NSString).replacingCharacters(in: range, with: text)
         updateTextViewHeight(for: newText)
         
-        if (range.length + range.location > currentLength) {
-            return false
+        if maxLength == 0 {
+            return true
         }
-        let newLength = currentLength + text.count - range.length
+        
+        let newLength = newText.count
         return newLength <= maxLength
     }
     
