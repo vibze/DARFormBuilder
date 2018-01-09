@@ -125,7 +125,7 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
         let size = text.boundingRect(
             with: CGSize(width: textView.textContainer.size.width - textView.textContainer.lineFragmentPadding - 5, height: .infinity),
             options: .usesLineFragmentOrigin,
-            attributes: [NSAttributedStringKey.font: textView.font!],
+            attributes: [NSFontAttributeName: textView.font!],
             context: nil
         )
         let height = size.height + textView.textContainerInset.top + textView.textContainerInset.bottom + 1
