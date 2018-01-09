@@ -24,9 +24,9 @@ public class TextInputCell: BaseCell, UITextFieldDelegate {
     let textField = UITextField()
     let countLabel = UILabel()
     
-    public convenience init(text: String, placeholder: String, keyboardType: UIKeyboardType, maxLength: Int, onChange: ((String) -> Void)?) {
+    public convenience init(value: String, placeholder: String, keyboardType: UIKeyboardType, maxLength: Int, onChange: ((String) -> Void)?) {
         self.init(style: .default, reuseIdentifier: nil)
-        self.textValue = text
+        self.textValue = value
         self.placeholder = placeholder
         self.keyboardType = keyboardType
         self.maxLength = maxLength

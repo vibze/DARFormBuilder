@@ -23,9 +23,9 @@ public class DateInputCell: TextInputCell {
     private let datePickerView: UIDatePicker = UIDatePicker()
     private let dateFormatter = DateFormatter()
     
-    public convenience init(date: Date, onChange: ((Date) -> Void)?) {
+    public convenience init(value: Date, onChange: ((Date) -> Void)?) {
         self.init(style: .default, reuseIdentifier: nil)
-        dateValue = date
+        dateValue = value
         onDateChange = onChange
     }
 
