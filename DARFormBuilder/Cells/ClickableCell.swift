@@ -20,6 +20,7 @@ public class ClickableCell: BaseCell {
         self.label = label
         self.onTap = onTap
         accessoryType = .disclosureIndicator
+        selectionStyle = .default
     }
     
     override func configureSubviews() {

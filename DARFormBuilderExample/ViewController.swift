@@ -25,10 +25,10 @@ class ViewController: UIViewController {
             NumDialInputCell(label: "Amount", value: 5, range: 1..<25) { amount in
                 print(amount)
             },
-            TextInputCell(value: "Name", placeholder: "Letters, words", keyboardType: .default, maxLength: 30) { text in
+            TextInputCell(placeholder: "Letters, words", keyboardType: .default, maxLength: 60) { text in
                 print(text)
             },
-            DateInputCell(value: Date()) { date in
+            DateInputCell(placeholder: "Date") { date in
                 print(date)
             },
             SwitchInputCell(label: "Yes/No?", value: true) { value in
