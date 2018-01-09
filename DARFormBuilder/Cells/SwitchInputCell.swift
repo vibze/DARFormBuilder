@@ -63,6 +63,7 @@ public class SwitchInputCell: BaseCell {
     
     @objc func valueChanged(_ sender: UISwitch) {
         onValueChanged?(sender.isOn)
+        value = sender.isOn
     }
     
     override func configureCell() {

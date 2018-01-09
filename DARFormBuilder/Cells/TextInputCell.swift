@@ -92,6 +92,7 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
         
         placeholderLabel.isHidden = currentLength > 0
         onTextChange?(textView.text)
+        textValue = textView.text
     }
     
     override func configureCell() {
@@ -108,8 +109,6 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
     }
     
     public func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-        let currentLength = textView.text.count
-        
         let newText = (textView.text! as NSString).replacingCharacters(in: range, with: text)
         updateTextViewHeight(for: newText)
         
