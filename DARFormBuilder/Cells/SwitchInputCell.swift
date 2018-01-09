@@ -23,7 +23,7 @@ public class SwitchInputCell: BaseCell {
     private var labelLabel = UILabel()
     private var switchView = UISwitch()
     
-    public convenience init(label: String, value: Bool, onChange: ((Bool) -> Void)?) {
+    public convenience init(label: String, value: Bool = false, onChange: ((Bool) -> Void)?) {
         self.init(style: .default, reuseIdentifier: nil)
         self.label = label
         self.value = value

@@ -13,17 +13,20 @@ public class DateInputCell: TextInputCell {
     
     var onDateChange: ((Date) -> Void)?
     
-    var dateValue = Date() {
+    var dateValue: Date? = Date() {
         didSet {
-            datePickerView.date = dateValue
-            textField.text = dateFormatter.string(from: dateValue)
+            datePickerView.date = dateValue ?? Date()
+            
+            if let date = dateValue {
+                textField.text = dateFormatter.string(from: date)
+            }
         }
     }
     
     private let datePickerView: UIDatePicker = UIDatePicker()
     private let dateFormatter = DateFormatter()
     
-    public convenience init(value: Date, onChange: ((Date) -> Void)?) {
+    public convenience init(value: Date? = nil, onChange: ((Date) -> Void)?) {
         self.init(style: .default, reuseIdentifier: nil)
         dateValue = value
         onDateChange = onChange
@@ -43,11 +46,16 @@ public class DateInputCell: TextInputCell {
     @objc func datePickerValueChanged(sender: UIDatePicker) {
         dateValue = sender.date
         
-        onDateChange?(dateValue)
+        if let date = dateValue {
+            onDateChange?(date)
+        }
     }
     
     override func configureCell() {
-        datePickerView.date = dateValue
-        textField.text = dateFormatter.string(from: dateValue)
+        datePickerView.date = dateValue ?? Date()
+        
+        if let date = dateValue {
+            textField.text = dateFormatter.string(from: date)
+        }
     }
 }

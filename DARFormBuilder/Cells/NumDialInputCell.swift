@@ -29,7 +29,7 @@ public class NumDialInputCell: BaseCell {
     private let plusButton = UIButton()
     private let minusButton = UIButton()
     
-    public convenience init(label: String, value: Int, range: Range<Int>, onChange: ((Int) -> Void)?) {
+    public convenience init(label: String, value: Int = 0, range: Range<Int> = 0..<100, onChange: ((Int) -> Void)?) {
         self.init(style: .default, reuseIdentifier: nil)
         self.label = label
         self.value = value

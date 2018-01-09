@@ -19,10 +19,10 @@ public class DescriptionCell: BaseCell {
     
     private let descriptionLabel = UILabel()
     
-    public convenience init(text: String, fontSize: CGFloat) {
+    public convenience init(text: String, fontSize: CGFloat = 12) {
         self.init(style: .default, reuseIdentifier: nil)
         descText = text
-        descriptionLabel.font = UIFont.systemFont(ofSize: 12)
+        descriptionLabel.font = UIFont.systemFont(ofSize: fontSize)
     }
     
     override func configureSubviews() {
