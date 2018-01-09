@@ -36,6 +36,10 @@
 		1866DF6E1FFF87150047158D /* FormControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF6D1FFF87150047158D /* FormControllerDataSource.swift */; };
 		1866DF6F1FFF88830047158D /* FormControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF6B1FFF86FE0047158D /* FormControllerDelegate.swift */; };
 		1866DF701FFF88830047158D /* FormControllerDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF6D1FFF87150047158D /* FormControllerDataSource.swift */; };
+		9128676C20036A280094A6A9 /* AccessoryTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128676B20036A280094A6A9 /* AccessoryTypeCell.swift */; };
+		9128676D200371BD0094A6A9 /* AccessoryTypeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128676B20036A280094A6A9 /* AccessoryTypeCell.swift */; };
+		9128676F20037C6C0094A6A9 /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128676E20037C6C0094A6A9 /* CustomViewCell.swift */; };
+		9128677020037C710094A6A9 /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128676E20037C6C0094A6A9 /* CustomViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +77,8 @@
 		1866DF661FFF7B770047158D /* SwitchInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchInputCell.swift; sourceTree = "<group>"; };
 		1866DF6B1FFF86FE0047158D /* FormControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormControllerDelegate.swift; sourceTree = "<group>"; };
 		1866DF6D1FFF87150047158D /* FormControllerDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormControllerDataSource.swift; sourceTree = "<group>"; };
+		9128676B20036A280094A6A9 /* AccessoryTypeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessoryTypeCell.swift; sourceTree = "<group>"; };
+		9128676E20037C6C0094A6A9 /* CustomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,8 @@
 				1866DF621FFF7ABD0047158D /* TextInputCell.swift */,
 				1866DF641FFF7B5C0047158D /* DateInputCell.swift */,
 				1866DF661FFF7B770047158D /* SwitchInputCell.swift */,
+				9128676B20036A280094A6A9 /* AccessoryTypeCell.swift */,
+				9128676E20037C6C0094A6A9 /* CustomViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -317,6 +325,7 @@
 			files = (
 				1866DF311FFF72DE0047158D /* DescriptionCell.swift in Sources */,
 				1866DF6E1FFF87150047158D /* FormControllerDataSource.swift in Sources */,
+				9128676F20037C6C0094A6A9 /* CustomViewCell.swift in Sources */,
 				1866DF671FFF7B770047158D /* SwitchInputCell.swift in Sources */,
 				1866DF6C1FFF86FE0047158D /* FormControllerDelegate.swift in Sources */,
 				1866DF2F1FFF71E60047158D /* TitleCell.swift in Sources */,
@@ -325,6 +334,7 @@
 				1866DF651FFF7B5C0047158D /* DateInputCell.swift in Sources */,
 				1866DF2D1FFF71B00047158D /* BaseCell.swift in Sources */,
 				1866DF331FFF73930047158D /* StaticValueCell.swift in Sources */,
+				9128676C20036A280094A6A9 /* AccessoryTypeCell.swift in Sources */,
 				1866DF631FFF7ABD0047158D /* TextInputCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,9 +344,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1866DF5D1FFF7A1B0047158D /* BaseCell.swift in Sources */,
+				9128677020037C710094A6A9 /* CustomViewCell.swift in Sources */,
 				1866DF601FFF7A1B0047158D /* StaticValueCell.swift in Sources */,
 				1866DF691FFF7BC60047158D /* DateInputCell.swift in Sources */,
 				1866DF411FFF79060047158D /* ViewController.swift in Sources */,
+				9128676D200371BD0094A6A9 /* AccessoryTypeCell.swift in Sources */,
 				1866DF611FFF7A1B0047158D /* NumDialInputCell.swift in Sources */,
 				1866DF6A1FFF7BC60047158D /* SwitchInputCell.swift in Sources */,
 				1866DF5F1FFF7A1B0047158D /* DescriptionCell.swift in Sources */,
@@ -436,7 +448,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -490,7 +502,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

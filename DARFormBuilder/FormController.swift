@@ -59,7 +59,7 @@ public class FormController: UITableViewController {
         tableView.register(NumDialInputCell.self, forCellReuseIdentifier: "labeledNumDial")
         tableView.register(TextInputCell.self, forCellReuseIdentifier: "textfield")
         tableView.register(DateInputCell.self, forCellReuseIdentifier: "dateField")
-        tableView.register(SwitchInputCell.self,forCellReuseIdentifier: "labeledSwitch")
+        tableView.register(SwitchInputCell.self, forCellReuseIdentifier: "labeledSwitch")
     }
     
     public required init?(coder aDecoder: NSCoder) {
