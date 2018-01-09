@@ -28,34 +28,69 @@ Add `pod DARFormBuilder, '~1.1.0'` to your podfile and run `pod install`
 formController.items = [
     
     // Plain text with big font
-    TitleCell(text: "Title"),
+    TitleCell(text: "Title", fontSize: 30),
     
     // Plain text with small font
-    DescriptionCell(text: "Your top client is Ice Cream Shop, Inc. Their ice cream is so popular they can’t keep up with customer orders at the counter. They’ve recruited you to create a sleek iOS app that will allow customers to order ice cream right from their phone. You’ve started developing the app, and it’s coming along well."),
+    DescriptionCell(text: "Your top client is Ice Cream Shop, Inc. Their ice cream is so popular they can’t keep up with customer orders at the counter. They’ve recruited you to create a sleek iOS app that will allow customers to order ice cream right from their phone. You’ve started developing the app, and it’s coming along well.", fontSize: 12),
     
     // Static value with label on the left and value on the right
     StaticValueCell(label: "Price", value: "1000"),
     
     // Label on the left and a number with plus and minus buttons on the right
-    NumDialInputCell(label: "Amount", onChange: { amount in
+    NumDialInputCell(label: "Amount", value: 5, range: 1..<25) { amount in
         
     }),
     
     // Basic text input cell without label
-    TextInputCell(label: "Name", placeholder: "Letters, words", keyboardType: .default, onChange: { text in
+    TextInputCell(text: "Name", placeholder: "Letters, words", keyboardType: .default, maxLength: 30) { text in
+    
     }),
     
     // Date input cell without label
-    DateInputCell(label: "Birthday", placeholder: "xx/xx/xxxx", onChange: { date in 
+    DateInputCell(label: "Birthday", value: Date()) { date in
+    
     }),
     
     // Labeled switch input cell
-    SwitchInputCell(label: "Yes/No?", onChange: { value in 
+    SwitchInputCell(label: "Yes/No?", value: true) { value in 
+    
     })
+    
+    // Clickable cell with disclosure indicator
+    ClickableCell(label: "Click me") {
+        
+    }
+    
+    // Custom view cell
+    CustomViewCell(customView: UIImageView(image: xxx"))
 ]
 ```
 
 ### List of available cell types
-```Swift
 
-```
+#### TitleCell
+Cell for displaying form titles. Big font, contrasty color.
+
+#### DescriptionCell
+Cell for displaying long texts as descriptions or field clarifications.
+
+#### StaticValueCell
+Label and value for displaying static properties.
+
+#### NumDialInputCell
+Label with number dial. Values can be limited by range.
+
+#### TextInputCell
+Simple textView cell. Can be limited by max length.
+
+#### DateInputCell
+Date picker cell.
+
+#### SwitchInputCell
+Label with switch view on the right.
+
+#### ClickableCell
+Label with disclosure indicator. Clickable.
+
+#### CustomViewCell
+In case you want to display a custom view in a cell. Use auto-layout to stretch contentView.
