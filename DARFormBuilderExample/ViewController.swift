@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             TextInputCell(placeholder: "Letters, words", keyboardType: .default, maxLength: 60) { text in
                 print(text)
             },
-            DateInputCell(placeholder: "Date") { date in
+            DateInputCell(placeholder: "Date", value: nil) { date in
                 print(date)
             },
             SwitchInputCell(label: "Yes/No?", value: true) { value in
