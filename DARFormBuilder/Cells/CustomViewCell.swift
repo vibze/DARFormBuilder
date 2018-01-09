@@ -8,30 +8,23 @@
 
 import UIKit
 
-class CustomViewCell: BaseCell {
+public class CustomViewCell: BaseCell {
 
-    var customView = UIView() {
-        didSet {
-            cellView = customView
-        }
+    var customView = UIView()
+    
+    public convenience init(customView: UIView) {
+        self.init(style: .default, reuseIdentifier: nil)
+        self.customView = customView
     }
     
-    private var cellView = UIView()
-
-    override func configureSubviews() {
-        cellView.translatesAutoresizingMaskIntoConstraints = false
-    }
-    
-    override func addSubviews() {
-        contentView.addSubview(cellView)
-    }
-    
-    override func configureConstraints() {
+    override func configureCell() {
+        customView.translatesAutoresizingMaskIntoConstraints = false
+        contentView.addSubview(customView)
         NSLayoutConstraint.activate([
-            NSLayoutConstraint(item: cellView, attribute: .leading, relatedBy: .equal, toItem: contentView, attribute: .leading, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: cellView, attribute: .top, relatedBy: .equal, toItem: contentView, attribute: .top, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: cellView, attribute: .trailing, relatedBy: .equal, toItem: contentView, attribute: .trailing, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: cellView, attribute: .bottom, relatedBy: .equal, toItem: contentView, attribute: .bottom, multiplier: 1, constant: 0)
-        ])
+            NSLayoutConstraint(item: customView, attribute: .leading, relatedBy: .equal, toItem: contentView, attribute: .leading, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: customView, attribute: .top, relatedBy: .equal, toItem: contentView, attribute: .top, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: customView, attribute: .trailing, relatedBy: .equal, toItem: contentView, attribute: .trailing, multiplier: 1, constant: 0),
+            NSLayoutConstraint(item: customView, attribute: .bottom, relatedBy: .equal, toItem: contentView, attribute: .bottom, multiplier: 1, constant: 0)
+            ])
     }
 }

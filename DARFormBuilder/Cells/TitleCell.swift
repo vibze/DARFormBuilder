@@ -13,13 +13,9 @@ import UIKit
  Ячейка с названием формы.
  Большой черный шрифт.
  */
-class TitleCell: BaseCell {
+public class TitleCell: BaseCell {
     
-    var titleText = "" {
-        didSet {
-            titleLabel.text = titleText
-        }
-    }
+    var titleText = ""
     
     override var shouldHideSeparator: Bool {
         return true
@@ -31,8 +27,13 @@ class TitleCell: BaseCell {
     
     private let titleLabel = UILabel()
     
+    public convenience init(text: String, fontSize: CGFloat = 16) {
+        self.init(style: .default, reuseIdentifier: nil)
+        titleText = text
+        titleLabel.font = UIFont.systemFont(ofSize: fontSize)
+    }
+    
     override func configureSubviews() {
-        titleLabel.font = UIFont.systemFont(ofSize: 16)
         titleLabel.textColor = UIColor.black
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         
@@ -50,5 +51,9 @@ class TitleCell: BaseCell {
             NSLayoutConstraint(item: titleLabel, attribute: .trailing, relatedBy: .equal, toItem: contentView, attribute: .trailing, multiplier: 1, constant: -padding.right),
             NSLayoutConstraint(item: titleLabel, attribute: .bottom, relatedBy: .equal, toItem: contentView, attribute: .bottom, multiplier: 1, constant: -padding.bottom)
             ])
+    }
+    
+    override func configureCell() {
+        titleLabel.text = titleText
     }
 }

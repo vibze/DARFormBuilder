@@ -9,19 +9,17 @@
 import UIKit
 
 
-class NumDialInputCell: BaseCell {
+public class NumDialInputCell: BaseCell {
     
-    var label = "" {
-        didSet {
-            labelLabel.text = label
-        }
-    }
+    var label = ""
     
     var value: Int = 0 {
         didSet {
             valueLabel.text = value.description
         }
     }
+    
+    var range: Range<Int> = 0..<100
     
     var onValueChanged: ((Int) -> Void)? = nil
     
@@ -30,6 +28,14 @@ class NumDialInputCell: BaseCell {
     private let valueLabel = UILabel()
     private let plusButton = UIButton()
     private let minusButton = UIButton()
+    
+    public convenience init(label: String, value: Int, range: Range<Int>, onChange: ((Int) -> Void)?) {
+        self.init(style: .default, reuseIdentifier: nil)
+        self.label = label
+        self.value = value
+        self.range = range
+        onValueChanged = onChange
+    }
     
     override func configureSubviews() {
         labelLabel.font = UIFont.systemFont(ofSize: 14)
@@ -89,14 +95,19 @@ class NumDialInputCell: BaseCell {
     }
 
     @objc func didTapPlusButton(_ sender: UIButton) {
+        guard range.contains(value + 1) else { return }
         value += 1
         onValueChanged?(value)
     }
     
     @objc func didTapMinusButton(_ sender: UIButton) {
-        if value > 1 {
-            value -= 1
-            onValueChanged?(value)
-        }
+        guard range.contains(value - 1) else { return }
+        value -= 1
+        onValueChanged?(value)
+    }
+    
+    override func configureCell() {
+        labelLabel.text = label
+        valueLabel.text = value.description
     }
 }

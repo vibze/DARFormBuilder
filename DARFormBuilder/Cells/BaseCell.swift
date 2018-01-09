@@ -9,7 +9,7 @@
 import UIKit
 
 
-class BaseCell: UITableViewCell {
+public class BaseCell: UITableViewCell {
     
     var padding: UIEdgeInsets {
         return UIEdgeInsets(top: 10, left: 17, bottom: 10, right: 15)
@@ -27,11 +27,11 @@ class BaseCell: UITableViewCell {
         configureConstraints()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         
         if shouldHideSeparator {
@@ -48,6 +48,10 @@ class BaseCell: UITableViewCell {
     }
     
     func configureConstraints() {
+        
+    }
+    
+    func configureCell() {
         
     }
 }

@@ -9,16 +9,11 @@
 import UIKit
 
 
-class SwitchInputCell: BaseCell {
+public class SwitchInputCell: BaseCell {
     
     var onValueChanged: ((Bool) -> Void)?
     
-    var label = "" {
-        didSet {
-            labelLabel.text = label
-        }
-    }
-    
+    var label = ""
     var value = false {
         didSet {
             switchView.isOn = value
@@ -28,10 +23,18 @@ class SwitchInputCell: BaseCell {
     private var labelLabel = UILabel()
     private var switchView = UISwitch()
     
+    public convenience init(label: String, value: Bool, onChange: ((Bool) -> Void)?) {
+        self.init(style: .default, reuseIdentifier: nil)
+        self.label = label
+        self.value = value
+        onValueChanged = onChange
+    }
+    
     override func configureSubviews() {
         labelLabel.numberOfLines = 0
         labelLabel.font = UIFont.systemFont(ofSize: 14)
         labelLabel.translatesAutoresizingMaskIntoConstraints = false
+        labelLabel.lineBreakMode = .byWordWrapping
         
         switchView.addTarget(self, action: #selector(valueChanged), for: .valueChanged)
         switchView.translatesAutoresizingMaskIntoConstraints = false
@@ -44,19 +47,26 @@ class SwitchInputCell: BaseCell {
     
     override func configureConstraints() {
         NSLayoutConstraint.activate([
-            NSLayoutConstraint(item: labelLabel, attribute: .leading, relatedBy: .equal, toItem: contentView, attribute: .leading, multiplier: 1, constant: padding.left),
-            NSLayoutConstraint(item: labelLabel, attribute: .top, relatedBy: .equal, toItem: contentView, attribute: .top, multiplier: 1, constant: padding.top),
-            NSLayoutConstraint(item: labelLabel, attribute: .bottom, relatedBy: .equal, toItem: contentView, attribute: .bottom, multiplier: 1, constant: -padding.bottom)
-            ])
-        
-        NSLayoutConstraint.activate([
             NSLayoutConstraint(item: switchView, attribute: .top, relatedBy: .equal, toItem: contentView, attribute: .top, multiplier: 1, constant: padding.top),
             NSLayoutConstraint(item: switchView, attribute: .trailing, relatedBy: .equal, toItem: contentView, attribute: .trailing, multiplier: 1, constant: -padding.right),
             NSLayoutConstraint(item: switchView, attribute: .bottom, relatedBy: .equal, toItem: contentView, attribute: .bottom, multiplier: 1, constant: -padding.bottom)
             ])
+        
+        NSLayoutConstraint.activate([
+            NSLayoutConstraint(item: labelLabel, attribute: .leading, relatedBy: .equal, toItem: contentView, attribute: .leading, multiplier: 1, constant: padding.left),
+            NSLayoutConstraint(item: labelLabel, attribute: .top, relatedBy: .equal, toItem: contentView, attribute: .top, multiplier: 1, constant: padding.top),
+            NSLayoutConstraint(item: labelLabel, attribute: .bottom, relatedBy: .equal, toItem: contentView, attribute: .bottom, multiplier: 1, constant: -padding.bottom),
+            NSLayoutConstraint(item: labelLabel, attribute: .trailing, relatedBy: .equal, toItem: switchView, attribute: .leading, multiplier: 1, constant: -5)
+            ])
+        
     }
     
     @objc func valueChanged(_ sender: UISwitch) {
         onValueChanged?(sender.isOn)
+    }
+    
+    override func configureCell() {
+        labelLabel.text = label
+        switchView.isOn = value
     }
 }

@@ -13,19 +13,19 @@ import UIKit
  Ячейка с описанием.
  Мелкий серый текст.
  */
-class DescriptionCell: BaseCell {
+public class DescriptionCell: BaseCell {
     
-    var descText = "" {
-        didSet {
-            descriptionLabel.text = descText
-            
-        }
-    }
+    var descText = ""
     
     private let descriptionLabel = UILabel()
     
-    override func configureSubviews() {
+    public convenience init(text: String, fontSize: CGFloat) {
+        self.init(style: .default, reuseIdentifier: nil)
+        descText = text
         descriptionLabel.font = UIFont.systemFont(ofSize: 12)
+    }
+    
+    override func configureSubviews() {
         descriptionLabel.textColor = UIColor.lightGray
         descriptionLabel.numberOfLines = 0
         descriptionLabel.lineBreakMode = .byWordWrapping
@@ -43,5 +43,9 @@ class DescriptionCell: BaseCell {
             NSLayoutConstraint(item: descriptionLabel, attribute: .trailing, relatedBy: .equal, toItem: contentView, attribute: .trailing, multiplier: 1, constant: -padding.right),
             NSLayoutConstraint(item: descriptionLabel, attribute: .bottom, relatedBy: .equal, toItem: contentView, attribute: .bottom, multiplier: 1, constant: -padding.bottom)
             ])
+    }
+    
+    override func configureCell() {
+        descriptionLabel.text = descText
     }
 }

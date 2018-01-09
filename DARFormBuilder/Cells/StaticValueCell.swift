@@ -12,22 +12,18 @@ import UIKit
 /**
  Ячейка с лейблом слева и статичным текстом справа
  */
-class StaticValueCell: BaseCell {
-    var label = "" {
-        didSet {
-            labelLabel.text = label
-            
-        }
-    }
-    
-    var value = "" {
-        didSet {
-            valueLabel.text = value
-        }
-    }
-    
+public class StaticValueCell: BaseCell {
+    var label = ""
+    var value = ""
+
     private let labelLabel = UILabel()
     private let valueLabel = UILabel()
+    
+    public convenience init(label: String, value: String) {
+        self.init(style: .default, reuseIdentifier: nil)
+        self.label = label
+        self.value = value
+    }
     
     override func configureSubviews() {
         labelLabel.font = UIFont.systemFont(ofSize: 14)
@@ -58,6 +54,11 @@ class StaticValueCell: BaseCell {
             NSLayoutConstraint(item: valueLabel, attribute: .trailing, relatedBy: .equal, toItem: contentView, attribute: .trailing, multiplier: 1, constant: -padding.right),
             NSLayoutConstraint(item: valueLabel, attribute: .bottom, relatedBy: .equal, toItem: contentView, attribute: .bottom, multiplier: 1, constant: -padding.bottom)
             ])
+    }
+    
+    override func configureCell() {
+        labelLabel.text = label
+        valueLabel.text = value
     }
 }
 

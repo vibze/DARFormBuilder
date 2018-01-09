@@ -1,5 +1,5 @@
 //
-//  AccessoryTypeCell.swift
+//  ClickableCell.swift
 //  DARFormBuilder
 //
 //  Created by Darkhan Mukatay on 08/01/2018.
@@ -8,29 +8,27 @@
 
 import UIKit
 
-class AccessoryTypeCell: BaseCell {
+public class ClickableCell: BaseCell {
     
-    var label = "" {
-        didSet {
-            labelLabel.text = label
-        }
-    }
+    var label = ""
+    var onTap: (() -> ())?
     
     private var labelLabel = UILabel()
     
-    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    public convenience init(label: String, onTap: (() -> ())?) {
+        self.init(style: .default, reuseIdentifier: nil)
+        self.label = label
+        self.onTap = onTap
         accessoryType = .disclosureIndicator
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
     }
     
     override func configureSubviews() {
         labelLabel.font = UIFont.systemFont(ofSize: 14)
         labelLabel.textColor = UIColor.black
         labelLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        let tgs = UITapGestureRecognizer(target: self, action: #selector(didTap))
+        contentView.addGestureRecognizer(tgs)
     }
     
     override func addSubviews() {
@@ -44,5 +42,13 @@ class AccessoryTypeCell: BaseCell {
             NSLayoutConstraint(item: labelLabel, attribute: .trailing, relatedBy: .equal, toItem: contentView, attribute: .trailing, multiplier: 1, constant: -padding.right),
             NSLayoutConstraint(item: labelLabel, attribute: .bottom, relatedBy: .equal, toItem: contentView, attribute: .bottom, multiplier: 1, constant: -padding.bottom)
         ])
+    }
+    
+    @objc func didTap() {
+        onTap?()
+    }
+    
+    override func configureCell() {
+        labelLabel.text = label
     }
 }

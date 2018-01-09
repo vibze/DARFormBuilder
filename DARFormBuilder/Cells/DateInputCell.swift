@@ -9,19 +9,25 @@
 import UIKit
 
 
-class DateInputCell: TextInputCell {
+public class DateInputCell: TextInputCell {
     
     var onDateChange: ((Date) -> Void)?
     
     var dateValue = Date() {
         didSet {
             datePickerView.date = dateValue
-            textValue = dateFormatter.string(from: dateValue)
+            textField.text = dateFormatter.string(from: dateValue)
         }
     }
     
     private let datePickerView: UIDatePicker = UIDatePicker()
     private let dateFormatter = DateFormatter()
+    
+    public convenience init(date: Date, onChange: ((Date) -> Void)?) {
+        self.init(style: .default, reuseIdentifier: nil)
+        dateValue = date
+        onDateChange = onChange
+    }
 
     override func configureSubviews() {
         super.configureSubviews()
@@ -36,6 +42,12 @@ class DateInputCell: TextInputCell {
     
     @objc func datePickerValueChanged(sender: UIDatePicker) {
         dateValue = sender.date
+        
         onDateChange?(dateValue)
+    }
+    
+    override func configureCell() {
+        datePickerView.date = dateValue
+        textField.text = dateFormatter.string(from: dateValue)
     }
 }
