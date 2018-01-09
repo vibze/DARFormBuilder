@@ -37,21 +37,32 @@ formController.items = [
     StaticValueCell(label: "Price", value: "1000"),
     
     // Label on the left and a number with plus and minus buttons on the right
-    NumDialInputCell(label: "Amount", onChange: { amount in
+    NumDialInputCell(label: "Amount") { amount in
         
     }),
     
     // Basic text input cell without label
-    TextInputCell(label: "Name", placeholder: "Letters, words", keyboardType: .default, onChange: { text in
+    TextInputCell(label: "Name", placeholder: "Letters, words", keyboardType: .default) { text in
+    
     }),
     
     // Date input cell without label
-    DateInputCell(label: "Birthday", placeholder: "xx/xx/xxxx", onChange: { date in 
+    DateInputCell(label: "Birthday", placeholder: "xx/xx/xxxx") { date in
+    
     }),
     
     // Labeled switch input cell
-    SwitchInputCell(label: "Yes/No?", onChange: { value in 
+    SwitchInputCell(label: "Yes/No?") { value in 
+    
     })
+    
+    // Clickable cell with disclosure indicator
+    ClickableCell(label: "Click me") {
+        
+    }
+    
+    // Custom view cell
+    CustomViewCell(customView: UIImageView(image: xxx"))
 ]
 ```
 
