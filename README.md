@@ -4,7 +4,7 @@ Library made to cut corners when making complex forms using UITableView.
 
 ### Installation using cocoapods
 
-Add `pod DARFormBuilder, '~1.0.0'` to your podfile and run `pod install`
+Add `pod DARFormBuilder, '~1.1.0'` to your podfile and run `pod install`
 
 ### How to use
 
@@ -20,48 +20,42 @@ Add `pod DARFormBuilder, '~1.0.0'` to your podfile and run `pod install`
         
         view.addSubview(formController.view)
         formController.view.frame = view.bounds
-        formController.delegate = self
-        formController.dataSource = self
     }    
 ```
 
 3. Configure your form fields
 ```Swift
 formController.items = [
-        .title(text: "Title"),
-        .description(text: "Your top client is Ice Cream Shop, Inc. Their ice cream is so popular they can’t keep up with customer orders at the counter. They’ve recruited you to create a sleek iOS app that will allow customers to order ice cream right from their phone. You’ve started developing the app, and it’s coming along well."),
-        .staticValue(label: "Price", value: "1000"),
-        .numDialInput(label: "Amount", key: "amount"),
-        .textInput(label: "Name", placeholder: "Letters, words", keyboardType: .default, key: "name"),
-        .dateInput(label: "Birthday", placeholder: "xx/xx/xxxx", key: "birthday"),
-        .switchInput(label: "Yes/No?", key: "yesno")
+    
+    // Plain text with big font
+    TitleCell(text: "Title"),
+    
+    // Plain text with small font
+    DescriptionCell(text: "Your top client is Ice Cream Shop, Inc. Their ice cream is so popular they can’t keep up with customer orders at the counter. They’ve recruited you to create a sleek iOS app that will allow customers to order ice cream right from their phone. You’ve started developing the app, and it’s coming along well."),
+    
+    // Static value with label on the left and value on the right
+    StaticValueCell(label: "Price", value: "1000"),
+    
+    // Label on the left and a number with plus and minus buttons on the right
+    NumDialInputCell(label: "Amount", onChange: { amount in
+        
+    }),
+    
+    // Basic text input cell without label
+    TextInputCell(label: "Name", placeholder: "Letters, words", keyboardType: .default, onChange: { text in
+    }),
+    
+    // Date input cell without label
+    DateInputCell(label: "Birthday", placeholder: "xx/xx/xxxx", onChange: { date in 
+    }),
+    
+    // Labeled switch input cell
+    SwitchInputCell(label: "Yes/No?", onChange: { value in 
+    })
 ]
 ```
 
-4. Implement `FormControllerDelegate` and `FormControllerDataSource` to control form values.
-
-
 ### List of available cell types
 ```Swift
-// Basic title. Big font, contrast font color.
-case title(text: String)
 
-// Description cell. Small font.
-case description(text: String)
-
-// Static value cell for displaying some static information.
-case staticValue(label: String, value: String)
-
-// Number dial. Label on left, dial on the right.
-case numDialInput(label: String, key: String)
-
-// Simple text input without label but with a placeholder.
-case textInput(label: String, placeholder: String, keyboardType: UIKeyboardType, key: String)
-
-// Same as above but uses a datepicker as inputview and 
-// sends messages to a different delegate method
-case dateInput(label: String, placeholder: String, key: String)
-
-// Label and a switch. For boolean values.
-case switchInput(label: String, key: String)
 ```
