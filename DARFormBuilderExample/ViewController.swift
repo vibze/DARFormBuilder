@@ -37,7 +37,10 @@ class ViewController: UIViewController {
             SwitchInputCell(label: "Yes/No?", value: true) { value in
                 print(value)
             },
-            SwitchInputCell(label: "При звонке не сообщать, что это доставка цветов", value: true) { value in
+            CustomViewCell(customView: UIImageView(image: #imageLiteral(resourceName: "randomImage"))),
+            CustomViewCell(customView: UIImageView(image: #imageLiteral(resourceName: "randomImage"))),
+            CustomViewCell(customView: UIImageView(image: #imageLiteral(resourceName: "randomImage"))),
+            SwitchInputCell(label: "При звонке не сообщать, что это доставка цветов") { value in
                 print(value)
             },
             ClickableCell(label: "Click me") {

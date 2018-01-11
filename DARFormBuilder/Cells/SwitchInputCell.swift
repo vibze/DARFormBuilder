@@ -14,11 +14,7 @@ public class SwitchInputCell: BaseCell {
     var onValueChanged: ((Bool) -> Void)?
     
     var label = ""
-    var value = false {
-        didSet {
-            switchView.isOn = value
-        }
-    }
+    var value = false
     
     private var labelLabel = UILabel()
     private var switchView = UISwitch()
