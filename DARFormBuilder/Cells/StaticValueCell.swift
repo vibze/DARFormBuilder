@@ -13,8 +13,18 @@ import UIKit
  Ячейка с лейблом слева и статичным текстом справа
  */
 public class StaticValueCell: BaseCell {
-    var label = ""
-    var value = ""
+    
+    var label = "" {
+        didSet {
+            labelLabel.text = label
+        }
+    }
+    
+    var value = "" {
+        didSet {
+            valueLabel.text = value
+        }
+    }
 
     private let labelLabel = UILabel()
     private let valueLabel = UILabel()
