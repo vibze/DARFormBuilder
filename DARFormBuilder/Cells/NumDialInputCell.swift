@@ -38,7 +38,7 @@ public class NumDialInputCell: BaseCell {
     }
     
     override func configureSubviews() {
-        labelLabel.font = UIFont.systemFont(ofSize: 14)
+        labelLabel.font = UIFont.systemFont(ofSize: 16)
         labelLabel.textColor = UIColor.black
         labelLabel.translatesAutoresizingMaskIntoConstraints = false
         
@@ -47,7 +47,7 @@ public class NumDialInputCell: BaseCell {
         plusButton.setTitleColor(UIColor.black, for: .normal)
         plusButton.translatesAutoresizingMaskIntoConstraints = false
         
-        valueLabel.font = UIFont.systemFont(ofSize: 14)
+        valueLabel.font = UIFont.systemFont(ofSize: 16)
         valueLabel.textColor = UIColor.black
         valueLabel.textAlignment = .right
         valueLabel.translatesAutoresizingMaskIntoConstraints = false
@@ -81,9 +81,9 @@ public class NumDialInputCell: BaseCell {
             ])
         
         NSLayoutConstraint.activate([
-            NSLayoutConstraint(item: valueLabel, attribute: .top, relatedBy: .equal, toItem: plusButton, attribute: .top, multiplier: 1, constant: padding.top),
+            NSLayoutConstraint(item: valueLabel, attribute: .top, relatedBy: .equal, toItem: contentView, attribute: .top, multiplier: 1, constant: padding.top),
             NSLayoutConstraint(item: valueLabel, attribute: .trailing, relatedBy: .equal, toItem: plusButton, attribute: .leading, multiplier: 1, constant: -5),
-            NSLayoutConstraint(item: valueLabel, attribute: .bottom, relatedBy: .equal, toItem: plusButton, attribute: .bottom, multiplier: 1, constant: -padding.bottom),
+            NSLayoutConstraint(item: valueLabel, attribute: .bottom, relatedBy: .equal, toItem: contentView, attribute: .bottom, multiplier: 1, constant: -padding.bottom)
             ])
         
         NSLayoutConstraint.activate([

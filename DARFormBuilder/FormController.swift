@@ -37,7 +37,7 @@ public class FormController: UITableViewController {
         super.init(style: .plain)
         
         tableView.tableFooterView = UIView()
-        tableView.estimatedRowHeight = 50
+        tableView.estimatedRowHeight = 70
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.keyboardDismissMode = .interactive
     }

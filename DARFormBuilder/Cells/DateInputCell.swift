@@ -49,7 +49,10 @@ public class DateInputCell: TextInputCell {
         
         if let date = dateValue {
             onDateChange?(date)
-            placeholderLabel.isHidden = true
+            floatLabel()
+        }
+        else {
+            groundLabel()
         }
     }
     

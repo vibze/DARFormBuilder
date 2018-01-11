@@ -28,7 +28,8 @@ public class SwitchInputCell: BaseCell {
     
     override func configureSubviews() {
         labelLabel.numberOfLines = 0
-        labelLabel.font = UIFont.systemFont(ofSize: 14)
+        labelLabel.font = UIFont.systemFont(ofSize: 16)
+        labelLabel.textColor = Config.primaryTextColor
         labelLabel.translatesAutoresizingMaskIntoConstraints = false
         labelLabel.lineBreakMode = .byWordWrapping
         

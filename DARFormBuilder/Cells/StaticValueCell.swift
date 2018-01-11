@@ -26,12 +26,12 @@ public class StaticValueCell: BaseCell {
     }
     
     override func configureSubviews() {
-        labelLabel.font = UIFont.systemFont(ofSize: 14)
-        labelLabel.textColor = UIColor.black
+        labelLabel.font = UIFont.systemFont(ofSize: 16)
+        labelLabel.textColor = Config.primaryTextColor
         labelLabel.translatesAutoresizingMaskIntoConstraints = false
         
-        valueLabel.font = UIFont.systemFont(ofSize: 14)
-        valueLabel.textColor = UIColor.black
+        valueLabel.font = UIFont.systemFont(ofSize: 16)
+        valueLabel.textColor = Config.primaryTextColor
         valueLabel.textAlignment = .right
         valueLabel.translatesAutoresizingMaskIntoConstraints = false
     }

@@ -34,7 +34,7 @@ public class TitleCell: BaseCell {
     }
     
     override func configureSubviews() {
-        titleLabel.textColor = UIColor.black
+        titleLabel.textColor = Config.primaryTextColor
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         
         separatorInset = UIEdgeInsets(top: 0, left: 320, bottom: 0, right: 0)

@@ -24,6 +24,7 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
     let countLabel = UILabel()
     let placeholderLabel = UILabel()
     var textViewHeightConstraint: NSLayoutConstraint? = nil
+    var placeholderLabelTopConstraint: NSLayoutConstraint? = nil
         
     public convenience init(placeholder: String, value: String = "", keyboardType: UIKeyboardType = .default, maxLength: Int = 0, onChange: ((String) -> Void)?) {
         self.init(style: .default, reuseIdentifier: nil)
@@ -35,16 +36,17 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
     }
     
     override func configureSubviews() {
-        textView.font = UIFont.systemFont(ofSize: 14)
+        textView.font = UIFont.systemFont(ofSize: 16)
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.delegate = self
         textView.backgroundColor = UIColor.clear
+        textView.textColor = Config.primaryTextColor
         textView.textContainerInset = UIEdgeInsets.zero
         textView.textContainer.lineFragmentPadding = 0
         textView.bounces = false
         
         countLabel.font = UIFont.systemFont(ofSize: 12)
-        countLabel.textColor = UIColor.lightGray
+        countLabel.textColor = Config.labelTextColor
         countLabel.translatesAutoresizingMaskIntoConstraints = false
         
         placeholderLabel.font = textView.font
@@ -67,16 +69,16 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
         textViewHeightConstraint = NSLayoutConstraint(item: textView, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 60)
         NSLayoutConstraint.activate([
             NSLayoutConstraint(item: textView, attribute: .leading, relatedBy: .equal, toItem: contentView, attribute: .leading, multiplier: 1, constant: padding.left),
-            NSLayoutConstraint(item: textView, attribute: .top, relatedBy: .equal, toItem: contentView, attribute: .top, multiplier: 1, constant: padding.top),
+            NSLayoutConstraint(item: textView, attribute: .top, relatedBy: .equal, toItem: contentView, attribute: .top, multiplier: 1, constant: padding.top + 10),
             NSLayoutConstraint(item: textView, attribute: .trailing, relatedBy: .equal, toItem: countLabel, attribute: .leading, multiplier: 1, constant: -5),
             NSLayoutConstraint(item: textView, attribute: .bottom, relatedBy: .equal, toItem: contentView, attribute: .bottom, multiplier: 1, constant: -padding.bottom),
             textViewHeightConstraint!
             ])
         
+        placeholderLabelTopConstraint = NSLayoutConstraint(item: placeholderLabel, attribute: .top, relatedBy: .equal, toItem: textView, attribute: .top, multiplier: 1, constant: 0)
         NSLayoutConstraint.activate([
             NSLayoutConstraint(item: placeholderLabel, attribute: .leading, relatedBy: .equal, toItem: textView, attribute: .leading, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: placeholderLabel, attribute: .top, relatedBy: .equal, toItem: textView, attribute: .top, multiplier: 1, constant: 0),
-            NSLayoutConstraint(item: placeholderLabel, attribute: .bottom, relatedBy: .equal, toItem: textView, attribute: .bottom, multiplier: 1, constant: 0)
+            placeholderLabelTopConstraint!
             ])
         
         updateTextViewHeight(for: textView.text)
@@ -90,9 +92,10 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
             countLabel.text = "\(currentLength)/\(maxLength)"
         }
         
-        placeholderLabel.isHidden = currentLength > 0
         onTextChange?(textView.text)
         textValue = textView.text
+        
+        currentLength > 0 ? floatLabel() : groundLabel()
     }
     
     override func configureCell() {
@@ -105,7 +108,7 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
             countLabel.text = ""
         }
         placeholderLabel.text = placeholder
-        placeholderLabel.isHidden = currentLength > 0
+        currentLength > 0 ? floatLabel() : groundLabel()
     }
     
     public func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
@@ -130,5 +133,15 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
         let height = size.height + textView.textContainerInset.top + textView.textContainerInset.bottom + 1
         textViewHeightConstraint?.constant = height
         delegate?.formBuilderCellDidUpdateHeight()
+    }
+    
+    func floatLabel() {
+        placeholderLabelTopConstraint?.constant = -14
+        placeholderLabel.font = UIFont.systemFont(ofSize: 11)
+    }
+    
+    func groundLabel() {
+        placeholderLabelTopConstraint?.constant = 0
+        placeholderLabel.font = textView.font
     }
 }

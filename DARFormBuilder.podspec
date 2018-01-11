@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.ios.deployment_target = '9.0'
   s.name         = "DARFormBuilder"
-  s.version      = "1.1.4"
+  s.version      = "1.1.5"
   s.summary      = "A library created to build forms faster"
   s.description  = "Uses UITableVIew and a set of cells to construct a form for any requirement."
   s.homepage     = "https://github.com/vibze/DARFormBuilder"
