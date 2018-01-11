@@ -62,6 +62,10 @@ public class DateInputCell: TextInputCell {
         
         if let date = dateValue {
             textView.text = dateFormatter.string(from: date)
+            floatLabel()
+        }
+        else {
+            groundLabel()
         }
     }
     
