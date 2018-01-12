@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class TextFieldInputCell: BaseCell, UITextFieldDelegate {
+public class TextFieldInputCell: BaseCell, UITextFieldDelegate, TextInputAccessoryViewDelegate {
     
     var onTextChange: ((String) -> Void)?
     
@@ -17,6 +17,7 @@ public class TextFieldInputCell: BaseCell, UITextFieldDelegate {
     var textValue = ""
     var maxLength: Int = 0
     
+    let textInputAccessoryView = TextInputAccessoryView()
     let textField = UITextField()
     let countLabel = UILabel()
     let placeholderLabel = UILabel()
@@ -32,11 +33,27 @@ public class TextFieldInputCell: BaseCell, UITextFieldDelegate {
         onTextChange = onChange
     }
     
+    public override var canBecomeFocused: Bool {
+        return true
+    }
+    
+    override func focus() {
+        textField.becomeFirstResponder()
+    }
+    
+    override func blur() {
+        textField.resignFirstResponder()
+    }
+    
     override func configureSubviews() {
         textField.font = UIFont.systemFont(ofSize: 14)
         textField.addTarget(self, action: #selector(textChange), for: .editingChanged)
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.delegate = self
+        textField.returnKeyType = .next
+        textField.inputAccessoryView = textInputAccessoryView
+        textField.inputAccessoryView?.frame = CGRect(x: 0, y: 0, width: 1, height: 44)
+        textInputAccessoryView.delegate = self
         
         countLabel.font = UIFont.systemFont(ofSize: 12)
         countLabel.textColor = UIColor.lightGray
@@ -75,7 +92,7 @@ public class TextFieldInputCell: BaseCell, UITextFieldDelegate {
             ])
     }
     
-    @objc private func textChange(_ sender: UITextField) {
+    func textChange(_ sender: UITextField) {
         let currentLength = sender.text?.count ?? 0
         
         if maxLength != 0 {
@@ -88,7 +105,7 @@ public class TextFieldInputCell: BaseCell, UITextFieldDelegate {
         onTextChange?(sender.text!)
     }
     
-    private func floatLabel() {
+    func floatLabel() {
         self.placeholderLabelTopConstraint?.constant = -14
         self.placeholderLabel.font = UIFont.systemFont(ofSize: 11)
         UIView.animate(withDuration: 0.1) {
@@ -96,7 +113,7 @@ public class TextFieldInputCell: BaseCell, UITextFieldDelegate {
         }
     }
     
-    private func groundLabel() {
+    func groundLabel() {
         self.placeholderLabelTopConstraint?.constant = 0
         self.placeholderLabel.font = self.textField.font
         UIView.animate(withDuration: 0.1) {
@@ -117,6 +134,11 @@ public class TextFieldInputCell: BaseCell, UITextFieldDelegate {
         currentLength > 0 ? floatLabel() : groundLabel()
     }
     
+    public func textFieldDidBeginEditing(_ textField: UITextField) {
+        textInputAccessoryView.prevButton.isEnabled = delegate?.formBuilderCellPrevFocusableCell(self) != nil
+        textInputAccessoryView.nextButton.isEnabled = delegate?.formBuilderCellNextFocusableCell(self) != nil
+    }
+    
     public func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
         let currentLength = textField.text?.count ?? 0
         
@@ -126,5 +148,31 @@ public class TextFieldInputCell: BaseCell, UITextFieldDelegate {
         
         let newLength = currentLength + string.count - range.length
         return newLength <= maxLength
+    }
+    
+    public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        if let cell = delegate?.formBuilderCellNextFocusableCell(self) {
+            delegate?.formBuilderCellScrollToCell(cell)
+            cell.focus()
+        }
+        return false
+    }
+    
+    func textInputAccessoryViewPrev() {
+        if let cell = delegate?.formBuilderCellPrevFocusableCell(self) {
+            delegate?.formBuilderCellScrollToCell(cell)
+            cell.focus()
+        }
+    }
+    
+    func textInputAccessoryViewNext() {
+        if let cell = delegate?.formBuilderCellNextFocusableCell(self) {
+            delegate?.formBuilderCellScrollToCell(cell)
+            cell.focus()
+        }
+    }
+    
+    func textInputAccessoryViewDone() {
+        textField.resignFirstResponder()
     }
 }

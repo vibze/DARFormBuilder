@@ -10,6 +10,9 @@ import UIKit
 
 protocol FormBuilderCellDelegate: class {
     func formBuilderCellDidUpdateHeight()
+    func formBuilderCellScrollToCell(_ cell: BaseCell)
+    func formBuilderCellNextFocusableCell(_ cell: BaseCell) -> BaseCell?
+    func formBuilderCellPrevFocusableCell(_ cell: BaseCell) -> BaseCell?
 }
 
 public class BaseCell: UITableViewCell {
@@ -19,6 +22,10 @@ public class BaseCell: UITableViewCell {
     }
     
     var shouldHideSeparator: Bool {
+        return false
+    }
+    
+    public override var canBecomeFocused: Bool {
         return false
     }
     
@@ -59,6 +66,14 @@ public class BaseCell: UITableViewCell {
     }
     
     func configureCell() {
+        
+    }
+    
+    func focus() {
+        
+    }
+    
+    func blur() {
         
     }
 }

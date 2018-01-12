@@ -9,7 +9,7 @@
 import UIKit
 
 
-public class DateInputCell: TextInputCell {
+public class DateInputCell: TextFieldInputCell {
     
     var onDateChange: ((Date) -> Void)?
     
@@ -18,7 +18,7 @@ public class DateInputCell: TextInputCell {
             datePickerView.date = dateValue ?? Date()
             
             if let date = dateValue {
-                textView.text = dateFormatter.string(from: date)
+                textField.text = dateFormatter.string(from: date)
             }
         }
     }
@@ -39,7 +39,7 @@ public class DateInputCell: TextInputCell {
         dateFormatter.dateFormat = "HH:mm DD/MM/YYYY"
         
         datePickerView.datePickerMode = .dateAndTime
-        textView.inputView = datePickerView
+        textField.inputView = datePickerView
         
         datePickerView.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
     }
@@ -61,7 +61,7 @@ public class DateInputCell: TextInputCell {
         datePickerView.date = dateValue ?? Date()
         
         if let date = dateValue {
-            textView.text = dateFormatter.string(from: date)
+            textField.text = dateFormatter.string(from: date)
             floatLabel()
         }
         else {
@@ -69,7 +69,8 @@ public class DateInputCell: TextInputCell {
         }
     }
     
-    func textViewDidBeginEditing(_ textView: UITextView) {
+    public override func textFieldDidBeginEditing(_ textField: UITextField) {
+        super.textFieldDidBeginEditing(textField)
         datePickerValueChanged(sender: datePickerView)
     }
 }

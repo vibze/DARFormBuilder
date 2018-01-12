@@ -49,6 +49,9 @@ class ViewController: UIViewController {
             TextFieldInputCell(placeholder: "Hi there", maxLength: 60) { text in
                 print(text)
             },
+            TextInputCell(placeholder: "Test me", value: "...", maxLength: 20) { text in
+                print(text)
+            },
             TextFieldInputCell(placeholder: "Hi there", value: "Username", maxLength: 30) { text in
                 print(text)
             }

@@ -11,7 +11,7 @@ import UIKit
 /**
  Текстовое поле
  */
-public class TextInputCell: BaseCell, UITextViewDelegate {
+public class TextInputCell: BaseCell, UITextViewDelegate, TextInputAccessoryViewDelegate {
     
     var onTextChange: ((String) -> Void)?
     
@@ -20,6 +20,7 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
     var textValue = ""
     var maxLength: Int = 0
     
+    let textInputAccessoryView = TextInputAccessoryView()
     let textView = UITextView()
     let countLabel = UILabel()
     let placeholderLabel = UILabel()
@@ -35,6 +36,18 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
         onTextChange = onChange
     }
     
+    public override var canBecomeFocused: Bool {
+        return true
+    }
+    
+    override func focus() {
+        textView.becomeFirstResponder()
+    }
+    
+    override func blur() {
+        textView.resignFirstResponder()
+    }
+    
     override func configureSubviews() {
         textView.font = UIFont.systemFont(ofSize: 16)
         textView.translatesAutoresizingMaskIntoConstraints = false
@@ -44,6 +57,9 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
         textView.textContainerInset = UIEdgeInsets.zero
         textView.textContainer.lineFragmentPadding = 0
         textView.bounces = false
+        textView.inputAccessoryView = textInputAccessoryView
+        textView.inputAccessoryView?.frame = CGRect(x: 0, y: 0, width: 1, height: 44)
+        textInputAccessoryView.delegate = self
         
         countLabel.font = UIFont.systemFont(ofSize: 12)
         countLabel.textColor = Config.labelTextColor
@@ -123,6 +139,11 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
         return newLength <= maxLength
     }
     
+    public func textViewDidBeginEditing(_ textView: UITextView) {
+        textInputAccessoryView.prevButton.isEnabled = delegate?.formBuilderCellPrevFocusableCell(self) != nil
+        textInputAccessoryView.nextButton.isEnabled = delegate?.formBuilderCellNextFocusableCell(self) != nil
+    }
+    
     private func updateTextViewHeight(for text: String) {
         let size = text.boundingRect(
             with: CGSize(width: textView.textContainer.size.width - textView.textContainer.lineFragmentPadding - 5, height: .infinity),
@@ -149,5 +170,23 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
         UIView.animate(withDuration: 0.1) {
             self.layoutIfNeeded()
         }
+    }
+    
+    func textInputAccessoryViewPrev() {
+        if let cell = delegate?.formBuilderCellPrevFocusableCell(self) {
+            delegate?.formBuilderCellScrollToCell(cell)
+            cell.focus()
+        }
+    }
+    
+    func textInputAccessoryViewNext() {
+        if let cell = delegate?.formBuilderCellNextFocusableCell(self) {
+            delegate?.formBuilderCellScrollToCell(cell)
+            cell.focus()
+        }
+    }
+    
+    func textInputAccessoryViewDone() {
+        textView.resignFirstResponder()
     }
 }

@@ -34,6 +34,8 @@
 		1866DF6A1FFF7BC60047158D /* SwitchInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF661FFF7B770047158D /* SwitchInputCell.swift */; };
 		18F70D3620076C59008986B9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F70D3520076C59008986B9 /* Config.swift */; };
 		18F70D3720076CF9008986B9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F70D3520076C59008986B9 /* Config.swift */; };
+		18F70D3C20087AE5008986B9 /* TextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F70D3B20087AE5008986B9 /* TextInputAccessoryView.swift */; };
+		18F70D3D20087CE7008986B9 /* TextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F70D3B20087AE5008986B9 /* TextInputAccessoryView.swift */; };
 		9128676C20036A280094A6A9 /* ClickableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128676B20036A280094A6A9 /* ClickableCell.swift */; };
 		9128676D200371BD0094A6A9 /* ClickableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128676B20036A280094A6A9 /* ClickableCell.swift */; };
 		9128676F20037C6C0094A6A9 /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128676E20037C6C0094A6A9 /* CustomViewCell.swift */; };
@@ -76,6 +78,7 @@
 		1866DF641FFF7B5C0047158D /* DateInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputCell.swift; sourceTree = "<group>"; };
 		1866DF661FFF7B770047158D /* SwitchInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchInputCell.swift; sourceTree = "<group>"; };
 		18F70D3520076C59008986B9 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		18F70D3B20087AE5008986B9 /* TextInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputAccessoryView.swift; sourceTree = "<group>"; };
 		9128676B20036A280094A6A9 /* ClickableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableCell.swift; sourceTree = "<group>"; };
 		9128676E20037C6C0094A6A9 /* CustomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
 		9148C2122006063900572E0C /* TextFieldInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldInputCell.swift; sourceTree = "<group>"; };
@@ -134,6 +137,7 @@
 				1866DF2B1FFF71900047158D /* Cells */,
 				1866DF211FFF6E610047158D /* DARFormBuilder.h */,
 				1866DF221FFF6E610047158D /* Info.plist */,
+				18F70D3B20087AE5008986B9 /* TextInputAccessoryView.swift */,
 			);
 			path = DARFormBuilder;
 			sourceTree = "<group>";
@@ -332,6 +336,7 @@
 				18F70D3620076C59008986B9 /* Config.swift in Sources */,
 				1866DF351FFF74350047158D /* NumDialInputCell.swift in Sources */,
 				1866DF651FFF7B5C0047158D /* DateInputCell.swift in Sources */,
+				18F70D3C20087AE5008986B9 /* TextInputAccessoryView.swift in Sources */,
 				1866DF2D1FFF71B00047158D /* BaseCell.swift in Sources */,
 				1866DF331FFF73930047158D /* StaticValueCell.swift in Sources */,
 				9128676C20036A280094A6A9 /* ClickableCell.swift in Sources */,
@@ -346,6 +351,7 @@
 				1866DF5D1FFF7A1B0047158D /* BaseCell.swift in Sources */,
 				9128677020037C710094A6A9 /* CustomViewCell.swift in Sources */,
 				1866DF601FFF7A1B0047158D /* StaticValueCell.swift in Sources */,
+				18F70D3D20087CE7008986B9 /* TextInputAccessoryView.swift in Sources */,
 				18F70D3720076CF9008986B9 /* Config.swift in Sources */,
 				1866DF691FFF7BC60047158D /* DateInputCell.swift in Sources */,
 				9148C214200609CE00572E0C /* TextFieldInputCell.swift in Sources */,

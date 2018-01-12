@@ -68,4 +68,35 @@ extension FormController: FormBuilderCellDelegate {
         tableView.beginUpdates()
         tableView.endUpdates()
     }
+    
+    func formBuilderCellNextFocusableCell(_ cell: BaseCell) -> BaseCell? {
+        guard let index = cells.index(of: cell) else { return nil }
+        for i in index...cells.count-1 {
+            guard i != index else { continue }
+            let cell = cells[i]
+            if cell.canBecomeFocused {
+                return cell
+            }
+        }
+        
+        return nil
+    }
+    
+    func formBuilderCellPrevFocusableCell(_ cell: BaseCell) -> BaseCell? {
+        guard let index = cells.index(of: cell) else { return nil }
+        for i in (0...index).reversed() {
+            guard i != index else { continue }
+            let cell = cells[i]
+            if cell.canBecomeFocused {
+                return cell
+            }
+        }
+        
+        return nil
+    }
+    
+    func formBuilderCellScrollToCell(_ cell: BaseCell) {
+        guard let index = cells.index(of: cell) else { return }
+        tableView.scrollToRow(at: IndexPath(row: index, section: 0), at: .top, animated: true)
+    }
 }
