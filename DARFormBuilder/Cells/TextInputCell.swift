@@ -157,16 +157,16 @@ public class TextInputCell: BaseCell, UITextViewDelegate, TextInputAccessoryView
     }
     
     func floatLabel() {
-        self.placeholderLabelTopConstraint?.constant = -14
-        self.placeholderLabel.font = UIFont.systemFont(ofSize: 11)
+        placeholderLabelTopConstraint?.constant = -14
+        placeholderLabel.font = UIFont.systemFont(ofSize: 11)
         UIView.animate(withDuration: 0.1) {
             self.layoutIfNeeded()
         }
     }
     
     func groundLabel() {
-        self.placeholderLabelTopConstraint?.constant = 0
-        self.placeholderLabel.font = self.textView.font
+        placeholderLabelTopConstraint?.constant = 0
+        placeholderLabel.font = textView.font
         UIView.animate(withDuration: 0.1) {
             self.layoutIfNeeded()
         }
