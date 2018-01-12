@@ -14,13 +14,13 @@ import UIKit
  */
 public class StaticValueCell: BaseCell {
     
-    var label = "" {
+    public var label = "" {
         didSet {
             labelLabel.text = label
         }
     }
     
-    var value = "" {
+    public var value = "" {
         didSet {
             valueLabel.text = value
         }
