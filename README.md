@@ -4,7 +4,7 @@ Library made to cut corners when making complex forms using UITableView.
 
 ### Installation using cocoapods
 
-Add `pod DARFormBuilder, '~1.1.0'` to your podfile and run `pod install`
+Add `pod DARFormBuilder` to your podfile and run `pod install`
 
 ### How to use
 
@@ -82,6 +82,9 @@ Label with number dial. Values can be limited by range.
 
 #### TextInputCell
 Simple textView cell. Can be limited by max length.
+
+#### TextFieldInputCell
+Simple textField cell. Can be limited by max length.
 
 #### DateInputCell
 Date picker cell.
