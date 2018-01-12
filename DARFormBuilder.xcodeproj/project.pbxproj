@@ -38,6 +38,8 @@
 		9128676D200371BD0094A6A9 /* ClickableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128676B20036A280094A6A9 /* ClickableCell.swift */; };
 		9128676F20037C6C0094A6A9 /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128676E20037C6C0094A6A9 /* CustomViewCell.swift */; };
 		9128677020037C710094A6A9 /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128676E20037C6C0094A6A9 /* CustomViewCell.swift */; };
+		9148C2132006063900572E0C /* TextFieldInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9148C2122006063900572E0C /* TextFieldInputCell.swift */; };
+		9148C214200609CE00572E0C /* TextFieldInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9148C2122006063900572E0C /* TextFieldInputCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +78,7 @@
 		18F70D3520076C59008986B9 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		9128676B20036A280094A6A9 /* ClickableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableCell.swift; sourceTree = "<group>"; };
 		9128676E20037C6C0094A6A9 /* CustomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
+		9148C2122006063900572E0C /* TextFieldInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldInputCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +151,7 @@
 				1866DF661FFF7B770047158D /* SwitchInputCell.swift */,
 				9128676B20036A280094A6A9 /* ClickableCell.swift */,
 				9128676E20037C6C0094A6A9 /* CustomViewCell.swift */,
+				9148C2122006063900572E0C /* TextFieldInputCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -323,6 +327,7 @@
 				9128676F20037C6C0094A6A9 /* CustomViewCell.swift in Sources */,
 				1866DF671FFF7B770047158D /* SwitchInputCell.swift in Sources */,
 				1866DF2F1FFF71E60047158D /* TitleCell.swift in Sources */,
+				9148C2132006063900572E0C /* TextFieldInputCell.swift in Sources */,
 				1866DF2A1FFF711E0047158D /* FormController.swift in Sources */,
 				18F70D3620076C59008986B9 /* Config.swift in Sources */,
 				1866DF351FFF74350047158D /* NumDialInputCell.swift in Sources */,
@@ -343,6 +348,7 @@
 				1866DF601FFF7A1B0047158D /* StaticValueCell.swift in Sources */,
 				18F70D3720076CF9008986B9 /* Config.swift in Sources */,
 				1866DF691FFF7BC60047158D /* DateInputCell.swift in Sources */,
+				9148C214200609CE00572E0C /* TextFieldInputCell.swift in Sources */,
 				1866DF411FFF79060047158D /* ViewController.swift in Sources */,
 				9128676D200371BD0094A6A9 /* ClickableCell.swift in Sources */,
 				1866DF611FFF7A1B0047158D /* NumDialInputCell.swift in Sources */,

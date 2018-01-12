@@ -110,7 +110,7 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
         placeholderLabel.text = placeholder
         currentLength > 0 ? floatLabel() : groundLabel()
     }
-    
+
     public func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
         let newText = (textView.text! as NSString).replacingCharacters(in: range, with: text)
         updateTextViewHeight(for: newText)
@@ -136,12 +136,18 @@ public class TextInputCell: BaseCell, UITextViewDelegate {
     }
     
     func floatLabel() {
-        placeholderLabelTopConstraint?.constant = -14
-        placeholderLabel.font = UIFont.systemFont(ofSize: 11)
+        self.placeholderLabelTopConstraint?.constant = -14
+        self.placeholderLabel.font = UIFont.systemFont(ofSize: 11)
+        UIView.animate(withDuration: 0.1) {
+            self.layoutIfNeeded()
+        }
     }
     
     func groundLabel() {
-        placeholderLabelTopConstraint?.constant = 0
-        placeholderLabel.font = textView.font
+        self.placeholderLabelTopConstraint?.constant = 0
+        self.placeholderLabel.font = self.textView.font
+        UIView.animate(withDuration: 0.1) {
+            self.layoutIfNeeded()
+        }
     }
 }

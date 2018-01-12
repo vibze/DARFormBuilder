@@ -28,7 +28,7 @@ class ViewController: UIViewController {
             TextInputCell(placeholder: "Letters, words") { text in
                 print(text)
             },
-            TextInputCell(placeholder: "Letters, words", maxLength: 60) { text in
+            TextInputCell(placeholder: "Letters, words", value: "Hello", maxLength: 60) { text in
                 print(text)
             },
             DateInputCell(placeholder: "Date", value: nil) { date in
@@ -46,7 +46,12 @@ class ViewController: UIViewController {
             ClickableCell(label: "Click me") {
                 print("Clicked!")
             },
-            CustomViewCell(customView: UIImageView(image: #imageLiteral(resourceName: "randomImage")))
+            TextFieldInputCell(placeholder: "Hi there", maxLength: 60) { text in
+                print(text)
+            },
+            TextFieldInputCell(placeholder: "Hi there", value: "Username", maxLength: 30) { text in
+                print(text)
+            }
         ]
     }
 }
