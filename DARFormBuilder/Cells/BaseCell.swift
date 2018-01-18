@@ -18,7 +18,7 @@ protocol FormBuilderCellDelegate: class {
 
 public class BaseCell: UITableViewCell {
     
-    enum SeparatorStyle {
+    public enum SeparatorStyle {
         case hairline, stripe, none
     }
     
