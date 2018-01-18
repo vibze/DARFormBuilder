@@ -38,7 +38,7 @@ public class NumDialInputCell: BaseCell {
     }
     
     override func configureSubviews() {
-        labelLabel.font = UIFont.systemFont(ofSize: 16)
+        labelLabel.font = UIFont.systemFont(ofSize: config.fontSize)
         labelLabel.textColor = UIColor.black
         labelLabel.translatesAutoresizingMaskIntoConstraints = false
         
@@ -47,7 +47,7 @@ public class NumDialInputCell: BaseCell {
         plusButton.setTitleColor(UIColor.black, for: .normal)
         plusButton.translatesAutoresizingMaskIntoConstraints = false
         
-        valueLabel.font = UIFont.systemFont(ofSize: 16)
+        valueLabel.font = UIFont.systemFont(ofSize: config.fontSize)
         valueLabel.textColor = UIColor.black
         valueLabel.textAlignment = .right
         valueLabel.translatesAutoresizingMaskIntoConstraints = false

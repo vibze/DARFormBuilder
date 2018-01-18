@@ -46,7 +46,7 @@ public class TextFieldInputCell: BaseCell, UITextFieldDelegate, TextInputAccesso
     }
     
     override func configureSubviews() {
-        textField.font = UIFont.systemFont(ofSize: 14)
+        textField.font = UIFont.systemFont(ofSize: config.fontSize)
         textField.addTarget(self, action: #selector(textChange), for: .editingChanged)
         textField.translatesAutoresizingMaskIntoConstraints = false
         textField.delegate = self

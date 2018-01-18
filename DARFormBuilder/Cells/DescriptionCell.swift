@@ -26,7 +26,7 @@ public class DescriptionCell: BaseCell {
     }
     
     override func configureSubviews() {
-        descriptionLabel.textColor = Config.labelTextColor
+        descriptionLabel.textColor = config.labelTextColor
         descriptionLabel.numberOfLines = 0
         descriptionLabel.lineBreakMode = .byWordWrapping
         descriptionLabel.translatesAutoresizingMaskIntoConstraints = false

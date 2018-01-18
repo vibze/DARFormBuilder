@@ -24,7 +24,7 @@ public class ClickableCell: BaseCell {
     }
     
     override func configureSubviews() {
-        labelLabel.font = UIFont.systemFont(ofSize: 16)
+        labelLabel.font = UIFont.systemFont(ofSize: config.fontSize)
         labelLabel.textColor = UIColor.black
         labelLabel.translatesAutoresizingMaskIntoConstraints = false
         

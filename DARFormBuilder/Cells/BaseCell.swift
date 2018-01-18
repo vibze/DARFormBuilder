@@ -13,13 +13,20 @@ protocol FormBuilderCellDelegate: class {
     func formBuilderCellScrollToCell(_ cell: BaseCell)
     func formBuilderCellNextFocusableCell(_ cell: BaseCell) -> BaseCell?
     func formBuilderCellPrevFocusableCell(_ cell: BaseCell) -> BaseCell?
+    var formBuilderCellConfig: Config { get }
 }
 
 public class BaseCell: UITableViewCell {
     
-    var padding: UIEdgeInsets {
-        return UIEdgeInsets(top: 10, left: 17, bottom: 10, right: 15)
+    enum SeparatorStyle {
+        case hairline, stripe, none
     }
+    
+    var padding: UIEdgeInsets {
+        return config.cellPadding
+    }
+    
+    var separatorStyle: SeparatorStyle = .hairline
     
     var shouldHideSeparator: Bool {
         return false
@@ -31,10 +38,19 @@ public class BaseCell: UITableViewCell {
     
     weak var delegate: FormBuilderCellDelegate?
     
+    var config: Config {
+        return delegate?.formBuilderCellConfig ?? Config()
+    }
+    
+    private let separator = CALayer()
+    
     override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         selectionStyle = .none
+        
+        layer.addSublayer(separator)
+        separator.backgroundColor = config.separatorColor.cgColor
         
         configureSubviews()
         addSubviews()
@@ -47,9 +63,11 @@ public class BaseCell: UITableViewCell {
     
     public override func layoutSubviews() {
         super.layoutSubviews()
-        
-        if shouldHideSeparator {
-            separatorInset = UIEdgeInsets(top: 0, left: frame.width, bottom: 0, right: 0)
+
+        switch separatorStyle {
+        case .none: separator.frame = CGRect.zero
+        case .hairline: separator.frame = CGRect(x: padding.left, y: frame.height - 1, width: frame.width - padding.left - padding.right, height: 1)
+        case .stripe: separator.frame = CGRect(x: padding.left, y: frame.height - 5, width: frame.width - padding.left - padding.right, height: 5)
         }
     }
     

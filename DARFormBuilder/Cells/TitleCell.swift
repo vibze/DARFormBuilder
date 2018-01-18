@@ -17,10 +17,6 @@ public class TitleCell: BaseCell {
     
     var titleText = ""
     
-    override var shouldHideSeparator: Bool {
-        return true
-    }
-    
     override var padding: UIEdgeInsets {
         return UIEdgeInsets(top: 10, left: 17, bottom: 0, right: 15)
     }
@@ -31,13 +27,12 @@ public class TitleCell: BaseCell {
         self.init(style: .default, reuseIdentifier: nil)
         titleText = text
         titleLabel.font = UIFont.systemFont(ofSize: fontSize)
+        separatorStyle = .none
     }
     
     override func configureSubviews() {
-        titleLabel.textColor = Config.primaryTextColor
+        titleLabel.textColor = config.primaryTextColor
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
-        
-        separatorInset = UIEdgeInsets(top: 0, left: 320, bottom: 0, right: 0)
     }
     
     override func addSubviews() {

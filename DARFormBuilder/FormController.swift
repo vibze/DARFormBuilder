@@ -26,6 +26,7 @@ public protocol FormControllerScrollDelegate: class {
 public class FormController: UITableViewController {
 
     public weak var scrollDelegate: FormControllerScrollDelegate?
+    public var config = Config()
 
     public var cells: [BaseCell] = [] {
         didSet {
@@ -35,11 +36,16 @@ public class FormController: UITableViewController {
     
     public init() {
         super.init(style: .plain)
+    }
+    
+    public override func viewDidLoad() {
+        super.viewDidLoad()
         
         tableView.tableFooterView = UIView()
         tableView.estimatedRowHeight = 70
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.keyboardDismissMode = .interactive
+        tableView.separatorStyle = .none
     }
     
     public required init?(coder aDecoder: NSCoder) {
@@ -97,6 +103,10 @@ extension FormController: FormBuilderCellDelegate {
     
     func formBuilderCellScrollToCell(_ cell: BaseCell) {
         guard let index = cells.index(of: cell) else { return }
-        tableView.scrollToRow(at: IndexPath(row: index, section: 0), at: .top, animated: true)
+        tableView.scrollToRow(at: IndexPath(row: index, section: 0), at: .bottom, animated: true)
+    }
+    
+    var formBuilderCellConfig: Config {
+        return config
     }
 }

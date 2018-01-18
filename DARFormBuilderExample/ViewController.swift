@@ -18,6 +18,11 @@ class ViewController: UIViewController {
         view.addSubview(formController.view)
         formController.view.frame = view.bounds
         
+        let usernameCell = TextFieldInputCell(placeholder: "Hi there", value: "Username", maxLength: 30) { text in
+            print(text)
+        }
+        usernameCell.separatorStyle = .stripe
+        
         formController.cells = [
             TitleCell(text: "Title", fontSize: 30),
             DescriptionCell(text: "Your top client is Ice Cream Shop, Inc. Their ice cream is so popular they can’t keep up with customer orders at the counter. They’ve recruited you to create a sleek iOS app that will allow customers to order ice cream right from their phone. You’ve started developing the app, and it’s coming along well.", fontSize: 12),
@@ -49,10 +54,8 @@ class ViewController: UIViewController {
             TextFieldInputCell(placeholder: "Hi there", maxLength: 60) { text in
                 print(text)
             },
+            usernameCell,
             TextInputCell(placeholder: "Test me", value: "...", maxLength: 20) { text in
-                print(text)
-            },
-            TextFieldInputCell(placeholder: "Hi there", value: "Username", maxLength: 30) { text in
                 print(text)
             }
         ]

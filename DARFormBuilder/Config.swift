@@ -10,6 +10,9 @@ import UIKit
 
 
 public struct Config {
-    public static var primaryTextColor = UIColor.black
-    public static var labelTextColor = UIColor.lightGray
+    public var primaryTextColor = UIColor.black
+    public var labelTextColor = UIColor.lightGray
+    public var separatorColor = UIColor.gray.withAlphaComponent(0.25)
+    public var cellPadding = UIEdgeInsets(top: 10, left: 17, bottom: 10, right: 15)
+    public var fontSize: CGFloat = 16
 }

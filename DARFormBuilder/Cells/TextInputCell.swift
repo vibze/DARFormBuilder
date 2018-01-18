@@ -49,11 +49,11 @@ public class TextInputCell: BaseCell, UITextViewDelegate, TextInputAccessoryView
     }
     
     override func configureSubviews() {
-        textView.font = UIFont.systemFont(ofSize: 16)
+        textView.font = UIFont.systemFont(ofSize: config.fontSize)
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.delegate = self
         textView.backgroundColor = UIColor.clear
-        textView.textColor = Config.primaryTextColor
+        textView.textColor = config.primaryTextColor
         textView.textContainerInset = UIEdgeInsets.zero
         textView.textContainer.lineFragmentPadding = 0
         textView.bounces = false
@@ -62,7 +62,7 @@ public class TextInputCell: BaseCell, UITextViewDelegate, TextInputAccessoryView
         textInputAccessoryView.delegate = self
         
         countLabel.font = UIFont.systemFont(ofSize: 12)
-        countLabel.textColor = Config.labelTextColor
+        countLabel.textColor = config.labelTextColor
         countLabel.translatesAutoresizingMaskIntoConstraints = false
         
         placeholderLabel.font = textView.font
@@ -142,6 +142,7 @@ public class TextInputCell: BaseCell, UITextViewDelegate, TextInputAccessoryView
     public func textViewDidBeginEditing(_ textView: UITextView) {
         textInputAccessoryView.prevButton.isEnabled = delegate?.formBuilderCellPrevFocusableCell(self) != nil
         textInputAccessoryView.nextButton.isEnabled = delegate?.formBuilderCellNextFocusableCell(self) != nil
+        delegate?.formBuilderCellScrollToCell(self)
     }
     
     private func updateTextViewHeight(for text: String) {
@@ -174,14 +175,12 @@ public class TextInputCell: BaseCell, UITextViewDelegate, TextInputAccessoryView
     
     func textInputAccessoryViewPrev() {
         if let cell = delegate?.formBuilderCellPrevFocusableCell(self) {
-            delegate?.formBuilderCellScrollToCell(cell)
             cell.focus()
         }
     }
     
     func textInputAccessoryViewNext() {
         if let cell = delegate?.formBuilderCellNextFocusableCell(self) {
-            delegate?.formBuilderCellScrollToCell(cell)
             cell.focus()
         }
     }
