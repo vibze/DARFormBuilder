@@ -26,7 +26,7 @@ public class BaseCell: UITableViewCell {
         return config.cellPadding
     }
     
-    var separatorStyle: SeparatorStyle = .hairline
+    public var separatorStyle: SeparatorStyle = .hairline
     
     var shouldHideSeparator: Bool {
         return false
