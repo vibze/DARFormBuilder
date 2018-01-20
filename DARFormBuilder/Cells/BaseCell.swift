@@ -55,6 +55,9 @@ public class BaseCell: UITableViewCell {
         configureSubviews()
         addSubviews()
         configureConstraints()
+        
+        let tgs = UITapGestureRecognizer(target: self, action: #selector(didTapCell))
+        addGestureRecognizer(tgs)
     }
     
     public required init?(coder aDecoder: NSCoder) {
@@ -69,6 +72,10 @@ public class BaseCell: UITableViewCell {
         case .hairline: separator.frame = CGRect(x: padding.left, y: frame.height - 1, width: frame.width - padding.left - padding.right, height: 1)
         case .stripe: separator.frame = CGRect(x: padding.left, y: frame.height - 5, width: frame.width - padding.left - padding.right, height: 5)
         }
+    }
+    
+    func didTapCell(_ recognizer: UITapGestureRecognizer) {
+        focus()
     }
     
     func configureSubviews() {

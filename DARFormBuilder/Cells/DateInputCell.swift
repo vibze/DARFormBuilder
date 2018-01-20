@@ -36,8 +36,7 @@ public class DateInputCell: TextFieldInputCell {
     override func configureSubviews() {
         super.configureSubviews()
         
-        dateFormatter.dateFormat = "HH:mm DD/MM/YYYY"
-        
+        dateFormatter.dateFormat = "DD.MM.YYYY HH:mm"
         datePickerView.datePickerMode = .dateAndTime
         textField.inputView = datePickerView
         

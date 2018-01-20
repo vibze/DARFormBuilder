@@ -175,12 +175,14 @@ public class TextInputCell: BaseCell, UITextViewDelegate, TextInputAccessoryView
     
     func textInputAccessoryViewPrev() {
         if let cell = delegate?.formBuilderCellPrevFocusableCell(self) {
+            delegate?.formBuilderCellScrollToCell(cell)
             cell.focus()
         }
     }
     
     func textInputAccessoryViewNext() {
         if let cell = delegate?.formBuilderCellNextFocusableCell(self) {
+            delegate?.formBuilderCellScrollToCell(cell)
             cell.focus()
         }
     }
