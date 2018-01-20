@@ -17,6 +17,7 @@ class ViewController: UIViewController {
         
         view.addSubview(formController.view)
         formController.view.frame = view.bounds
+        formController.bottomInset = 100
         
         let usernameCell = TextFieldInputCell(placeholder: "Hi there", value: "Username", maxLength: 30) { text in
             print(text)

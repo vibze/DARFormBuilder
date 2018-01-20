@@ -27,6 +27,14 @@ public class FormController: UITableViewController {
 
     public weak var scrollDelegate: FormControllerScrollDelegate?
     public var config = Config()
+    public var bottomInset: CGFloat = 0 {
+        didSet {
+            var inset = tableView.contentInset
+            inset.bottom = bottomInset
+            tableView.contentInset = inset
+            tableView.scrollIndicatorInsets = inset
+        }
+    }
 
     public var cells: [BaseCell] = [] {
         didSet {
