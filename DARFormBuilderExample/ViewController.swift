@@ -42,6 +42,12 @@ class ViewController: UIViewController {
             },
             SwitchInputCell(label: "Yes/No?", value: true) { value in
                 print(value)
+                if value {
+                    self.formController.hiddenRows = [IndexPath.init(row: 2, section: 0)]
+                }
+                else {
+                    self.formController.hiddenRows = []
+                }
             },
             CustomViewCell(customView: UIImageView(image: #imageLiteral(resourceName: "randomImage"))),
             CustomViewCell(customView: UIImageView(image: #imageLiteral(resourceName: "randomImage"))),

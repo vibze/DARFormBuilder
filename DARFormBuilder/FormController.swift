@@ -42,6 +42,14 @@ public class FormController: UITableViewController {
         }
     }
     
+    public var hiddenRows: [IndexPath] = [] {
+        didSet {
+            tableView.beginUpdates()
+            tableView.reloadData()
+            tableView.endUpdates()
+        }
+    }
+    
     public init() {
         super.init(style: .plain)
     }
@@ -51,13 +59,21 @@ public class FormController: UITableViewController {
         
         tableView.tableFooterView = UIView()
         tableView.estimatedRowHeight = 70
-        tableView.rowHeight = UITableViewAutomaticDimension
         tableView.keyboardDismissMode = .interactive
         tableView.separatorStyle = .none
     }
     
     public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    public override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if hiddenRows.contains(indexPath) {
+            print("ZZZ")
+            return 0
+        }
+        
+        return UITableViewAutomaticDimension
     }
     
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
