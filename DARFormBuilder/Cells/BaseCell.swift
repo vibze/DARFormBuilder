@@ -58,6 +58,8 @@ public class BaseCell: UITableViewCell {
         
         let tgs = UITapGestureRecognizer(target: self, action: #selector(didTapCell))
         addGestureRecognizer(tgs)
+        
+        clipsToBounds = true
     }
     
     public required init?(coder aDecoder: NSCoder) {
