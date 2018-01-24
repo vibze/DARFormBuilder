@@ -64,7 +64,17 @@ class ViewController: UIViewController {
             usernameCell,
             TextInputCell(placeholder: "Test me", value: "...", maxLength: 20) { text in
                 print(text)
-            }
+            },
+            DateRangeInputCell(datePlaceholder: "Date", startTimePlaceholder: "Start", endTimePlaceholder: "End",
+                               dateValue: nil, startTimeValue: nil, endTimeValue: nil,
+                               onChange: { (date, startTime, endTime) in
+                                guard let date = date, let startTime = startTime, let endTime = endTime else {
+                                    return
+                                }
+                print(date)
+                print(startTime)
+                print(endTime)
+            })
         ]
     }
 }

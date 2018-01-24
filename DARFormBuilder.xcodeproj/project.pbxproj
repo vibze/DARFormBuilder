@@ -42,6 +42,10 @@
 		9128677020037C710094A6A9 /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128676E20037C6C0094A6A9 /* CustomViewCell.swift */; };
 		9148C2132006063900572E0C /* TextFieldInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9148C2122006063900572E0C /* TextFieldInputCell.swift */; };
 		9148C214200609CE00572E0C /* TextFieldInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9148C2122006063900572E0C /* TextFieldInputCell.swift */; };
+		9162E9A82018401400FF9AE4 /* DateRangeInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162E9A72018401400FF9AE4 /* DateRangeInputCell.swift */; };
+		9162E9A9201871F200FF9AE4 /* DateRangeInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162E9A72018401400FF9AE4 /* DateRangeInputCell.swift */; };
+		91D2E0E220187D69004157BA /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2E0E120187D69004157BA /* FloatLabelTextField.swift */; };
+		91D2E0E320188102004157BA /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2E0E120187D69004157BA /* FloatLabelTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,6 +86,8 @@
 		9128676B20036A280094A6A9 /* ClickableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableCell.swift; sourceTree = "<group>"; };
 		9128676E20037C6C0094A6A9 /* CustomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
 		9148C2122006063900572E0C /* TextFieldInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldInputCell.swift; sourceTree = "<group>"; };
+		9162E9A72018401400FF9AE4 /* DateRangeInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRangeInputCell.swift; sourceTree = "<group>"; };
+		91D2E0E120187D69004157BA /* FloatLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,7 @@
 			children = (
 				1866DF291FFF711E0047158D /* FormController.swift */,
 				18F70D3520076C59008986B9 /* Config.swift */,
+				91D2E0E120187D69004157BA /* FloatLabelTextField.swift */,
 				1866DF2B1FFF71900047158D /* Cells */,
 				1866DF211FFF6E610047158D /* DARFormBuilder.h */,
 				1866DF221FFF6E610047158D /* Info.plist */,
@@ -156,6 +163,7 @@
 				9128676B20036A280094A6A9 /* ClickableCell.swift */,
 				9128676E20037C6C0094A6A9 /* CustomViewCell.swift */,
 				9148C2122006063900572E0C /* TextFieldInputCell.swift */,
+				9162E9A72018401400FF9AE4 /* DateRangeInputCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -330,6 +338,8 @@
 				1866DF311FFF72DE0047158D /* DescriptionCell.swift in Sources */,
 				9128676F20037C6C0094A6A9 /* CustomViewCell.swift in Sources */,
 				1866DF671FFF7B770047158D /* SwitchInputCell.swift in Sources */,
+				91D2E0E220187D69004157BA /* FloatLabelTextField.swift in Sources */,
+				9162E9A82018401400FF9AE4 /* DateRangeInputCell.swift in Sources */,
 				1866DF2F1FFF71E60047158D /* TitleCell.swift in Sources */,
 				9148C2132006063900572E0C /* TextFieldInputCell.swift in Sources */,
 				1866DF2A1FFF711E0047158D /* FormController.swift in Sources */,
@@ -353,6 +363,7 @@
 				1866DF601FFF7A1B0047158D /* StaticValueCell.swift in Sources */,
 				18F70D3D20087CE7008986B9 /* TextInputAccessoryView.swift in Sources */,
 				18F70D3720076CF9008986B9 /* Config.swift in Sources */,
+				9162E9A9201871F200FF9AE4 /* DateRangeInputCell.swift in Sources */,
 				1866DF691FFF7BC60047158D /* DateInputCell.swift in Sources */,
 				9148C214200609CE00572E0C /* TextFieldInputCell.swift in Sources */,
 				1866DF411FFF79060047158D /* ViewController.swift in Sources */,
@@ -362,6 +373,7 @@
 				1866DF5F1FFF7A1B0047158D /* DescriptionCell.swift in Sources */,
 				1866DF681FFF7BC60047158D /* TextInputCell.swift in Sources */,
 				1866DF5E1FFF7A1B0047158D /* TitleCell.swift in Sources */,
+				91D2E0E320188102004157BA /* FloatLabelTextField.swift in Sources */,
 				1866DF3F1FFF79060047158D /* AppDelegate.swift in Sources */,
 				1866DF5C1FFF79230047158D /* FormController.swift in Sources */,
 			);
