@@ -16,3 +16,6 @@ public struct Config {
     public var cellPadding = UIEdgeInsets(top: 12, left: 17, bottom: 12, right: 15)
     public var fontSize: CGFloat = 18
 }
+
+
+var config = Config()

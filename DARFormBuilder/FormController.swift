@@ -36,11 +36,28 @@ public class FormController: UITableViewController {
         }
     }
 
-    public var cells: [BaseCell] = [] {
+    public var rows: [UITableViewCell] = [] {
         didSet {
             tableView.reloadData()
+            
+            responderViews = []
+            for row in rows {
+                guard let row = row as? Row else { continue }
+                for view in row.views {
+                    if view.canBecomeFirstResponder {
+                        responderViews.append(view)
+                    }
+                    
+                    if let view = view as? CanMountTextInputAccessoryView {
+                        view.mountTextInputAccessoryView(textInputAccessoryView)
+                        textInputAccessoryView.frame = CGRect(x: 0, y: 0, width: 10, height: 44)
+                    }
+                }
+            }
         }
     }
+    
+    public var responderViews: [UIView] = []
     
     public var hiddenRows: [IndexPath] = [] {
         didSet {
@@ -69,68 +86,40 @@ public class FormController: UITableViewController {
     
     public override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if hiddenRows.contains(indexPath) {
-            print("ZZZ")
             return 0
         }
         
-        return UITableViewAutomaticDimension
+        if let row = rows[indexPath.row] as? Row {
+            return row.height
+        }
+        
+        return 60
     }
     
     public override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return cells.count
+        return rows.count
     }
     
     public override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = cells[indexPath.row]
-        cell.configureCell()
-        cell.delegate = self
-
-        return cell
+        let row = rows[indexPath.row]
+        if let row = row as? Row {
+            row.delegate = self
+        }
+        
+        return row
     }
     
     public override func scrollViewDidScroll(_ scrollView: UIScrollView) {
         scrollDelegate?.scrollViewDidScroll(scrollView)
     }
+    
+    private let textInputAccessoryView = TextInputAccessoryView()
 }
 
-extension FormController: FormBuilderCellDelegate {
-    func formBuilderCellDidUpdateHeight() {
+extension FormController: RowDelegate {
+    func row(_ row: Row, didChangeHeight height: CGFloat) {
         tableView.beginUpdates()
         tableView.endUpdates()
     }
-    
-    func formBuilderCellNextFocusableCell(_ cell: BaseCell) -> BaseCell? {
-        guard let index = cells.index(of: cell) else { return nil }
-        for i in index...cells.count-1 {
-            guard i != index else { continue }
-            let cell = cells[i]
-            if cell.canBecomeFocused {
-                return cell
-            }
-        }
-        
-        return nil
-    }
-    
-    func formBuilderCellPrevFocusableCell(_ cell: BaseCell) -> BaseCell? {
-        guard let index = cells.index(of: cell) else { return nil }
-        for i in (0...index).reversed() {
-            guard i != index else { continue }
-            let cell = cells[i]
-            if cell.canBecomeFocused {
-                return cell
-            }
-        }
-        
-        return nil
-    }
-    
-    func formBuilderCellScrollToCell(_ cell: BaseCell) {
-        guard let index = cells.index(of: cell) else { return }
-        tableView.scrollToRow(at: IndexPath(row: index, section: 0), at: .bottom, animated: true)
-    }
-    
-    var formBuilderCellConfig: Config {
-        return config
-    }
 }
+

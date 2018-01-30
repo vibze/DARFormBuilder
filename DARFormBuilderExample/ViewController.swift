@@ -17,54 +17,43 @@ class ViewController: UIViewController {
         
         view.addSubview(formController.view)
         formController.view.frame = view.bounds
-        formController.bottomInset = 100
         
-        let usernameCell = TextFieldInputCell(placeholder: "Hi there", value: "Username", maxLength: 30) { text in
-            print(text)
-        }
-        usernameCell.separatorStyle = .stripe
+        let titleView = UILabel()
+        titleView.text = "Тест"
+        titleView.font = UIFont.systemFont(ofSize: 24)
         
-        formController.cells = [
-            TitleCell(text: "Title", fontSize: 30),
-            DescriptionCell(text: "Your top client is Ice Cream Shop, Inc. Their ice cream is so popular they can’t keep up with customer orders at the counter. They’ve recruited you to create a sleek iOS app that will allow customers to order ice cream right from their phone. You’ve started developing the app, and it’s coming along well.", fontSize: 12),
-            StaticValueCell(label: "Price", value: "1000"),
-            NumDialInputCell(label: "Amount", value: 5, range: 1..<25) { amount in
-                print(amount)
-            },
-            TextInputCell(placeholder: "Letters, words") { text in
-                print(text)
-            },
-            TextInputCell(placeholder: "Letters, words", value: "Hello", maxLength: 60) { text in
-                print(text)
-            },
-            DateInputCell(placeholder: "Date", value: nil) { date in
-                print(date)
-            },
-            SwitchInputCell(label: "Yes/No?", value: true) { value in
-                print(value)
-                if value {
-                    self.formController.hiddenRows = [IndexPath.init(row: 2, section: 0)]
-                }
-                else {
-                    self.formController.hiddenRows = []
-                }
-            },
-            CustomViewCell(customView: UIImageView(image: #imageLiteral(resourceName: "randomImage"))),
-            CustomViewCell(customView: UIImageView(image: #imageLiteral(resourceName: "randomImage"))),
-            CustomViewCell(customView: UIImageView(image: #imageLiteral(resourceName: "randomImage"))),
-            SwitchInputCell(label: "При звонке не сообщать, что это доставка цветов") { value in
-                print(value)
-            },
-            ClickableCell(label: "Click me") {
-                print("Clicked!")
-            },
-            TextFieldInputCell(placeholder: "Hi there", maxLength: 60) { text in
-                print(text)
-            },
-            usernameCell,
-            TextInputCell(placeholder: "Test me", value: "...", maxLength: 20) { text in
-                print(text)
-            }
+        let nameField = StringField("Имя", maxLength: 60)
+        nameField.onTextChange = { print($0) }
+        let ageField = KeyValueField("Возраст", value: "10")
+        let ageFixField = KeyValueField("Возраст (фикс)", value: "10")
+        ageFixField.isEnabled = false
+        
+        let amountField = KeyNumDialField("Количеситво", value: 5)
+        let boolField = KeySwitchField("Показать поля", value: true)
+        
+        let dateField = DateField("День рождения", value: nil)
+        dateField.onDateChange = { print($0) }
+        
+        let fromTimeField = DateField("Время от", value: nil)
+        fromTimeField.dateFormat = "HH:mm"
+        fromTimeField.datePickerMode = .time
+        
+        let toTimeField = DateField("Время до", value: nil)
+        toTimeField.dateFormat = "HH:mm"
+        toTimeField.datePickerMode = .time
+        
+        let aboutField = TextField("Об Алексее могучем...", maxLength: 150)
+        
+        formController.rows = [
+            Row(titleView),
+            Row(nameField),
+            Row(ageField),
+            Row(ageFixField),
+            Row(amountField),
+            Row(boolField),
+            Row(aboutField),
+            Row(dateField),
+            Row(fromTimeField, toTimeField),
         ]
     }
 }

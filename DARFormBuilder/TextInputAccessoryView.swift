@@ -56,3 +56,4 @@ protocol TextInputAccessoryViewDelegate: class {
     func textInputAccessoryViewNext()
     func textInputAccessoryViewDone()
 }
+
