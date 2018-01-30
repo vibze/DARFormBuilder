@@ -16,7 +16,7 @@ protocol FormBuilderCellDelegate: class {
     var formBuilderCellConfig: Config { get }
 }
 
-public class BaseCell: UITableViewCell {
+open class BaseCell: UITableViewCell {
     
     public enum SeparatorStyle {
         case hairline, stripe, none
@@ -32,7 +32,7 @@ public class BaseCell: UITableViewCell {
         return false
     }
     
-    public override var canBecomeFocused: Bool {
+    open override var canBecomeFocused: Bool {
         return false
     }
     
@@ -66,7 +66,7 @@ public class BaseCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public override func layoutSubviews() {
+    open override func layoutSubviews() {
         super.layoutSubviews()
 
         switch separatorStyle {
