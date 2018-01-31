@@ -190,12 +190,12 @@ public class TextInputCell: BaseCell, UITextViewDelegate, TextInputAccessoryView
         textView.resignFirstResponder()
     }
     
-    override func showError() {
+    override public func showError() {
         placeholderLabel.textColor = .red
         countLabel.textColor = .red
     }
     
-    override func hideError() {
+    override public func hideError() {
         placeholderLabel.textColor = .lightGray
         countLabel.textColor = .lightGray
     }

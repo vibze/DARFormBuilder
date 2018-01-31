@@ -104,11 +104,11 @@ open class BaseCell: UITableViewCell {
         
     }
     
-    func showError() {
+    public func showError() {
         
     }
     
-    func hideError() {
+    public func hideError() {
         
     }
 }
