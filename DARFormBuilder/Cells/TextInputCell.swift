@@ -19,7 +19,6 @@ public class TextInputCell: BaseCell, UITextViewDelegate, TextInputAccessoryView
     var placeholder: String = ""
     var textValue = ""
     var maxLength: Int = 0
-    
     let textInputAccessoryView = TextInputAccessoryView()
     let textView = UITextView()
     let countLabel = UILabel()
@@ -96,7 +95,7 @@ public class TextInputCell: BaseCell, UITextViewDelegate, TextInputAccessoryView
             NSLayoutConstraint(item: placeholderLabel, attribute: .leading, relatedBy: .equal, toItem: textView, attribute: .leading, multiplier: 1, constant: 0),
             placeholderLabelTopConstraint!
             ])
-        
+
         updateTextViewHeight(for: textView.text)
     }
     
@@ -189,5 +188,15 @@ public class TextInputCell: BaseCell, UITextViewDelegate, TextInputAccessoryView
     
     func textInputAccessoryViewDone() {
         textView.resignFirstResponder()
+    }
+    
+    override func showError() {
+        placeholderLabel.textColor = .red
+        countLabel.textColor = .red
+    }
+    
+    override func hideError() {
+        placeholderLabel.textColor = .lightGray
+        countLabel.textColor = .lightGray
     }
 }

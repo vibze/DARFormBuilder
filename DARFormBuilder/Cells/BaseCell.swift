@@ -103,4 +103,12 @@ open class BaseCell: UITableViewCell {
     func blur() {
         
     }
+    
+    func showError() {
+        
+    }
+    
+    func hideError() {
+        
+    }
 }

@@ -17,7 +17,14 @@ class ViewController: UIViewController {
         
         view.addSubview(formController.view)
         formController.view.frame = view.bounds
-        formController.bottomInset = 100
+        //formController.bottomInset = 100
+        
+        let btn = UIButton(frame: CGRect(x: 0, y: 0, width: 400, height: 100))
+        btn.setTitle("Validate form", for: .normal)
+        btn.addTarget(self, action: #selector(validateForm), for: .touchUpInside)
+        btn.backgroundColor = .blue
+        btn.setTitleColor(.white, for: .normal)
+        formController.tableView.tableFooterView = btn
         
         let usernameCell = TextFieldInputCell(placeholder: "Hi there", value: "Username", maxLength: 30) { text in
             print(text)
@@ -37,9 +44,12 @@ class ViewController: UIViewController {
             TextInputCell(placeholder: "Letters, words", value: "Hello", maxLength: 60) { text in
                 print(text)
             },
-            DateInputCell(placeholder: "Date", value: nil) { date in
+            DateInputCell(placeholder: "Date", value: nil, pickerMode: .date, format: "dd.MM.yyyy", onChange: { (date) in
                 print(date)
-            },
+            }),
+            DateInputCell(placeholder: "Time", value: nil, pickerMode: .time, format: "hh:mm", onChange: { (time) in
+                print(time)
+            }),
             SwitchInputCell(label: "Yes/No?", value: true) { value in
                 print(value)
                 if value {
@@ -49,8 +59,6 @@ class ViewController: UIViewController {
                     self.formController.hiddenRows = []
                 }
             },
-            CustomViewCell(customView: UIImageView(image: #imageLiteral(resourceName: "randomImage"))),
-            CustomViewCell(customView: UIImageView(image: #imageLiteral(resourceName: "randomImage"))),
             CustomViewCell(customView: UIImageView(image: #imageLiteral(resourceName: "randomImage"))),
             SwitchInputCell(label: "При звонке не сообщать, что это доставка цветов") { value in
                 print(value)
@@ -65,6 +73,7 @@ class ViewController: UIViewController {
             TextInputCell(placeholder: "Test me", value: "...", maxLength: 20) { text in
                 print(text)
             },
+ 
             DateRangeInputCell(datePlaceholder: "Date", startTimePlaceholder: "Start", endTimePlaceholder: "End",
                                dateValue: nil, startTimeValue: nil, endTimeValue: nil,
                                onChange: { (date, startTime, endTime) in
@@ -76,5 +85,19 @@ class ViewController: UIViewController {
                 print(endTime)
             })
         ]
+    }
+    
+    var err = false
+    func validateForm() {
+        print("validator")
+        if err {
+            formController.cells[4].showError()
+            formController.cells[5].showError()
+            err = false
+        } else {
+            formController.cells[4].hideError()
+            formController.cells[5].hideError()
+            err = true
+        }
     }
 }

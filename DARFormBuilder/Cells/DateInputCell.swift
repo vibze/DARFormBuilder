@@ -26,9 +26,13 @@ public class DateInputCell: TextFieldInputCell {
     private let datePickerView: UIDatePicker = UIDatePicker()
     private let dateFormatter = DateFormatter()
     
-    public convenience init(placeholder: String, value: Date?, onChange: ((Date) -> Void)?) {
+    public convenience init(placeholder: String, value: Date?, pickerMode: UIDatePickerMode = .date,format: String = "dd.MM.yyyy", minimumDate: Date = Date(),onChange: ((Date) -> Void)?) {
         self.init(style: .default, reuseIdentifier: nil)
         self.placeholder = placeholder
+        dateFormatter.dateFormat = format
+        datePickerView.datePickerMode = pickerMode
+        datePickerView.minimumDate = minimumDate
+        
         dateValue = value
         onDateChange = onChange
     }
@@ -36,8 +40,7 @@ public class DateInputCell: TextFieldInputCell {
     override func configureSubviews() {
         super.configureSubviews()
         
-        dateFormatter.dateFormat = "dd.MM.yyyy HH:mm"
-        datePickerView.datePickerMode = .dateAndTime
+
         textField.inputView = datePickerView
         
         datePickerView.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
