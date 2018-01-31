@@ -75,4 +75,12 @@ public class DateInputCell: TextFieldInputCell {
         super.textFieldDidBeginEditing(textField)
         datePickerValueChanged(sender: datePickerView)
     }
+    
+    override func showError() {
+        placeholderLabel.textColor = .red
+    }
+    
+    override func hideError() {
+        placeholderLabel.textColor = .lightGray
+    }
 }
