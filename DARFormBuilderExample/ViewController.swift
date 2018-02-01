@@ -44,10 +44,18 @@ class ViewController: UIViewController {
             TextInputCell(placeholder: "Letters, words", value: "Hello", maxLength: 60) { text in
                 print(text)
             },
-            DateInputCell(placeholder: "Date", value: nil, pickerMode: .date, format: "dd.MM.yyyy", onChange: { (date) in
+            DateInputCell(placeholder: "Date", value: Date(), pickerMode: .date, format: "dd.MM.yyyy", minimumDate: Date(), onChange: { (date) in
                 print(date)
+                let cell = self.formController.cells[7] as! DateInputCell
+                switch Calendar.current.compare(date, to: Date(), toGranularity: .day) {
+                case .orderedSame:
+                    cell.minimumDateValue = date
+                    cell.dateValue = date
+                default:
+                    cell.minimumDateValue = nil
+                }
             }),
-            DateInputCell(placeholder: "Time", value: nil, pickerMode: .time, format: "hh:mm", onChange: { (time) in
+            DateInputCell(placeholder: "Time", value: nil, pickerMode: .time, format: "hh:mm", minimumDate: Date(),onChange: { (time) in
                 print(time)
             }),
             SwitchInputCell(label: "Yes/No?", value: true) { value in

@@ -13,7 +13,7 @@ public class DateInputCell: TextFieldInputCell {
     
     var onDateChange: ((Date) -> Void)?
     
-    var dateValue: Date? = nil {
+    public var dateValue: Date? = nil {
         didSet {
             datePickerView.date = dateValue ?? Date()
             
@@ -23,15 +23,22 @@ public class DateInputCell: TextFieldInputCell {
         }
     }
     
+    public var minimumDateValue: Date? = nil {
+        didSet {
+            datePickerView.minimumDate = minimumDateValue
+        }
+    }
+    
     private let datePickerView: UIDatePicker = UIDatePicker()
     private let dateFormatter = DateFormatter()
     
-    public convenience init(placeholder: String, value: Date?, pickerMode: UIDatePickerMode = .date,format: String = "dd.MM.yyyy", minimumDate: Date = Date(),onChange: ((Date) -> Void)?) {
+    public convenience init(placeholder: String, value: Date?, pickerMode: UIDatePickerMode = .date,format: String = "dd.MM.yyyy", minimumDate: Date? = nil, onChange: ((Date) -> Void)?) {
         self.init(style: .default, reuseIdentifier: nil)
         self.placeholder = placeholder
         dateFormatter.dateFormat = format
         datePickerView.datePickerMode = pickerMode
         datePickerView.minimumDate = minimumDate
+        minimumDateValue = minimumDate
         
         dateValue = value
         onDateChange = onChange
