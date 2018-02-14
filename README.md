@@ -2,11 +2,11 @@
 
 Library made to cut corners when making complex forms using UITableView.
 
-### Installation using cocoapods
+## Installation using cocoapods
 
 Add `pod DARFormBuilder` to your podfile and run `pod install`
 
-### How to use
+## How to use
 
 1. Instantiate a FormTableViewController
 ```Swift
@@ -66,7 +66,7 @@ formController.items = [
 ]
 ```
 
-### List of available cell types
+## List of available cell types
 
 #### TitleCell
 Cell for displaying form titles. Big font, contrasty color.
@@ -103,7 +103,7 @@ In case you want to display a custom view in a cell. Use auto-layout to stretch 
 
 Framework offers a convenient controller for building forms. It is instantiated using a JSON configuration file, which can provide fields configurations, initial values and interaction logic.
 
-Below is an annotated JSON config example
+Below is a JSON config example:
 
 ```Javascript
 {
@@ -128,40 +128,39 @@ Below is an annotated JSON config example
 
 ### Available field types and their settings
 
-#### textInput
-
+#### `textInput`
 A simple textInput with floating label.
 
 Params:
 
-- `label: String = ""` -- Placeholder/floating label text
-- `keyboardType: String(default|email|phone|number) = "default"` -- Keyboard type to display for this field
-- `maxLength: Int = 0` -- Maximum text length
-- `required: Bool = false` -- Field will not pass validation if text is not present
+- `label: String = ""` — Placeholder/floating label text
+- `keyboardType: String(default|email|phone|number) = "default"` — Keyboard type to display for this field
+- `maxLength: Int = 0` — Maximum text length
+- `required: Bool = false` — Field will not pass validation if text is not present
 
-#### dateInput
+#### `dateInput`
 Date input with floating label.
 
 Params:
-- label: String = "" -- Placeholder/floating label text
-- inputMode: String(datetime|date|time) = "datetime" -- Date input mode to display for this field
-- displayFormat: String = "dd.MM.yyyy" -- Display date format in (unicode format pattern)[http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns]
-- valueFormat: String = “yyyy-MM-dd'T'HH:mm:ss.SSSXXXXX” -- Field value format in (unicode format pattern)[http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns]
-- required: Bool = false -- Field will not pass validation if text is not present
+- `label: String = ""` — Placeholder/floating label text
+- `inputMode: String(datetime|date|time) = "datetime"` — Date input mode to display for this field
+- `displayFormat: String = "dd.MM.yyyy"` — Display date format in [unicode format pattern](http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns)
+- `valueFormat: String = “yyyy-MM-dd'T'HH:mm:ss.SSSXXXXX”` — Field value format in [unicode format pattern](http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns)
+- `required: Bool = false` — Field will not pass validation if text is not present
 
-#### phoneInput
+#### `phoneInput`
 Phone input with floating label.
 
 Params:
-- label: String = "" -- Placeholder/floating label text
-- displayFormat: String = "+7 ### ###-##-##"
-- pickFromContacts: Bool = false -- Display pick from contacts button on the field
-- required: Bool = false -- Field will not pass validation if text is not present
+- `label: String = ""` — Placeholder/floating label text
+- `displayFormat: String = "+7 ### ###-##-##"` — Phone number formatting mask
+- `pickFromContacts: Bool = false` — Display pick from contacts button on the field
+- `required: Bool = false` — Field will not pass validation if text is not present
 
-#### switchInput
+#### `switchInput`
 Switch with label on the left.
 
 Params:
-- label: String = "" -- Label text
-- hideFieldsIfChecked: [Int] = [] -- Form should hide fields at given indices if the switch is on
+- `label: String = ""` — Label text
+- `hideFieldsIfChecked: [Int] = []` — Form should hide fields at given indices if the switch is on
 
