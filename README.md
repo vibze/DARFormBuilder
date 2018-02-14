@@ -8,7 +8,7 @@ Add `pod DARFormBuilder` to your podfile and run `pod install`
 
 ### How to use
 
-1. Instantiate a FormController
+1. Instantiate a FormTableViewController
 ```Swift
     let formController = FormController()
 ```
@@ -97,3 +97,58 @@ Label with disclosure indicator. Clickable.
 
 #### CustomViewCell
 In case you want to display a custom view in a cell. Use auto-layout to stretch contentView.
+
+
+## DARFormController
+
+Framework offers a convenient controller for building forms. It is instantiated using a JSON configuration file, which can provide fields configurations, initial values and interaction logic.
+
+Below is an annotated JSON config example
+
+```Javascript
+{
+    "fields": [
+        {
+            "key": "name",
+            "type": "textInput",
+            "label": "Name",
+            "maxLength": 60,
+            "required": true
+        },
+        {
+            "key": "hideFields",
+            "type": "switchInput",
+            "label": "Hide Fields",
+            "hideFieldsIfChecked": [0]
+        },
+        ...
+    ],
+}
+```
+
+## Available field types and their settings
+
+**textInput**
+A simple textInput with floating label.
+
+Params:
+- label: String = "" -- Placeholder/floating label text
+- keyboardType: String(default|email|phone|number) = "default" -- Keyboard type to display for this field
+- maxLength: Int = 0 -- Maximum text length
+- required: Bool = false -- Field will not pass validation if text is not present
+
+**switchInput**
+Switch with label on the left.
+
+Params:
+- label: String = "" -- Label text
+- hideFieldsIfChecked: [Int] = [] -- Form should hide fields at given indices if switch is on
+
+**dateInput**
+Date input with floating label.
+
+Params:
+- label: String = "" -- Placeholder/floating label text
+- inputMode: String(datetime|date|time) = "datetime" -- Date input mode to display for this field
+- displayFormat: String = "YYYY-
+- required: Bool = false -- Field will not pass validation if text is not present
