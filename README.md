@@ -6,72 +6,41 @@ Library made to cut corners when making complex forms using UITableView.
 
 Add `pod DARFormBuilder` to your podfile and run `pod install`
 
-## How to use
 
-1. Instantiate a FormTableViewController
-```Swift
-    let formController = FormController()
-```
+## Components
 
-2. Add it to your controller's view:
-```Swift
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        view.addSubview(formController.view)
-        formController.view.frame = view.bounds
-    }    
-```
+Framework provides two types of controllers to build forms. One is basic with less abstraction and another one is more feature-packed.
 
-3. Configure your form fields
+
+### FormTableViewController
+
+This controller just renders a layout with the cells you provide. You pass it an array of views for them to be rendered in a table. Framework provides a [full-featured set of inputs](github) that you can use here. 
+
+Example:
+
 ```Swift
-formController.items = [
-    
-    // Plain text with big font
-    TitleCell(text: "Title", fontSize: 30),
-    
-    // Plain text with small font
-    DescriptionCell(text: "Your top client is Ice Cream Shop, Inc. Their ice cream is so popular they can’t keep up with customer orders at the counter. They’ve recruited you to create a sleek iOS app that will allow customers to order ice cream right from their phone. You’ve started developing the app, and it’s coming along well.", fontSize: 12),
-    
-    // Static value with label on the left and value on the right
-    StaticValueCell(label: "Price", value: "1000"),
-    
-    // Label on the left and a number with plus and minus buttons on the right
-    NumDialInputCell(label: "Amount", value: 5, range: 1..<25) { amount in
-        
-    }),
-    
-    // Basic text input cell without label
-    TextInputCell(text: "Name", placeholder: "Letters, words", keyboardType: .default, maxLength: 30) { text in
-    
-    }),
-    
-    // Date input cell without label
-    DateInputCell(label: "Birthday", value: Date()) { date in
-    
-    }),
-    
-    // Labeled switch input cell
-    SwitchInputCell(label: "Yes/No?", value: true) { value in 
-    
-    })
-    
-    // Clickable cell with disclosure indicator
-    ClickableCell(label: "Click me") {
-        
-    }
-    
-    // Custom view cell
-    CustomViewCell(customView: UIImageView(image: xxx"))
+let nameField = TextInput()
+let titleField = TextInput()
+let birthdayField = DateInput()
+let likesBoobiesField = SwitchInput()
+
+let tbl = FormTableViewController()
+tbl.rows = [
+	Row(titleField, nameField),
+    Row(birthdayField),
+    Row(likesBoobiesField)
 ]
 ```
 
-## List of available cell types
+When using `FormTableViewController` you are responsible for validating fields and reacting to field values changes. For validation purposes built-in input classes have an `errors` property which will return a list of error messages for a given field. `errors` array being empty means that field has passed validation. 
 
-#### TitleCell
+
+#### List of available cell types
+
+#### `TitleLabel`
 Cell for displaying form titles. Big font, contrasty color.
 
-#### DescriptionCell
+#### `DescriptionCell`
 Cell for displaying long texts as descriptions or field clarifications.
 
 #### StaticValueCell
@@ -164,3 +133,8 @@ Params:
 - `label: String = ""` — Label text
 - `hideFieldsIfChecked: [Int] = []` — Form should hide fields at given indices if the switch is on
 
+
+
+***
+
+This framework is built and maintained by DAR Team. Please check out our products!
