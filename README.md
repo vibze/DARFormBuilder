@@ -37,35 +37,32 @@ When using `FormTableViewController` you are responsible for validating fields a
 
 #### List of available cell types
 
-#### `TitleLabel`
+#### `TitleLabelCell`
 Cell for displaying form titles. Big font, contrasty color.
 
-#### `DescriptionCell`
+#### `DescriptionLabelCell`
 Cell for displaying long texts as descriptions or field clarifications.
 
-#### StaticValueCell
+#### `StaticValueCell`
 Label and value for displaying static properties.
 
-#### NumDialInputCell
+#### `NumDialInputCell`
 Label with number dial. Values can be limited by range.
 
-#### TextInputCell
-Simple textView cell. Can be limited by max length.
-
-#### TextFieldInputCell
+#### `TextInputCell`
 Simple textField cell. Can be limited by max length.
 
-#### DateInputCell
-Date picker cell.
+#### `DateInputCell`
+Date picker cell. Supports different input modes.
 
-#### SwitchInputCell
+#### `PhoneInputCell`
+Phone input cell. Can display a button to pick phone from contact book.
+
+#### `SwitchInputCell`
 Label with switch view on the right.
 
-#### ClickableCell
+#### `ChevronButtonCell`
 Label with disclosure indicator. Clickable.
-
-#### CustomViewCell
-In case you want to display a custom view in a cell. Use auto-layout to stretch contentView.
 
 
 ## DARFormController
