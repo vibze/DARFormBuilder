@@ -126,29 +126,42 @@ Below is an annotated JSON config example
 }
 ```
 
-## Available field types and their settings
+### Available field types and their settings
 
-**textInput**
+#### textInput
+
 A simple textInput with floating label.
 
 Params:
-- label: String = "" -- Placeholder/floating label text
+
+- `label: String = ""` -- Placeholder/floating label text
 - keyboardType: String(default|email|phone|number) = "default" -- Keyboard type to display for this field
 - maxLength: Int = 0 -- Maximum text length
 - required: Bool = false -- Field will not pass validation if text is not present
 
-**switchInput**
-Switch with label on the left.
-
-Params:
-- label: String = "" -- Label text
-- hideFieldsIfChecked: [Int] = [] -- Form should hide fields at given indices if switch is on
-
-**dateInput**
+#### dateInput
 Date input with floating label.
 
 Params:
 - label: String = "" -- Placeholder/floating label text
 - inputMode: String(datetime|date|time) = "datetime" -- Date input mode to display for this field
-- displayFormat: String = "YYYY-
+- displayFormat: String = "dd.MM.yyyy" -- Display date format in (unicode format pattern)[http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns]
+- valueFormat: String = “yyyy-MM-dd'T'HH:mm:ss.SSSXXXXX” -- Field value format in (unicode format pattern)[http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns]
 - required: Bool = false -- Field will not pass validation if text is not present
+
+#### phoneInput
+Phone input with floating label.
+
+Params:
+- label: String = "" -- Placeholder/floating label text
+- displayFormat: String = "+7 ### ###-##-##"
+- pickFromContacts: Bool = false -- Display pick from contacts button on the field
+- required: Bool = false -- Field will not pass validation if text is not present
+
+#### switchInput
+Switch with label on the left.
+
+Params:
+- label: String = "" -- Label text
+- hideFieldsIfChecked: [Int] = [] -- Form should hide fields at given indices if the switch is on
+
