@@ -135,9 +135,9 @@ A simple textInput with floating label.
 Params:
 
 - `label: String = ""` -- Placeholder/floating label text
-- keyboardType: String(default|email|phone|number) = "default" -- Keyboard type to display for this field
-- maxLength: Int = 0 -- Maximum text length
-- required: Bool = false -- Field will not pass validation if text is not present
+- `keyboardType: String(default|email|phone|number) = "default"` -- Keyboard type to display for this field
+- `maxLength: Int = 0` -- Maximum text length
+- `required: Bool = false` -- Field will not pass validation if text is not present
 
 #### dateInput
 Date input with floating label.
