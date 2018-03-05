@@ -54,6 +54,8 @@
 		18F70D3720076CF9008986B9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F70D3520076C59008986B9 /* Config.swift */; };
 		18F70D3C20087AE5008986B9 /* TextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F70D3B20087AE5008986B9 /* TextInputAccessoryView.swift */; };
 		18F70D3D20087CE7008986B9 /* TextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F70D3B20087AE5008986B9 /* TextInputAccessoryView.swift */; };
+		CE49A262204D2EA40072F0BF /* SectionDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49A261204D2EA40072F0BF /* SectionDivider.swift */; };
+		CE49A263204D31830072F0BF /* SectionDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE49A261204D2EA40072F0BF /* SectionDivider.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +102,7 @@
 		18D3E68E201B3E9100E2B204 /* CanMountTextInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanMountTextInputAccessoryView.swift; sourceTree = "<group>"; };
 		18F70D3520076C59008986B9 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		18F70D3B20087AE5008986B9 /* TextInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputAccessoryView.swift; sourceTree = "<group>"; };
+		CE49A261204D2EA40072F0BF /* SectionDivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionDivider.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,7 @@
 				18D3E685201B0F6A00E2B204 /* KeySwitchField.swift */,
 				185220FE203E789900257DF2 /* SelectField.swift */,
 				18F70D3B20087AE5008986B9 /* TextInputAccessoryView.swift */,
+				CE49A261204D2EA40072F0BF /* SectionDivider.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -392,6 +396,7 @@
 				1823BFE0203D296B00AB7AED /* SwiftMaskTextField.swift in Sources */,
 				1823BFE3203D2E6700AB7AED /* SampleJSONForm1.json in Sources */,
 				180D9CA320357F3600378898 /* PhoneInput.swift in Sources */,
+				CE49A262204D2EA40072F0BF /* SectionDivider.swift in Sources */,
 				18F70D3620076C59008986B9 /* Config.swift in Sources */,
 				18F70D3C20087AE5008986B9 /* TextInputAccessoryView.swift in Sources */,
 				184E6A53201AE1EF00211417 /* Row.swift in Sources */,
@@ -421,6 +426,7 @@
 				180D9CAC20359D0A00378898 /* CanCalculateOwnHeight.swift in Sources */,
 				18D3E690201B3EC900E2B204 /* CanMountTextInputAccessoryView.swift in Sources */,
 				18D3E687201B0F7C00E2B204 /* KeySwitchField.swift in Sources */,
+				CE49A263204D31830072F0BF /* SectionDivider.swift in Sources */,
 				1823BFDD203C271800AB7AED /* CanBeValidated.swift in Sources */,
 				1823BFEF203D306300AB7AED /* ItemCardFormController.swift in Sources */,
 				184E6A5B201AE80600211417 /* TextInput.swift in Sources */,
