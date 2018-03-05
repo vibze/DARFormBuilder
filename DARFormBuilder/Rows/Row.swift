@@ -30,6 +30,13 @@ public class Row: UITableViewCell {
         return subviewHeights.max() ?? 50
     }
     
+    var separator = true {
+        didSet {
+            separatorLayer.isHidden = !separator
+        }
+    }
+    let separatorLayer = CALayer()
+    
     public var fields: [UIView] {
         return stackView.arrangedSubviews
     }
@@ -63,6 +70,9 @@ public class Row: UITableViewCell {
         stackView.axis = .horizontal
         selectionStyle = .none
         
+        separatorLayer.backgroundColor = config.separatorColor.cgColor
+        layer.addSublayer(separatorLayer)
+        
         for view in views {
             stackView.addArrangedSubview(view)
         }
@@ -75,6 +85,7 @@ public class Row: UITableViewCell {
     public override func layoutSubviews() {
         super.layoutSubviews()
         stackView.frame = UIEdgeInsetsInsetRect(contentView.bounds, padding)
+        separatorLayer.frame = CGRect(x: 0, y: bounds.height - 1, width: bounds.width, height: 1)
     }
 }
 
