@@ -19,16 +19,15 @@ This controller just renders a layout with the cells you provide. You pass it an
 Example:
 
 ```Swift
-let nameField = TextInputCell()
-let titleField = TextInputCell()
-let birthdayField = DateInputCell()
-let likesBoobiesField = SwitchInputCell()
+let nameField = TextInput()
+let titleField = TextInput()
+let birthdayField = DateInput()
+let likesBoobiesField = SwitchInput()
 
 let tbl = FormTableViewController()
 tbl.rows = [
 	Row(titleField, nameField),
     Row(birthdayField),
-	DividerRow(style: .hairline),
     Row(likesBoobiesField)
 ]
 ```
@@ -38,87 +37,31 @@ When using `FormTableViewController` you are responsible for validating fields a
 
 #### List of available cell types
 
-#### `TitleLabel`
+#### `TitleLabelCell`
 Cell for displaying form titles. Big font, contrasty color.
 
-Properties:
-
-- `text: String = ""` — Title text
-
-
-#### `DescriptionLabel`
-
+#### `DescriptionLabelCell`
 Cell for displaying long texts as descriptions or field clarifications.
 
-Properties:
-
-- `text: String = ""` — Description text
-
-
-#### `KeyValueField`
-
+#### `StaticValueCell`
 Label and value for displaying static properties.
 
-Properties:
-
-- `label: String = ""` — Label text
-- `value: String = ""` — 
-
-
 #### `NumDialInputCell`
-
 Label with number dial. Values can be limited by range.
 
-
 #### `TextInputCell`
-
 Simple textField cell. Can be limited by max length.
 
-Properties:
-
-- `label: String = ""` — Placeholder/floating label text
-- `keyboardType: String(default|email|phone|number) = "default"` — Keyboard type to display for this field
-- `maxLength: Int = 0` — Maximum text length
-- `required: Bool = false` — Field will not pass validation if text is not present
-
-
 #### `DateInputCell`
-
 Date picker cell. Supports different input modes.
 
-Properties:
-
-- `label: String = ""` — Placeholder/floating label text
-- `inputMode: String(datetime|date|time) = "datetime"` — Date input mode to display for this field
-- `displayFormat: String = "dd.MM.yyyy"` — Display date format in [unicode format pattern](http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns)
-- `valueFormat: String = “yyyy-MM-dd'T'HH:mm:ss.SSSXXXXX”` — Field value format in [unicode format pattern](http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns)
-- `required: Bool = false` — Field will not pass validation if text is not present
-
-
 #### `PhoneInputCell`
-
 Phone input cell. Can display a button to pick phone from contact book.
 
-Properties:
-
-- `label: String = ""` — Placeholder/floating label text
-- `displayFormat: String = "+7 ### ###-##-##"` — Phone number formatting mask
-- `pickFromContacts: Bool = false` — Display pick from contacts button on the field
-- `required: Bool = false` — Field will not pass validation if text is not present
-
-
 #### `SwitchInputCell`
-
 Label with switch view on the right.
 
-Properties:
-
-- `label: String = ""` — Label text
-- `hideFieldsIfChecked: [Int] = []` — Form should hide fields at given indices if the switch is on
-
-
 #### `ChevronButtonCell`
-
 Label with disclosure indicator. Clickable.
 
 
@@ -148,6 +91,46 @@ Below is a JSON config example:
     ],
 }
 ```
+
+### Available field types and their settings
+
+#### `textInput`
+A simple textInput with floating label.
+
+Params:
+
+- `label: String = ""` — Placeholder/floating label text
+- `keyboardType: String(default|email|phone|number) = "default"` — Keyboard type to display for this field
+- `maxLength: Int = 0` — Maximum text length
+- `required: Bool = false` — Field will not pass validation if text is not present
+
+#### `dateInput`
+Date input with floating label.
+
+Params:
+- `label: String = ""` — Placeholder/floating label text
+- `inputMode: String(datetime|date|time) = "datetime"` — Date input mode to display for this field
+- `displayFormat: String = "dd.MM.yyyy"` — Display date format in [unicode format pattern](http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns)
+- `valueFormat: String = “yyyy-MM-dd'T'HH:mm:ss.SSSXXXXX”` — Field value format in [unicode format pattern](http://www.unicode.org/reports/tr35/tr35-31/tr35-dates.html#Date_Format_Patterns)
+- `required: Bool = false` — Field will not pass validation if text is not present
+
+#### `phoneInput`
+Phone input with floating label.
+
+Params:
+- `label: String = ""` — Placeholder/floating label text
+- `displayFormat: String = "+7 ### ###-##-##"` — Phone number formatting mask
+- `pickFromContacts: Bool = false` — Display pick from contacts button on the field
+- `required: Bool = false` — Field will not pass validation if text is not present
+
+#### `switchInput`
+Switch with label on the left.
+
+Params:
+- `label: String = ""` — Label text
+- `hideFieldsIfChecked: [Int] = []` — Form should hide fields at given indices if the switch is on
+
+
 
 ***
 
