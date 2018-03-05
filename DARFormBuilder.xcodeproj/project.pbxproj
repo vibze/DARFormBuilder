@@ -7,45 +7,53 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180D9CA320357F3600378898 /* PhoneInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D9CA220357F3600378898 /* PhoneInput.swift */; };
+		180D9CA42035801100378898 /* PhoneInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D9CA220357F3600378898 /* PhoneInput.swift */; };
+		180D9CA8203588EF00378898 /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D9CA7203588EF00378898 /* Divider.swift */; };
+		180D9CA920358A5D00378898 /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D9CA7203588EF00378898 /* Divider.swift */; };
+		180D9CAB20359CB600378898 /* CanCalculateOwnHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D9CAA20359CB600378898 /* CanCalculateOwnHeight.swift */; };
+		180D9CAC20359D0A00378898 /* CanCalculateOwnHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 180D9CAA20359CB600378898 /* CanCalculateOwnHeight.swift */; };
+		1823BFD8203BE30400AB7AED /* HeadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AAAA17203BE24A0093B901 /* HeadingLabel.swift */; };
+		1823BFDA203C239D00AB7AED /* CanBeValidated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823BFD9203C239D00AB7AED /* CanBeValidated.swift */; };
+		1823BFDD203C271800AB7AED /* CanBeValidated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823BFD9203C239D00AB7AED /* CanBeValidated.swift */; };
+		1823BFE0203D296B00AB7AED /* SwiftMaskTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823BFDF203D296B00AB7AED /* SwiftMaskTextField.swift */; };
+		1823BFE1203D29FE00AB7AED /* SwiftMaskTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823BFDF203D296B00AB7AED /* SwiftMaskTextField.swift */; };
+		1823BFE3203D2E6700AB7AED /* SampleJSONForm1.json in Sources */ = {isa = PBXBuildFile; fileRef = 1823BFE2203D2E6700AB7AED /* SampleJSONForm1.json */; };
+		1823BFE4203D2E6700AB7AED /* SampleJSONForm1.json in Sources */ = {isa = PBXBuildFile; fileRef = 1823BFE2203D2E6700AB7AED /* SampleJSONForm1.json */; };
+		1823BFE6203D2EB800AB7AED /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823BFE5203D2EB800AB7AED /* FormTableViewController.swift */; };
+		1823BFE7203D2EB800AB7AED /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823BFE5203D2EB800AB7AED /* FormTableViewController.swift */; };
+		1823BFEE203D306300AB7AED /* ItemCardFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823BFED203D306300AB7AED /* ItemCardFormController.swift */; };
+		1823BFEF203D306300AB7AED /* ItemCardFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1823BFED203D306300AB7AED /* ItemCardFormController.swift */; };
+		184E6A53201AE1EF00211417 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E6A52201AE1EF00211417 /* Row.swift */; };
+		184E6A54201AE30D00211417 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E6A52201AE1EF00211417 /* Row.swift */; };
+		184E6A5A201AE56100211417 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E6A59201AE56100211417 /* TextInput.swift */; };
+		184E6A5B201AE80600211417 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E6A59201AE56100211417 /* TextInput.swift */; };
+		185220FF203E789900257DF2 /* SelectField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185220FE203E789900257DF2 /* SelectField.swift */; };
+		18522100203E793200257DF2 /* SelectField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185220FE203E789900257DF2 /* SelectField.swift */; };
 		1866DF231FFF6E610047158D /* DARFormBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = 1866DF211FFF6E610047158D /* DARFormBuilder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1866DF2A1FFF711E0047158D /* FormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF291FFF711E0047158D /* FormController.swift */; };
-		1866DF2D1FFF71B00047158D /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF2C1FFF71B00047158D /* BaseCell.swift */; };
-		1866DF2F1FFF71E60047158D /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF2E1FFF71E60047158D /* TitleCell.swift */; };
-		1866DF311FFF72DE0047158D /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF301FFF72DE0047158D /* DescriptionCell.swift */; };
-		1866DF331FFF73930047158D /* StaticValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF321FFF73930047158D /* StaticValueCell.swift */; };
-		1866DF351FFF74350047158D /* NumDialInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF341FFF74350047158D /* NumDialInputCell.swift */; };
 		1866DF3F1FFF79060047158D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF3E1FFF79060047158D /* AppDelegate.swift */; };
-		1866DF411FFF79060047158D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF401FFF79060047158D /* ViewController.swift */; };
+		1866DF411FFF79060047158D /* FlowerOrderFormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF401FFF79060047158D /* FlowerOrderFormController.swift */; };
 		1866DF441FFF79060047158D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1866DF421FFF79060047158D /* Main.storyboard */; };
 		1866DF461FFF79060047158D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1866DF451FFF79060047158D /* Assets.xcassets */; };
 		1866DF491FFF79060047158D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1866DF471FFF79060047158D /* LaunchScreen.storyboard */; };
 		1866DF541FFF79060047158D /* DARFormBuilderExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF531FFF79060047158D /* DARFormBuilderExampleUITests.swift */; };
-		1866DF5C1FFF79230047158D /* FormController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF291FFF711E0047158D /* FormController.swift */; };
-		1866DF5D1FFF7A1B0047158D /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF2C1FFF71B00047158D /* BaseCell.swift */; };
-		1866DF5E1FFF7A1B0047158D /* TitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF2E1FFF71E60047158D /* TitleCell.swift */; };
-		1866DF5F1FFF7A1B0047158D /* DescriptionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF301FFF72DE0047158D /* DescriptionCell.swift */; };
-		1866DF601FFF7A1B0047158D /* StaticValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF321FFF73930047158D /* StaticValueCell.swift */; };
-		1866DF611FFF7A1B0047158D /* NumDialInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF341FFF74350047158D /* NumDialInputCell.swift */; };
-		1866DF631FFF7ABD0047158D /* TextInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF621FFF7ABD0047158D /* TextInputCell.swift */; };
-		1866DF651FFF7B5C0047158D /* DateInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF641FFF7B5C0047158D /* DateInputCell.swift */; };
-		1866DF671FFF7B770047158D /* SwitchInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF661FFF7B770047158D /* SwitchInputCell.swift */; };
-		1866DF681FFF7BC60047158D /* TextInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF621FFF7ABD0047158D /* TextInputCell.swift */; };
-		1866DF691FFF7BC60047158D /* DateInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF641FFF7B5C0047158D /* DateInputCell.swift */; };
-		1866DF6A1FFF7BC60047158D /* SwitchInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1866DF661FFF7B770047158D /* SwitchInputCell.swift */; };
+		18AAAA18203BE24A0093B901 /* HeadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AAAA17203BE24A0093B901 /* HeadingLabel.swift */; };
+		18D3E67F201AF9F400E2B204 /* KeyValueField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3E67E201AF9F400E2B204 /* KeyValueField.swift */; };
+		18D3E681201AFA9100E2B204 /* KeyValueField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3E67E201AF9F400E2B204 /* KeyValueField.swift */; };
+		18D3E683201AFC5100E2B204 /* KeyNumDialField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3E682201AFC5100E2B204 /* KeyNumDialField.swift */; };
+		18D3E684201AFFE400E2B204 /* KeyNumDialField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3E682201AFC5100E2B204 /* KeyNumDialField.swift */; };
+		18D3E686201B0F6A00E2B204 /* KeySwitchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3E685201B0F6A00E2B204 /* KeySwitchField.swift */; };
+		18D3E687201B0F7C00E2B204 /* KeySwitchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3E685201B0F6A00E2B204 /* KeySwitchField.swift */; };
+		18D3E689201B10E700E2B204 /* DateInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3E688201B10E700E2B204 /* DateInput.swift */; };
+		18D3E68A201B11B100E2B204 /* DateInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3E688201B10E700E2B204 /* DateInput.swift */; };
+		18D3E68C201B20A400E2B204 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3E68B201B20A400E2B204 /* TextField.swift */; };
+		18D3E68D201B222600E2B204 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3E68B201B20A400E2B204 /* TextField.swift */; };
+		18D3E68F201B3E9100E2B204 /* CanMountTextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3E68E201B3E9100E2B204 /* CanMountTextInputAccessoryView.swift */; };
+		18D3E690201B3EC900E2B204 /* CanMountTextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18D3E68E201B3E9100E2B204 /* CanMountTextInputAccessoryView.swift */; };
 		18F70D3620076C59008986B9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F70D3520076C59008986B9 /* Config.swift */; };
 		18F70D3720076CF9008986B9 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F70D3520076C59008986B9 /* Config.swift */; };
 		18F70D3C20087AE5008986B9 /* TextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F70D3B20087AE5008986B9 /* TextInputAccessoryView.swift */; };
 		18F70D3D20087CE7008986B9 /* TextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F70D3B20087AE5008986B9 /* TextInputAccessoryView.swift */; };
-		9128676C20036A280094A6A9 /* ClickableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128676B20036A280094A6A9 /* ClickableCell.swift */; };
-		9128676D200371BD0094A6A9 /* ClickableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128676B20036A280094A6A9 /* ClickableCell.swift */; };
-		9128676F20037C6C0094A6A9 /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128676E20037C6C0094A6A9 /* CustomViewCell.swift */; };
-		9128677020037C710094A6A9 /* CustomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9128676E20037C6C0094A6A9 /* CustomViewCell.swift */; };
-		9148C2132006063900572E0C /* TextFieldInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9148C2122006063900572E0C /* TextFieldInputCell.swift */; };
-		9148C214200609CE00572E0C /* TextFieldInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9148C2122006063900572E0C /* TextFieldInputCell.swift */; };
-		9162E9A82018401400FF9AE4 /* DateRangeInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162E9A72018401400FF9AE4 /* DateRangeInputCell.swift */; };
-		9162E9A9201871F200FF9AE4 /* DateRangeInputCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9162E9A72018401400FF9AE4 /* DateRangeInputCell.swift */; };
-		91D2E0E220187D69004157BA /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2E0E120187D69004157BA /* FloatLabelTextField.swift */; };
-		91D2E0E320188102004157BA /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D2E0E120187D69004157BA /* FloatLabelTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,18 +67,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180D9CA220357F3600378898 /* PhoneInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneInput.swift; sourceTree = "<group>"; };
+		180D9CA7203588EF00378898 /* Divider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
+		180D9CAA20359CB600378898 /* CanCalculateOwnHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanCalculateOwnHeight.swift; sourceTree = "<group>"; };
+		1823BFD9203C239D00AB7AED /* CanBeValidated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanBeValidated.swift; sourceTree = "<group>"; };
+		1823BFDF203D296B00AB7AED /* SwiftMaskTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftMaskTextField.swift; sourceTree = "<group>"; };
+		1823BFE2203D2E6700AB7AED /* SampleJSONForm1.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = SampleJSONForm1.json; sourceTree = "<group>"; };
+		1823BFE5203D2EB800AB7AED /* FormTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
+		1823BFED203D306300AB7AED /* ItemCardFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCardFormController.swift; sourceTree = "<group>"; };
+		184E6A52201AE1EF00211417 /* Row.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
+		184E6A59201AE56100211417 /* TextInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		185220FE203E789900257DF2 /* SelectField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectField.swift; sourceTree = "<group>"; };
 		1866DF1E1FFF6E610047158D /* DARFormBuilder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DARFormBuilder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1866DF211FFF6E610047158D /* DARFormBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DARFormBuilder.h; sourceTree = "<group>"; };
 		1866DF221FFF6E610047158D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1866DF291FFF711E0047158D /* FormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormController.swift; sourceTree = "<group>"; };
-		1866DF2C1FFF71B00047158D /* BaseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = "<group>"; };
-		1866DF2E1FFF71E60047158D /* TitleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCell.swift; sourceTree = "<group>"; };
-		1866DF301FFF72DE0047158D /* DescriptionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionCell.swift; sourceTree = "<group>"; };
-		1866DF321FFF73930047158D /* StaticValueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticValueCell.swift; sourceTree = "<group>"; };
-		1866DF341FFF74350047158D /* NumDialInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumDialInputCell.swift; sourceTree = "<group>"; };
 		1866DF3C1FFF79060047158D /* DARFormBuilderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DARFormBuilderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1866DF3E1FFF79060047158D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1866DF401FFF79060047158D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1866DF401FFF79060047158D /* FlowerOrderFormController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowerOrderFormController.swift; sourceTree = "<group>"; };
 		1866DF431FFF79060047158D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1866DF451FFF79060047158D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1866DF481FFF79060047158D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,16 +91,15 @@
 		1866DF4F1FFF79060047158D /* DARFormBuilderExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DARFormBuilderExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1866DF531FFF79060047158D /* DARFormBuilderExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DARFormBuilderExampleUITests.swift; sourceTree = "<group>"; };
 		1866DF551FFF79060047158D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1866DF621FFF7ABD0047158D /* TextInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputCell.swift; sourceTree = "<group>"; };
-		1866DF641FFF7B5C0047158D /* DateInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputCell.swift; sourceTree = "<group>"; };
-		1866DF661FFF7B770047158D /* SwitchInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchInputCell.swift; sourceTree = "<group>"; };
+		18AAAA17203BE24A0093B901 /* HeadingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingLabel.swift; sourceTree = "<group>"; };
+		18D3E67E201AF9F400E2B204 /* KeyValueField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueField.swift; sourceTree = "<group>"; };
+		18D3E682201AFC5100E2B204 /* KeyNumDialField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyNumDialField.swift; sourceTree = "<group>"; };
+		18D3E685201B0F6A00E2B204 /* KeySwitchField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeySwitchField.swift; sourceTree = "<group>"; };
+		18D3E688201B10E700E2B204 /* DateInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInput.swift; sourceTree = "<group>"; };
+		18D3E68B201B20A400E2B204 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		18D3E68E201B3E9100E2B204 /* CanMountTextInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanMountTextInputAccessoryView.swift; sourceTree = "<group>"; };
 		18F70D3520076C59008986B9 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		18F70D3B20087AE5008986B9 /* TextInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputAccessoryView.swift; sourceTree = "<group>"; };
-		9128676B20036A280094A6A9 /* ClickableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickableCell.swift; sourceTree = "<group>"; };
-		9128676E20037C6C0094A6A9 /* CustomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViewCell.swift; sourceTree = "<group>"; };
-		9148C2122006063900572E0C /* TextFieldInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldInputCell.swift; sourceTree = "<group>"; };
-		9162E9A72018401400FF9AE4 /* DateRangeInputCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateRangeInputCell.swift; sourceTree = "<group>"; };
-		91D2E0E120187D69004157BA /* FloatLabelTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +127,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1823BFDE203D296200AB7AED /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				1823BFDF203D296B00AB7AED /* SwiftMaskTextField.swift */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		1823BFE9203D2ED500AB7AED /* Traits */ = {
+			isa = PBXGroup;
+			children = (
+				180D9CAA20359CB600378898 /* CanCalculateOwnHeight.swift */,
+				18D3E68E201B3E9100E2B204 /* CanMountTextInputAccessoryView.swift */,
+				1823BFD9203C239D00AB7AED /* CanBeValidated.swift */,
+			);
+			path = Traits;
+			sourceTree = "<group>";
+		};
+		184E6A51201AE1D700211417 /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				184E6A52201AE1EF00211417 /* Row.swift */,
+				180D9CA7203588EF00378898 /* Divider.swift */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
+		184E6A55201AE4B700211417 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				18AAAA17203BE24A0093B901 /* HeadingLabel.swift */,
+				184E6A59201AE56100211417 /* TextInput.swift */,
+				18D3E688201B10E700E2B204 /* DateInput.swift */,
+				180D9CA220357F3600378898 /* PhoneInput.swift */,
+				18D3E68B201B20A400E2B204 /* TextField.swift */,
+				18D3E67E201AF9F400E2B204 /* KeyValueField.swift */,
+				18D3E682201AFC5100E2B204 /* KeyNumDialField.swift */,
+				18D3E685201B0F6A00E2B204 /* KeySwitchField.swift */,
+				185220FE203E789900257DF2 /* SelectField.swift */,
+				18F70D3B20087AE5008986B9 /* TextInputAccessoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1866DF141FFF6E610047158D = {
 			isa = PBXGroup;
 			children = (
@@ -138,41 +194,25 @@
 		1866DF201FFF6E610047158D /* DARFormBuilder */ = {
 			isa = PBXGroup;
 			children = (
-				1866DF291FFF711E0047158D /* FormController.swift */,
-				18F70D3520076C59008986B9 /* Config.swift */,
-				91D2E0E120187D69004157BA /* FloatLabelTextField.swift */,
-				1866DF2B1FFF71900047158D /* Cells */,
+				1823BFE9203D2ED500AB7AED /* Traits */,
+				1823BFDE203D296200AB7AED /* Lib */,
+				184E6A51201AE1D700211417 /* Rows */,
+				184E6A55201AE4B700211417 /* Views */,
 				1866DF211FFF6E610047158D /* DARFormBuilder.h */,
 				1866DF221FFF6E610047158D /* Info.plist */,
-				18F70D3B20087AE5008986B9 /* TextInputAccessoryView.swift */,
+				1823BFE5203D2EB800AB7AED /* FormTableViewController.swift */,
+				18F70D3520076C59008986B9 /* Config.swift */,
 			);
 			path = DARFormBuilder;
-			sourceTree = "<group>";
-		};
-		1866DF2B1FFF71900047158D /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				1866DF2C1FFF71B00047158D /* BaseCell.swift */,
-				1866DF2E1FFF71E60047158D /* TitleCell.swift */,
-				1866DF301FFF72DE0047158D /* DescriptionCell.swift */,
-				1866DF321FFF73930047158D /* StaticValueCell.swift */,
-				1866DF341FFF74350047158D /* NumDialInputCell.swift */,
-				1866DF621FFF7ABD0047158D /* TextInputCell.swift */,
-				1866DF641FFF7B5C0047158D /* DateInputCell.swift */,
-				1866DF661FFF7B770047158D /* SwitchInputCell.swift */,
-				9128676B20036A280094A6A9 /* ClickableCell.swift */,
-				9128676E20037C6C0094A6A9 /* CustomViewCell.swift */,
-				9148C2122006063900572E0C /* TextFieldInputCell.swift */,
-				9162E9A72018401400FF9AE4 /* DateRangeInputCell.swift */,
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		1866DF3D1FFF79060047158D /* DARFormBuilderExample */ = {
 			isa = PBXGroup;
 			children = (
+				1823BFE2203D2E6700AB7AED /* SampleJSONForm1.json */,
 				1866DF3E1FFF79060047158D /* AppDelegate.swift */,
-				1866DF401FFF79060047158D /* ViewController.swift */,
+				1866DF401FFF79060047158D /* FlowerOrderFormController.swift */,
+				1823BFED203D306300AB7AED /* ItemCardFormController.swift */,
 				1866DF421FFF79060047158D /* Main.storyboard */,
 				1866DF451FFF79060047158D /* Assets.xcassets */,
 				1866DF471FFF79060047158D /* LaunchScreen.storyboard */,
@@ -335,22 +375,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1866DF311FFF72DE0047158D /* DescriptionCell.swift in Sources */,
-				9128676F20037C6C0094A6A9 /* CustomViewCell.swift in Sources */,
-				1866DF671FFF7B770047158D /* SwitchInputCell.swift in Sources */,
-				91D2E0E220187D69004157BA /* FloatLabelTextField.swift in Sources */,
-				9162E9A82018401400FF9AE4 /* DateRangeInputCell.swift in Sources */,
-				1866DF2F1FFF71E60047158D /* TitleCell.swift in Sources */,
-				9148C2132006063900572E0C /* TextFieldInputCell.swift in Sources */,
-				1866DF2A1FFF711E0047158D /* FormController.swift in Sources */,
+				18D3E686201B0F6A00E2B204 /* KeySwitchField.swift in Sources */,
+				1823BFE6203D2EB800AB7AED /* FormTableViewController.swift in Sources */,
+				180D9CA8203588EF00378898 /* Divider.swift in Sources */,
+				180D9CAB20359CB600378898 /* CanCalculateOwnHeight.swift in Sources */,
+				185220FF203E789900257DF2 /* SelectField.swift in Sources */,
+				18AAAA18203BE24A0093B901 /* HeadingLabel.swift in Sources */,
+				1823BFEE203D306300AB7AED /* ItemCardFormController.swift in Sources */,
+				18D3E689201B10E700E2B204 /* DateInput.swift in Sources */,
+				18D3E68C201B20A400E2B204 /* TextField.swift in Sources */,
+				18D3E68F201B3E9100E2B204 /* CanMountTextInputAccessoryView.swift in Sources */,
+				1823BFDA203C239D00AB7AED /* CanBeValidated.swift in Sources */,
+				18D3E67F201AF9F400E2B204 /* KeyValueField.swift in Sources */,
+				18D3E683201AFC5100E2B204 /* KeyNumDialField.swift in Sources */,
+				184E6A5A201AE56100211417 /* TextInput.swift in Sources */,
+				1823BFE0203D296B00AB7AED /* SwiftMaskTextField.swift in Sources */,
+				1823BFE3203D2E6700AB7AED /* SampleJSONForm1.json in Sources */,
+				180D9CA320357F3600378898 /* PhoneInput.swift in Sources */,
 				18F70D3620076C59008986B9 /* Config.swift in Sources */,
-				1866DF351FFF74350047158D /* NumDialInputCell.swift in Sources */,
-				1866DF651FFF7B5C0047158D /* DateInputCell.swift in Sources */,
 				18F70D3C20087AE5008986B9 /* TextInputAccessoryView.swift in Sources */,
-				1866DF2D1FFF71B00047158D /* BaseCell.swift in Sources */,
-				1866DF331FFF73930047158D /* StaticValueCell.swift in Sources */,
-				9128676C20036A280094A6A9 /* ClickableCell.swift in Sources */,
-				1866DF631FFF7ABD0047158D /* TextInputCell.swift in Sources */,
+				184E6A53201AE1EF00211417 /* Row.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -358,24 +402,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1866DF5D1FFF7A1B0047158D /* BaseCell.swift in Sources */,
-				9128677020037C710094A6A9 /* CustomViewCell.swift in Sources */,
-				1866DF601FFF7A1B0047158D /* StaticValueCell.swift in Sources */,
 				18F70D3D20087CE7008986B9 /* TextInputAccessoryView.swift in Sources */,
+				18D3E68D201B222600E2B204 /* TextField.swift in Sources */,
+				1823BFD8203BE30400AB7AED /* HeadingLabel.swift in Sources */,
+				180D9CA920358A5D00378898 /* Divider.swift in Sources */,
 				18F70D3720076CF9008986B9 /* Config.swift in Sources */,
-				9162E9A9201871F200FF9AE4 /* DateRangeInputCell.swift in Sources */,
-				1866DF691FFF7BC60047158D /* DateInputCell.swift in Sources */,
-				9148C214200609CE00572E0C /* TextFieldInputCell.swift in Sources */,
-				1866DF411FFF79060047158D /* ViewController.swift in Sources */,
-				9128676D200371BD0094A6A9 /* ClickableCell.swift in Sources */,
-				1866DF611FFF7A1B0047158D /* NumDialInputCell.swift in Sources */,
-				1866DF6A1FFF7BC60047158D /* SwitchInputCell.swift in Sources */,
-				1866DF5F1FFF7A1B0047158D /* DescriptionCell.swift in Sources */,
-				1866DF681FFF7BC60047158D /* TextInputCell.swift in Sources */,
-				1866DF5E1FFF7A1B0047158D /* TitleCell.swift in Sources */,
-				91D2E0E320188102004157BA /* FloatLabelTextField.swift in Sources */,
+				1866DF411FFF79060047158D /* FlowerOrderFormController.swift in Sources */,
+				18D3E68A201B11B100E2B204 /* DateInput.swift in Sources */,
+				180D9CA42035801100378898 /* PhoneInput.swift in Sources */,
+				1823BFE1203D29FE00AB7AED /* SwiftMaskTextField.swift in Sources */,
+				1823BFE4203D2E6700AB7AED /* SampleJSONForm1.json in Sources */,
+				184E6A54201AE30D00211417 /* Row.swift in Sources */,
+				1823BFE7203D2EB800AB7AED /* FormTableViewController.swift in Sources */,
+				18522100203E793200257DF2 /* SelectField.swift in Sources */,
+				18D3E684201AFFE400E2B204 /* KeyNumDialField.swift in Sources */,
 				1866DF3F1FFF79060047158D /* AppDelegate.swift in Sources */,
-				1866DF5C1FFF79230047158D /* FormController.swift in Sources */,
+				18D3E681201AFA9100E2B204 /* KeyValueField.swift in Sources */,
+				180D9CAC20359D0A00378898 /* CanCalculateOwnHeight.swift in Sources */,
+				18D3E690201B3EC900E2B204 /* CanMountTextInputAccessoryView.swift in Sources */,
+				18D3E687201B0F7C00E2B204 /* KeySwitchField.swift in Sources */,
+				1823BFDD203C271800AB7AED /* CanBeValidated.swift in Sources */,
+				1823BFEF203D306300AB7AED /* ItemCardFormController.swift in Sources */,
+				184E6A5B201AE80600211417 /* TextInput.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

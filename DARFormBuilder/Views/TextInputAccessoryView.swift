@@ -9,17 +9,18 @@
 import UIKit
 
 
-class TextInputAccessoryView: UIView {
+public class TextInputAccessoryView: UIView {
     
-    weak var delegate: TextInputAccessoryViewDelegate?
+    public weak var delegate: TextInputAccessoryViewDelegate?
     
     let toolbar = UIToolbar()
+    weak var holder: UIView?
     var prevButton: UIBarButtonItem!
     var nextButton: UIBarButtonItem!
     var doneButton: UIBarButtonItem!
     
     init() {
-        super.init(frame: CGRect.zero)
+        super.init(frame: CGRect(x: 0, y: 0, width: 10, height: 44))
         
         prevButton = UIBarButtonItem(title: "Пред", style: .plain, target: self, action: #selector(didTapPrevButton))
         nextButton = UIBarButtonItem(title: "След", style: .plain, target: self, action: #selector(didTapNextButton))
@@ -29,30 +30,34 @@ class TextInputAccessoryView: UIView {
         toolbar.items = [prevButton, nextButton, UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil), doneButton]
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         toolbar.frame = bounds
     }
     
     func didTapPrevButton(_ sender: UIBarButtonItem) {
-        delegate?.textInputAccessoryViewPrev()
+        guard let sender = holder else { return }
+        delegate?.textInputAccessoryViewPrev(sender: sender)
     }
     
     func didTapNextButton(_ sender: UIBarButtonItem) {
-        delegate?.textInputAccessoryViewNext()
+        guard let sender = holder else { return }
+        delegate?.textInputAccessoryViewNext(sender: sender)
     }
     
     func didTapDoneButton(_ sender: UIBarButtonItem) {
-        delegate?.textInputAccessoryViewDone()
+        guard let sender = holder else { return }
+        delegate?.textInputAccessoryViewDone(sender: sender)
     }
 }
 
 
-protocol TextInputAccessoryViewDelegate: class {
-    func textInputAccessoryViewPrev()
-    func textInputAccessoryViewNext()
-    func textInputAccessoryViewDone()
+public protocol TextInputAccessoryViewDelegate: class {
+    func textInputAccessoryViewPrev(sender: UIView)
+    func textInputAccessoryViewNext(sender: UIView)
+    func textInputAccessoryViewDone(sender: UIView)
 }
+
