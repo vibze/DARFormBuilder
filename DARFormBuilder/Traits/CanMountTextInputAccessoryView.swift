@@ -6,9 +6,10 @@
 //  Copyright © 2018 DAR. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 
-protocol CanMountTextInputAccessoryView: class {
-    func mountTextInputAccessoryView(_ view: TextInputAccessoryView)
+protocol TextInputAccessoryViewHolder: class {
+    var textInputAccessoryView: TextInputAccessoryView { get }
 }
+

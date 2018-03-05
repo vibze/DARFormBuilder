@@ -1,5 +1,5 @@
 //
-//  DateField.swift
+//  DateInput.swift
 //  DARFormBuilder
 //
 //  Created by Viktor Ten on 1/26/18.
@@ -10,10 +10,10 @@ import UIKit
 
 
 /**
- Date/Time input based on `StringField`.
+ Date/Time input based on `TextInput`.
  
  
- ## Properties in addition to StringField
+ ## Properties in addition to TextInput
  
  `onDateChange` - Callback for date value change
  
@@ -28,26 +28,26 @@ import UIKit
  `dateFormat` - String representation of date that will be displayed in the field
  
  */
-public class DateField: StringField {
+open class DateInput: TextInput {
     
     public var onDateChange: ((Date) -> Void)?
     
-    public var datePickerMode: UIDatePickerMode {
+    open var datePickerMode: UIDatePickerMode {
         get { return datePicker.datePickerMode }
         set (v) { datePicker.datePickerMode = v }
     }
     
-    public var maxDate: Date? {
+    open var maxDate: Date? {
         get { return datePicker.maximumDate }
         set (v) { datePicker.maximumDate = v }
     }
     
-    public var minDate: Date? {
+    open var minDate: Date? {
         get { return datePicker.minimumDate }
         set (v) { datePicker.minimumDate = v }
     }
     
-    public var date: Date {
+    open var date: Date {
         get { return datePicker.date }
         set (v) {
             datePicker.date = v
@@ -55,34 +55,41 @@ public class DateField: StringField {
         }
     }
     
-    public var dateFormat: String {
+    open var dateFormat: String {
         get { return dateFormatter.dateFormat }
-        set (v) { dateFormatter.dateFormat = v }
+        set (v) {
+            dateFormatter.dateFormat = v
+            text = dateFormatter.string(from: date)
+        }
     }
     
     private let datePicker = UIDatePicker()
     private let dateFormatter = DateFormatter()
     
     public init(_ placeholder: String = "", value: Date?) {
-        super.init(placeholder, maxLength: 0)
+        super.init(placeholder)
         
         datePickerMode = .dateAndTime
-        inputView = datePicker
+        textField.inputView = datePicker
         dateFormat = "dd.MM.yyyy HH:mm"
         
         datePicker.addTarget(self, action: #selector(datePickerValueChanged), for: .valueChanged)
+        
+        if let date = value {
+            self.date = date
+        }
     }
     
     public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func datePickerValueChanged(_ sender: UIDatePicker) {
+    open func datePickerValueChanged(_ sender: UIDatePicker) {
         date = sender.date
         onDateChange?(date)
     }
     
-    public func textFieldDidBeginEditing(_ textField: UITextField) {
+    open func textFieldDidBeginEditing(_ textField: UITextField) {
         date = datePicker.date
     }
 }

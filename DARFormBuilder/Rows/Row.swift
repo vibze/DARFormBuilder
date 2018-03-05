@@ -9,19 +9,50 @@
 import UIKit
 
 
-class Row: UITableViewCell, CanBeAskedToChangeHeight {
-    
-    weak var delegate: RowDelegate?
+public class Row: UITableViewCell {
     
     let stackView = UIStackView()
     let views: [UIView]
-    var height: CGFloat = 50
+    var height: CGFloat {
+        var subviewHeights: [CGFloat] = []
+        
+        stackView.frame = UIEdgeInsetsInsetRect(contentView.bounds, padding)
+        stackView.layoutSubviews()
+
+        for view in stackView.arrangedSubviews {
+            if let view = view as? CanCalculateOwnHeight {
+                subviewHeights.append(view.height + padding.top + padding.bottom)
+            }
+            else {
+                subviewHeights.append(24 + padding.top + padding.bottom)
+            }
+        }
+        return subviewHeights.max() ?? 50
+    }
+    
+    public var fields: [UIView] {
+        return stackView.arrangedSubviews
+    }
+    
+    public var hasVisibleFields: Bool {
+        for field in fields {
+            if !field.isHidden {
+                return true
+            }
+        }
+        
+        return false
+    }
     
     private var padding: UIEdgeInsets {
         return Config().cellPadding
     }
 
-    init(_ views: UIView...) {
+    public convenience init(_ views: UIView...) {
+        self.init(views)
+    }
+    
+    public init(_ views: [UIView]) {
         self.views = views
         super.init(style: .default, reuseIdentifier: nil)
         
@@ -30,32 +61,20 @@ class Row: UITableViewCell, CanBeAskedToChangeHeight {
         stackView.distribution = .fillEqually
         stackView.alignment = .fill
         stackView.axis = .horizontal
+        selectionStyle = .none
+        
         for view in views {
             stackView.addArrangedSubview(view)
-            if let view = view as? CanAskParentToChangeHeight {
-                view.heightChangeDelegate = self
-            }
         }
-        
-        selectionStyle = .none
     }
 
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    override func layoutSubviews() {
+    public override func layoutSubviews() {
         super.layoutSubviews()
         stackView.frame = UIEdgeInsetsInsetRect(contentView.bounds, padding)
     }
-    
-    func changeHeight(to height: CGFloat) {
-        self.height = height
-        delegate?.row(self, didChangeHeight: height + padding.top + padding.bottom)
-    }
 }
 
-
-protocol RowDelegate: class {
-    func row(_ row: Row, didChangeHeight height: CGFloat)
-}

@@ -11,9 +11,9 @@ import UIKit
 
 public class KeyNumDialField: KeyValueField {
     
-    public var value: Int = 0 {
+    public var intValue: Int = 0 {
         didSet {
-            field.text = value.description
+            value = intValue.description
             layoutSubviews()
         }
     }
@@ -30,19 +30,23 @@ public class KeyNumDialField: KeyValueField {
     public init(_ key: String, value: Int = 0, range: Range<Int> = 0..<100) {
         super.init(key, value: "\(value)")
         
-        self.value = value
+        self.intValue = value
         self.range = range
         
+        addSubview(plusButton)
+        addSubview(minusButton)
+        
+        plusButton.backgroundColor = UIColor.black.withAlphaComponent(0.03)
+        plusButton.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 2, right: 0)
         plusButton.setTitle("+", for: .normal)
         plusButton.setTitleColor(field.textColor, for: .normal)
+        minusButton.backgroundColor = UIColor.black.withAlphaComponent(0.03)
+        minusButton.contentEdgeInsets = UIEdgeInsets(top: 0, left: 0, bottom: 2, right: 0)
         minusButton.setTitle("–", for: .normal)
         minusButton.setTitleColor(field.textColor, for: .normal)
         
-        field.leftView = minusButton
-        field.leftViewMode = .always
-        field.rightView = plusButton
-        field.rightViewMode = .always
         field.keyboardType = .numberPad
+        field.isEnabled = false
         
         plusButton.addTarget(self, action: #selector(didTapPlusButton), for: .touchUpInside)
         minusButton.addTarget(self, action: #selector(didTapMinusButton), for: .touchUpInside)
@@ -55,19 +59,23 @@ public class KeyNumDialField: KeyValueField {
     public override func layoutSubviews() {
         super.layoutSubviews()
         
+        plusButton.layer.cornerRadius = bounds.height/2
+        plusButton.frame = CGRect(x: bounds.width - bounds.height, y: 0, width: bounds.height, height: bounds.height)
+        
         field.sizeToFit()
-        field.frame.origin = CGPoint(x: bounds.width - field.frame.width, y: 0)
-        plusButton.frame.size = CGSize(width: bounds.height, height: bounds.height)
-        minusButton.frame.size = CGSize(width: bounds.height, height: bounds.height)
+        field.frame = CGRect(x: plusButton.frame.minX - field.frame.width - 9, y: 0, width: field.frame.width, height: bounds.height)
+        
+        minusButton.layer.cornerRadius = bounds.height/2
+        minusButton.frame = CGRect(x: field.frame.minX - bounds.height - 5, y: 0, width: bounds.height, height: bounds.height)
     }
     
     func didTapPlusButton(_ sender: UIButton) {
-        guard range.contains(value + 1) else { return }
-        value += 1
+        guard range.contains(intValue + 1) else { return }
+        intValue += 1
     }
     
     func didTapMinusButton(_ sender: UIButton) {
-        guard range.contains(value - 1) else { return }
-        value -= 1
+        guard range.contains(intValue - 1) else { return }
+        intValue -= 1
     }
 }
