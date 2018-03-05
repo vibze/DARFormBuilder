@@ -46,6 +46,6 @@ public class KeySwitchField: UIView, CanCalculateOwnHeight {
     
     var height: CGFloat {
         let size = label.sizeThatFits(CGSize(width: bounds.width - switchView.frame.width, height: CGFloat.greatestFiniteMagnitude))
-        return size.height
+        return max(size.height, switchView.frame.height)
     }
 }
