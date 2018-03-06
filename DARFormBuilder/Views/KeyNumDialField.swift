@@ -11,6 +11,7 @@ import UIKit
 
 public class KeyNumDialField: KeyValueField {
     
+    public var onNumberChange: ((Int) -> Void)?
     public var intValue: Int = 0 {
         didSet {
             value = intValue.description
@@ -72,10 +73,12 @@ public class KeyNumDialField: KeyValueField {
     func didTapPlusButton(_ sender: UIButton) {
         guard range.contains(intValue + 1) else { return }
         intValue += 1
+        onNumberChange?(intValue)
     }
     
     func didTapMinusButton(_ sender: UIButton) {
         guard range.contains(intValue - 1) else { return }
         intValue -= 1
+        onNumberChange?(intValue)
     }
 }
