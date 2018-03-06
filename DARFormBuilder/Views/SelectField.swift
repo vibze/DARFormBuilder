@@ -21,6 +21,9 @@ public class SelectField: KeyValueField, SelectViewControllerDelegate {
         }
     }
     
+    public var blurredOptionValues: Set<String> = []
+    public var disabledOptionValues: Set<String> = []
+    
     public var presentSelector: ((UIViewController) -> Void)? = nil
     public var dismissSelector: ((UIViewController) -> Void)? = nil
     public var onChange: ((Option) -> Void)? = nil
@@ -65,6 +68,8 @@ public class SelectField: KeyValueField, SelectViewControllerDelegate {
         let selectController = SelectViewController(options: options, selectedIndex: selectedIndex)
         selectController.title = label.text
         selectController.delegate = self
+        selectController.blurredOptionValues = blurredOptionValues
+        selectController.disabledOptionValues = disabledOptionValues
         presentSelector?(selectController)
     }
     
@@ -83,6 +88,9 @@ public class SelectViewController: UITableViewController {
     weak var delegate: SelectViewControllerDelegate?
     var selectedIndex: Int = 0
     let options: [SelectField.Option]
+    
+    var blurredOptionValues: Set<String> = []
+    var disabledOptionValues: Set<String> = []
     
     public init(options: [SelectField.Option], selectedIndex: Int = 0) {
         self.options = options
@@ -103,12 +111,18 @@ public class SelectViewController: UITableViewController {
         let option = options[indexPath.row]
         cell.textLabel?.text = option.text
         cell.accessoryType = indexPath.row == selectedIndex ? .checkmark : .none
+        cell.textLabel?.textColor = config.primaryTextColor
+        
+        if blurredOptionValues.contains(option.value) || disabledOptionValues.contains(option.value) {
+            cell.textLabel?.textColor = config.labelTextColor
+        }
         
         return cell
     }
     
     public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let option = options[indexPath.row]
+        guard !disabledOptionValues.contains(option.value) else { return }
         delegate?.selectViewController(self, didSelect: option)
     }
 }
