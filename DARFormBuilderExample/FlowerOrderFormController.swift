@@ -27,6 +27,7 @@ class FlowerOrderFormController: UIViewController {
         // selectField.collection = []
         
         let verifyAddressByPhone = KeySwitchField("Verify address and delivery time by phone call")
+        let verifyTime = KeySwitchField("Verify time")
         
         let streetField = TextInput("Street")
         streetField.isRequired = true
@@ -50,6 +51,7 @@ class FlowerOrderFormController: UIViewController {
             Row(headingLabel),
             Divider(style: .stripe(height: 6)),
             Row(streetField),
+            Row(verifyTime),
             Divider(),
             Row(houseField, flatField),
             Divider(),

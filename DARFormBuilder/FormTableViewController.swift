@@ -74,7 +74,7 @@ open class FormTableViewController: UITableViewController, TextInputAccessoryVie
     public var hiddenRows: [IndexPath] = [] {
         didSet {
             tableView.beginUpdates()
-            tableView.reloadData()
+            tableView.reloadRows(at: hiddenRows, with: .automatic)
             tableView.endUpdates()
         }
     }

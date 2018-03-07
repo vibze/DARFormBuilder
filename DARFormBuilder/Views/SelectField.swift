@@ -12,12 +12,21 @@ import UIKit
 public class SelectField: KeyValueField, SelectViewControllerDelegate {
 
     public struct Option {
-        let text: String
-        let value: String
+        public let text: String
+        public let value: String
+        
+        public init(text: String, value: String) {
+            self.text = text
+            self.value = value
+        }
     }
+    
+    public var blurredOptionValues: Set<String> = []
+    public var disabledOptionValues: Set<String> = []
     
     public var presentSelector: ((UIViewController) -> Void)? = nil
     public var dismissSelector: ((UIViewController) -> Void)? = nil
+    public var onChange: ((Option) -> Void)? = nil
     
     public var options: [Option] = []
     public var button = UITableViewCell()
@@ -25,6 +34,7 @@ public class SelectField: KeyValueField, SelectViewControllerDelegate {
         didSet {
             guard options.count > selectedIndex else { return }
             field.text = options[selectedIndex].text
+            onChange?(options[selectedIndex])
         }
     }
     
@@ -55,15 +65,18 @@ public class SelectField: KeyValueField, SelectViewControllerDelegate {
     }
     
     func didTapField(_ sender: UITapGestureRecognizer) {
-        let selectController = SelectViewController(options: options)
+        let selectController = SelectViewController(options: options, selectedIndex: selectedIndex)
         selectController.title = label.text
         selectController.delegate = self
+        selectController.blurredOptionValues = blurredOptionValues
+        selectController.disabledOptionValues = disabledOptionValues
         presentSelector?(selectController)
     }
     
     func selectViewController(_ controller: SelectViewController, didSelect option: SelectField.Option) {
         if let index = options.index(where: { $0.value == option.value }) {
             selectedIndex = index
+            onChange?(options[selectedIndex])
         }
         dismissSelector?(controller)
     }
@@ -73,10 +86,15 @@ public class SelectField: KeyValueField, SelectViewControllerDelegate {
 public class SelectViewController: UITableViewController {
     
     weak var delegate: SelectViewControllerDelegate?
+    var selectedIndex: Int = 0
     let options: [SelectField.Option]
     
-    public init(options: [SelectField.Option]) {
+    var blurredOptionValues: Set<String> = []
+    var disabledOptionValues: Set<String> = []
+    
+    public init(options: [SelectField.Option], selectedIndex: Int = 0) {
         self.options = options
+        self.selectedIndex = selectedIndex
         super.init(style: .plain)
     }
     
@@ -92,12 +110,19 @@ public class SelectViewController: UITableViewController {
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
         let option = options[indexPath.row]
         cell.textLabel?.text = option.text
+        cell.accessoryType = indexPath.row == selectedIndex ? .checkmark : .none
+        cell.textLabel?.textColor = config.primaryTextColor
+        
+        if blurredOptionValues.contains(option.value) || disabledOptionValues.contains(option.value) {
+            cell.textLabel?.textColor = config.labelTextColor
+        }
         
         return cell
     }
     
     public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let option = options[indexPath.row]
+        guard !disabledOptionValues.contains(option.value) else { return }
         delegate?.selectViewController(self, didSelect: option)
     }
 }
