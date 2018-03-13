@@ -42,6 +42,16 @@ open class TextInput: UIView, UITextFieldDelegate, TextInputAccessoryViewHolder,
     open var currentTextLength: Int {
         return textField.text?.count ?? 0
     }
+    
+    open var keyboardType: UIKeyboardType {
+        get { return textField.keyboardType }
+        set (v) { textField.keyboardType = v }
+    }
+    
+    open var isEnabled: Bool {
+        get { return textField.isEnabled }
+        set (v) { textField.isEnabled = v }
+    }
 
     public var onTextChange: ((String) -> Void)?
     public var textField = UITextField()
