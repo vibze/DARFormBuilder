@@ -54,6 +54,14 @@ open class TextInput: UIView, UITextFieldDelegate, TextInputAccessoryViewHolder,
         didSet { updateCountLabel() }
     }
     
+    public var keyboardType: UIKeyboardType {
+        get {
+            return textField.keyboardType
+        } set {
+            textField.keyboardType = newValue
+        }
+    }
+    
     public init(_ placeholder: String = "") {
         super.init(frame: CGRect.zero)
 

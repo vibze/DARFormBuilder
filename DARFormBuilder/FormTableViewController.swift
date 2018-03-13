@@ -41,7 +41,9 @@ open class FormTableViewController: UITableViewController, TextInputAccessoryVie
             tableView.scrollIndicatorInsets = inset
         }
     }
-
+    
+    public var keyboardAdditionalBottomInset: CGFloat = 0
+    
     public var rows: [UITableViewCell] = [] {
         didSet {
             tableView.reloadData()
@@ -163,15 +165,15 @@ open class FormTableViewController: UITableViewController, TextInputAccessoryVie
         let keyboardHeight = keyboardRectangle.height
         
         var inset = tableView.contentInset
-        inset.bottom = keyboardHeight
-        //tableView.contentInset = inset
+        inset.bottom = keyboardHeight + keyboardAdditionalBottomInset
+        tableView.contentInset = inset
         //tableView.scrollIndicatorInsets = inset
     }
     
     func willHideKeyboard(notification: Notification) {
         var inset = tableView.contentInset
         inset.bottom = 0
-        //tableView.contentInset = inset
+        tableView.contentInset = inset
         //tableView.scrollIndicatorInsets = inset
     }
 }
