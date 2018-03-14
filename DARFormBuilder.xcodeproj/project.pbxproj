@@ -93,6 +93,7 @@
 		1866DF4F1FFF79060047158D /* DARFormBuilderExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DARFormBuilderExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1866DF531FFF79060047158D /* DARFormBuilderExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DARFormBuilderExampleUITests.swift; sourceTree = "<group>"; };
 		1866DF551FFF79060047158D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		189BE952205934F100D2A5C0 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		18AAAA17203BE24A0093B901 /* HeadingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingLabel.swift; sourceTree = "<group>"; };
 		18D3E67E201AF9F400E2B204 /* KeyValueField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyValueField.swift; sourceTree = "<group>"; };
 		18D3E682201AFC5100E2B204 /* KeyNumDialField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyNumDialField.swift; sourceTree = "<group>"; };
@@ -182,6 +183,7 @@
 				1866DF3D1FFF79060047158D /* DARFormBuilderExample */,
 				1866DF521FFF79060047158D /* DARFormBuilderExampleUITests */,
 				1866DF1F1FFF6E610047158D /* Products */,
+				189BE951205934F100D2A5C0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -232,6 +234,14 @@
 				1866DF551FFF79060047158D /* Info.plist */,
 			);
 			path = DARFormBuilderExampleUITests;
+			sourceTree = "<group>";
+		};
+		189BE951205934F100D2A5C0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				189BE952205934F100D2A5C0 /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
