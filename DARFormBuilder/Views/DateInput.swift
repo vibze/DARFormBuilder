@@ -47,11 +47,12 @@ open class DateInput: TextInput {
         set (v) { datePicker.minimumDate = v }
     }
     
-    open var date: Date {
-        get { return datePicker.date }
-        set (v) {
-            datePicker.date = v
-            text = dateFormatter.string(from: v)
+    open var date: Date? = nil {
+        didSet {
+            if let date = date {
+                datePicker.date = date ?? Date()
+                text = dateFormatter.string(from: date)
+            }
         }
     }
     
@@ -59,7 +60,9 @@ open class DateInput: TextInput {
         get { return dateFormatter.dateFormat }
         set (v) {
             dateFormatter.dateFormat = v
-            text = dateFormatter.string(from: date)
+            if let date = date {
+                text = dateFormatter.string(from: date)
+            }
         }
     }
     
@@ -86,10 +89,11 @@ open class DateInput: TextInput {
     
     open func datePickerValueChanged(_ sender: UIDatePicker) {
         date = sender.date
-        onDateChange?(date)
+        onDateChange?(sender.date)
     }
     
     open func textFieldDidBeginEditing(_ textField: UITextField) {
         date = datePicker.date
+        onDateChange?(datePicker.date)
     }
 }

@@ -2,7 +2,7 @@
 //  HeadingLabel.swift
 //  DARFormBuilder
 //
-//  Created by Apple on 2/20/18.
+//  Created by Viktor Ten on 2/20/18.
 //  Copyright © 2018 DAR. All rights reserved.
 //
 

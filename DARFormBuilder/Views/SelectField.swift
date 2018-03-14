@@ -2,13 +2,46 @@
 //  SelectField.swift
 //  DARFormBuilder
 //
-//  Created by Apple on 2/22/18.
+//  Created by Viktor Ten on 2/22/18.
 //  Copyright © 2018 DAR. All rights reserved.
 //
 
 import UIKit
 
 
+/**
+ Select field allows user to choose one from the list of provided options.
+ Picker controller presentation is up to you. For that you have to provide
+ presentSelector and dismissSelector callbacks which get presented view
+ controller as the only parameter.
+ 
+ Usage example:
+ 
+ ```Swift
+ let field = SelectField("Vegetables")
+ 
+ field.options = [
+    SelectField.Option(text: "Potato", value: 1),
+    SelectField.Option(text: "Carrot", value: 2),
+    SelectField.Option(text: "Cucumber", value: 3)
+ ]
+ 
+ field.presentSelector = { [weak self] viewController in
+    self?.navigationController?.push(viewController: vc, animated: true)
+ }
+ field.onChange = { [weak self] option in
+    ...
+ }
+ ```
+ 
+ Select field also supports blurring and disabling options.
+ Blurring means the option will be grayed out but will still be selectable.
+ Disabled options will be grayed out and unselectable.
+ 
+ Blurred and disabled options are set by `blurredOptionsValues` and `disabledOptionsValues`
+ respectively. These sets contain values of the options that should be blurred/disabled.
+ 
+ */
 public class SelectField: KeyValueField, SelectViewControllerDelegate {
 
     public struct Option {
