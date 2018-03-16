@@ -141,18 +141,43 @@ open class FormTableViewController: UITableViewController, TextInputAccessoryVie
         guard
             let senderIndex = responderViews.index(of: sender),
             responderViews.count > senderIndex + 1 else { return }
-        responderViews[senderIndex + 1].becomeFirstResponder()
+        
+        if let i = rowIndexForField(field: responderViews[senderIndex + 1]) {
+            UIView.animate(withDuration: 0.2, animations: {
+                self.tableView.scrollToRow(at: IndexPath(row: i, section: 0), at: .none, animated: false)
+            }, completion: { result in
+                self.responderViews[senderIndex + 1].becomeFirstResponder()
+            })
+        }
     }
     
     public func textInputAccessoryViewPrev(sender: UIView) {
         guard
             let senderIndex = responderViews.index(of: sender),
             senderIndex > 0 else { return }
-        responderViews[senderIndex - 1].becomeFirstResponder()
+        
+        if let i = rowIndexForField(field: responderViews[senderIndex - 1]) {
+            UIView.animate(withDuration: 0.2, animations: {
+                self.tableView.scrollToRow(at: IndexPath(row: i, section: 0), at: .none, animated: false)
+            }, completion: { result in
+                self.responderViews[senderIndex - 1].becomeFirstResponder()
+            })
+        }
     }
     
     public func textInputAccessoryViewDone(sender: UIView) {
         view.endEditing(true)
+    }
+    
+    private func rowIndexForField(field: UIView) -> Int? {
+        for (i, row) in rows.enumerated() {
+            guard let row = row as? Row else { continue }
+            if row.views.contains(field) {
+                return i
+            }
+        }
+        
+        return nil
     }
     
     private let textInputAccessoryView = TextInputAccessoryView()
@@ -166,14 +191,14 @@ open class FormTableViewController: UITableViewController, TextInputAccessoryVie
         
         var inset = tableView.contentInset
         inset.bottom = keyboardHeight + keyboardAdditionalBottomInset
-        tableView.contentInset = inset
+        //tableView.contentInset = inset
         //tableView.scrollIndicatorInsets = inset
     }
     
     func willHideKeyboard(notification: Notification) {
         var inset = tableView.contentInset
         inset.bottom = 0
-        tableView.contentInset = inset
+        //tableView.contentInset = inset
         //tableView.scrollIndicatorInsets = inset
     }
 }
