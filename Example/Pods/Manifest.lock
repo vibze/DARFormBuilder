@@ -1,0 +1,16 @@
+PODS:
+  - DARFormBuilder (0.1.0)
+
+DEPENDENCIES:
+  - DARFormBuilder (from `../`)
+
+EXTERNAL SOURCES:
+  DARFormBuilder:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DARFormBuilder: 5fda1e0c1bbe887870e63bbea58293018ac557b5
+
+PODFILE CHECKSUM: 6a985f7e38fbae5a8348b9ab9eba3b5aa855e8a9
+
+COCOAPODS: 1.5.3
