@@ -47,27 +47,27 @@ Label with number dial. Values can be limited by range.
 
 #### `TextInput`
 Simple textField. Can be limited by max length.
-![textInputImage](Images/TextInput.png)
+![textInputImage](Example/Images/TextInput.png)
 
 #### `DateInput`
 Date picker. Supports different input modes.
-![dateInputImage](Images/DateInput.png)
+![dateInputImage](Example/Images/DateInput.png)
 
 #### `PhoneInput`
 Phone input. Can display only digits.
-![phoneInputImage](Images/PhoneInput.png)
+![phoneInputImage](Example/Images/PhoneInput.png)
 
 #### `KeySwitchField`
 Label with switch view on the right.
-![keySwitchFieldImage](Images/KeySwitchField.png)
+![keySwitchFieldImage](Example/Images/KeySwitchField.png)
 
 #### `SelectField`
 Label with disclosure indicator. Clickable.
-![selectFieldImage](Images/SelectField.png)
+![selectFieldImage](Example/Images/SelectField.png)
 
 #### `KeyValueField`
 Label with key and value on the right.
-![keyValueFieldImage](Images/KeyValueField.png)
+![keyValueFieldImage](Example/Images/KeyValueField.png)
 
 
 
