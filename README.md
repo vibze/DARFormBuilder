@@ -39,34 +39,42 @@ When using `FormTableViewController` you are responsible for validating fields a
 
 #### `HeadingLabel`
 Cell for displaying form titles with description. Big font, contrasty color.
+
 ![headingLabelImage](Images/HeadingLabel.png)
 
 #### `KeyNumDialField`
 Label with number dial. Values can be limited by range.
+
 ![keyNumDialFieldImage](Images/KeyNumDialField.png)
 
 #### `TextInput`
 Simple textField. Can be limited by max length.
+
 ![textInputImage](Images/TextInput.png)
 
 #### `DateInput`
 Date picker. Supports different input modes.
+
 ![dateInputImage](Images/DateInput.png)
 
 #### `PhoneInput`
 Phone input. Can display only digits.
+
 ![phoneInputImage](Images/PhoneInput.png)
 
 #### `KeySwitchField`
 Label with switch view on the right.
+
 ![keySwitchFieldImage](Images/KeySwitchField.png)
 
 #### `SelectField`
 Label with disclosure indicator. Clickable.
+
 ![selectFieldImage](Images/SelectField.png)
 
 #### `KeyValueField`
 Label with key and value on the right.
+
 ![keyValueFieldImage](Images/KeyValueField.png)
 
 
