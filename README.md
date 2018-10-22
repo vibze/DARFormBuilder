@@ -26,7 +26,7 @@ let likesBoobiesField = SwitchInput()
 
 let tbl = FormTableViewController()
 tbl.rows = [
-	Row(titleField, nameField),
+    Row(titleField, nameField),
     Row(birthdayField),
     Row(likesBoobiesField)
 ]
@@ -37,32 +37,38 @@ When using `FormTableViewController` you are responsible for validating fields a
 
 #### List of available cell types
 
-#### `TitleLabelCell`
-Cell for displaying form titles. Big font, contrasty color.
+#### `HeadingLabel`
+Cell for displaying form titles with description. Big font, contrasty color.
+![headingLabelImage](Images/HeadingLabel.png)
 
-#### `DescriptionLabelCell`
-Cell for displaying long texts as descriptions or field clarifications.
-
-#### `StaticValueCell`
-Label and value for displaying static properties.
-
-#### `NumDialInputCell`
+#### `KeyNumDialField`
 Label with number dial. Values can be limited by range.
+![keyNumDialFieldImage](Images/KeyNumDialField.png)
 
-#### `TextInputCell`
-Simple textField cell. Can be limited by max length.
+#### `TextInput`
+Simple textField. Can be limited by max length.
+![textInputImage](Images/TextInput.png)
 
-#### `DateInputCell`
-Date picker cell. Supports different input modes.
+#### `DateInput`
+Date picker. Supports different input modes.
+![dateInputImage](Images/DateInput.png)
 
-#### `PhoneInputCell`
-Phone input cell. Can display a button to pick phone from contact book.
+#### `PhoneInput`
+Phone input. Can display only digits.
+![phoneInputImage](Images/PhoneInput.png)
 
-#### `SwitchInputCell`
+#### `KeySwitchField`
 Label with switch view on the right.
+![keySwitchFieldImage](Images/KeySwitchField.png)
 
-#### `ChevronButtonCell`
+#### `SelectField`
 Label with disclosure indicator. Clickable.
+![selectFieldImage](Images/SelectField.png)
+
+#### `KeyValueField`
+Label with key and value on the right.
+![keyValueFieldImage](Images/KeyValueField.png)
+
 
 
 ## DARFormController

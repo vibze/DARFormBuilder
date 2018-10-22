@@ -7,57 +7,57 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		09FA1B40A60C40181162F8EDCC983A62 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97309FECCF4FD1BBC0C45B8DC00318F5 /* Config.swift */; };
-		0BD28919CF0FC36CC6ABAC5893E2162E /* Pods-DARFormBuilder_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAA0E3973A5E77F172265B60158F670 /* Pods-DARFormBuilder_Example-dummy.m */; };
-		117C74F0B96224949DEC7D760E44C1EF /* PhoneInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A56D6B7943D338B2854B176C838119 /* PhoneInput.swift */; };
-		12AED14A1AED763497F3EBC6F331F886 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		25715B1821DAC0C30D44CE2C27367AC4 /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB275520CB0F9356572C7A880177B029 /* FormTableViewController.swift */; };
-		2F64AA4AAB69C41373DC1830ED15F65F /* TextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B6E2521680A773AF4036C6DBAC8C8E /* TextInputAccessoryView.swift */; };
-		30E96E16AEE4B8468419FC236043F3EE /* Pods-DARFormBuilder_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 300B8B9E9D91CEE61A879840664CF008 /* Pods-DARFormBuilder_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3A0E4EA733526E33E1010261388DE383 /* CanCalculateOwnHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11043E808CDA0850B312936197F2F442 /* CanCalculateOwnHeight.swift */; };
-		3D1ED66296C7AACF335E89EAC8579874 /* SwiftMaskTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C0F4FF864AD2B4F1EFC6C2F68CA938 /* SwiftMaskTextField.swift */; };
-		431A25F7E60BC193F538FA59088F1327 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826351A34F744C0C45EFCD93F794E610 /* Row.swift */; };
-		4C4DE6499B67BC4457E98C430C199EEC /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADCBA84692E15658D339B7B0ACAB9CC /* FloatLabelTextField.swift */; };
-		5269EB283BD9F5558AADB20E81327087 /* SelectField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472BFF48D037B0F158B954C7B0D4A53D /* SelectField.swift */; };
-		677534539D7F396A00E374CD7CB4526D /* CanBeValidated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC06208EE54554BDB75722EB14CF4B /* CanBeValidated.swift */; };
-		79D4BEA77336A7496D1021B2AEC1F1D9 /* Pods-DARFormBuilder_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A012FF97463F128FB6D064C29AC543D4 /* Pods-DARFormBuilder_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A4D6ABBE3BC883787C34393D082562E /* KeyNumDialField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B937D674781AA6CE3E7206E7CE0052 /* KeyNumDialField.swift */; };
-		91AA797BC22E5BAEF6883DFF14F55844 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A5C6E439365118F8A5CD4CCCFA405658 /* DateInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75BFA6CA03E6E56FEDDA7BCD743BAC0 /* DateInput.swift */; };
-		B02CF9E6344CA5EF254D109A29187BCE /* KeySwitchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1374A9CB65E0B3D16B9BCBE2CCD74DEC /* KeySwitchField.swift */; };
-		BAD078BBE6E6FD10D332C00CF1CF7598 /* SectionDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B4E3CBEC65BBC1F845134173E2069 /* SectionDivider.swift */; };
-		C572818D62A5BF41D66E84C0290191A4 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848D5B04010901119EF15EF6ECDF083 /* TextField.swift */; };
-		C741CE2D00F15A880295197CBB7EC829 /* CanMountTextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8535ED18112B976CAE912AF14EF636A /* CanMountTextInputAccessoryView.swift */; };
-		C8EBDE630FE345FA27804C3ACDD5C99A /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E33992914002E599806C0AFCB707DF /* Divider.swift */; };
-		D568FA56566FC35E8AACD95A83E0F80B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		DA935EC6B7A2F3C4104811ACD3EAA02B /* HeadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D84B209B68828CD6613A9F8F4C3BE /* HeadingLabel.swift */; };
-		EE05C47301EF3564F4DC1CACC6906B3C /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30142DBB450C805C52267AD5019F297E /* TextInput.swift */; };
-		F13BF89F9BC13084FA5918D37AACFE90 /* DARFormBuilder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D46AE1EC3084F39FA0619DFFFF5D7FB7 /* DARFormBuilder-dummy.m */; };
-		F3916383AB6A162F67AABD6499EAD9AC /* DARFormBuilder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1186614CC229F5CEAB4C4592C48D756 /* DARFormBuilder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F393C229AFADAED77B4BE3D556B845D5 /* Pods-DARFormBuilder_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3597CC302CB07F29849F947FACF5E7 /* Pods-DARFormBuilder_Tests-dummy.m */; };
-		FF65DA5B1B28C7F20D8122329DA78F96 /* KeyValueField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B9F51B5C0F7B574858FC126A3141B9 /* KeyValueField.swift */; };
+		18A7E3B45330B429D68ECDBE615EE3DC /* Pods-DARFormBuilder_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3597CC302CB07F29849F947FACF5E7 /* Pods-DARFormBuilder_Tests-dummy.m */; };
+		2309A44C37703379173400CB99DFC65D /* DateInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75BFA6CA03E6E56FEDDA7BCD743BAC0 /* DateInput.swift */; };
+		2A9D00B84F2648C0F45B3EBCAD3C4CBD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		2F754F5D5BC8421BFF2AFB1815BAE12C /* TextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B6E2521680A773AF4036C6DBAC8C8E /* TextInputAccessoryView.swift */; };
+		3CCA729132C46F6B45CF02CF80DCD59B /* CanBeValidated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC06208EE54554BDB75722EB14CF4B /* CanBeValidated.swift */; };
+		3DA764C5EB344EF14E87E98B8BE55D44 /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB275520CB0F9356572C7A880177B029 /* FormTableViewController.swift */; };
+		41477DFC6331A6BEA4335D160CD67B4A /* Pods-DARFormBuilder_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAA0E3973A5E77F172265B60158F670 /* Pods-DARFormBuilder_Example-dummy.m */; };
+		4304B9DEAD2928CA45C2996FC509F8EA /* SectionDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B4E3CBEC65BBC1F845134173E2069 /* SectionDivider.swift */; };
+		562A80627683613090A0096B1019D407 /* SwiftMaskTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C0F4FF864AD2B4F1EFC6C2F68CA938 /* SwiftMaskTextField.swift */; };
+		5B10924F2C47C87BF3F3BA4896E0EDC1 /* Pods-DARFormBuilder_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A012FF97463F128FB6D064C29AC543D4 /* Pods-DARFormBuilder_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69CBB0E5190923B18F8CD7B88DEB2429 /* KeySwitchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1374A9CB65E0B3D16B9BCBE2CCD74DEC /* KeySwitchField.swift */; };
+		72BBCBBE827F6FD4BF08360909344E4A /* CanMountTextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8535ED18112B976CAE912AF14EF636A /* CanMountTextInputAccessoryView.swift */; };
+		77978BBD44F0E18402A03059E04922A5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		7BB99F88DB7179DB9060BDEC958A8F85 /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E33992914002E599806C0AFCB707DF /* Divider.swift */; };
+		7D62ECB33712C3B732E073F08E19516A /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826351A34F744C0C45EFCD93F794E610 /* Row.swift */; };
+		7E5DDE772DA4B705CD4893BDAA8FAFB9 /* KeyValueField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B9F51B5C0F7B574858FC126A3141B9 /* KeyValueField.swift */; };
+		8EB21C0554FA5CDEA471B3B964285112 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30142DBB450C805C52267AD5019F297E /* TextInput.swift */; };
+		97A28EAC3F0A0E160E61EB8DA1335053 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97309FECCF4FD1BBC0C45B8DC00318F5 /* Config.swift */; };
+		9C632FBD8977E2094017ED122269FDD2 /* KeyNumDialField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B937D674781AA6CE3E7206E7CE0052 /* KeyNumDialField.swift */; };
+		9E15D484BBACE6ABE83C5501101D5C13 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848D5B04010901119EF15EF6ECDF083 /* TextField.swift */; };
+		BB6447EB5924CD2D2FE331D92EED5215 /* PhoneInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A56D6B7943D338B2854B176C838119 /* PhoneInput.swift */; };
+		BBE553D52D53418B987ABC995A43F6EB /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADCBA84692E15658D339B7B0ACAB9CC /* FloatLabelTextField.swift */; };
+		D69B3B2E7ADDF7BCAED5DCD23C32D444 /* DARFormBuilder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D46AE1EC3084F39FA0619DFFFF5D7FB7 /* DARFormBuilder-dummy.m */; };
+		DA8B21506865D494F31BC8F3C968F70E /* SelectField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472BFF48D037B0F158B954C7B0D4A53D /* SelectField.swift */; };
+		DC6F6D7B212C126A384078534EF618F5 /* DARFormBuilder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1186614CC229F5CEAB4C4592C48D756 /* DARFormBuilder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E24937EA8A96C107A429F9738B19C0DA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		EC766E7B5B19EA5207287376ACEE47F6 /* HeadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D84B209B68828CD6613A9F8F4C3BE /* HeadingLabel.swift */; };
+		F1D58926C47E318EBFCDD894B92AC396 /* CanCalculateOwnHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11043E808CDA0850B312936197F2F442 /* CanCalculateOwnHeight.swift */; };
+		F9D9C9D228D91ACB966922C6975B32CF /* Pods-DARFormBuilder_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 300B8B9E9D91CEE61A879840664CF008 /* Pods-DARFormBuilder_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		AF61BE7AFA7433B9D4F0C34565BA605C /* PBXContainerItemProxy */ = {
+		89451D2A8F072A08C37E3813FAFFAEB9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = CD9C03769B4A64CFCAF93BB3838FCFA5;
+			remoteGlobalIDString = 5EA4EA3C3B5297483A4E30F6261D6E9C;
 			remoteInfo = "Pods-DARFormBuilder_Example";
 		};
-		C9E38AA873C8DD2C0FADE28BFE54F0A6 /* PBXContainerItemProxy */ = {
+		DBD6DCAE105CFA1C6E32736D9E4E7FC1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 336F860F0479E5F7D86496ACECE3D498;
+			remoteGlobalIDString = 50D78636958229C98048943AD86CBB5D;
 			remoteInfo = DARFormBuilder;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		02B77646840A3ABD2A500D09B3617B21 /* Pods-DARFormBuilder_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DARFormBuilder_Tests-resources.sh"; sourceTree = "<group>"; };
-		04B32910B21C1E42C0B02643EC55DEBA /* Pods_DARFormBuilder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DARFormBuilder_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		04B32910B21C1E42C0B02643EC55DEBA /* Pods_DARFormBuilder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DARFormBuilder_Tests.framework; path = "Pods-DARFormBuilder_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B00C3A732227BB32C309546F3734818 /* Pods-DARFormBuilder_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DARFormBuilder_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		11043E808CDA0850B312936197F2F442 /* CanCalculateOwnHeight.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CanCalculateOwnHeight.swift; sourceTree = "<group>"; };
 		1374A9CB65E0B3D16B9BCBE2CCD74DEC /* KeySwitchField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeySwitchField.swift; sourceTree = "<group>"; };
@@ -71,26 +71,26 @@
 		40A56D6B7943D338B2854B176C838119 /* PhoneInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhoneInput.swift; sourceTree = "<group>"; };
 		426D84B209B68828CD6613A9F8F4C3BE /* HeadingLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HeadingLabel.swift; sourceTree = "<group>"; };
 		430DD01E0355D6B045D4A17C2F71E5D1 /* Pods-DARFormBuilder_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DARFormBuilder_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		438972C427847BAFD131729F5C1F700A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		438972C427847BAFD131729F5C1F700A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		472BFF48D037B0F158B954C7B0D4A53D /* SelectField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SelectField.swift; sourceTree = "<group>"; };
 		4B68740B475F405003C1C560CC735938 /* Pods-DARFormBuilder_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DARFormBuilder_Tests.modulemap"; sourceTree = "<group>"; };
 		53B6E2521680A773AF4036C6DBAC8C8E /* TextInputAccessoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextInputAccessoryView.swift; sourceTree = "<group>"; };
+		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5D9CBB7704B3A6967319DAB95EFFC813 /* Pods-DARFormBuilder_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DARFormBuilder_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5E1B4E3CBEC65BBC1F845134173E2069 /* SectionDivider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SectionDivider.swift; sourceTree = "<group>"; };
 		62E645E56813FAA866A7703ABA713024 /* DARFormBuilder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DARFormBuilder.modulemap; sourceTree = "<group>"; };
 		657522664E3F5543284F690D8206D15A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6C81246742320AC0618923F58E369644 /* Pods-DARFormBuilder_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DARFormBuilder_Example-frameworks.sh"; sourceTree = "<group>"; };
-		6C8D4698470F3D151499D62306E4CF20 /* Pods_DARFormBuilder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DARFormBuilder_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C8D4698470F3D151499D62306E4CF20 /* Pods_DARFormBuilder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DARFormBuilder_Example.framework; path = "Pods-DARFormBuilder_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F3597CC302CB07F29849F947FACF5E7 /* Pods-DARFormBuilder_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DARFormBuilder_Tests-dummy.m"; sourceTree = "<group>"; };
-		70535EED14CB0445501C62AA7C8E9D8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		70535EED14CB0445501C62AA7C8E9D8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		73CEA8E6F26748B26F275F9A0F75AE82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		75E33992914002E599806C0AFCB707DF /* Divider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
 		7ADCBA84692E15658D339B7B0ACAB9CC /* FloatLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
 		826351A34F744C0C45EFCD93F794E610 /* Row.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		8CBF6FC43CF4C59990318DDB32F6E9E4 /* Pods-DARFormBuilder_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DARFormBuilder_Example.release.xcconfig"; sourceTree = "<group>"; };
-		8FFC1AE4CBB0539946BC432C2FCD8498 /* DARFormBuilder.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = DARFormBuilder.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		8FFC1AE4CBB0539946BC432C2FCD8498 /* DARFormBuilder.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = DARFormBuilder.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		97309FECCF4FD1BBC0C45B8DC00318F5 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = DARFormBuilder/Sources/Config.swift; sourceTree = "<group>"; };
 		991166A4E233E38D88DE81C506843F62 /* Pods-DARFormBuilder_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DARFormBuilder_Example-resources.sh"; sourceTree = "<group>"; };
 		9DC1F5E92BE79EC90C28B1E28944260E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -108,32 +108,32 @@
 		D75BFA6CA03E6E56FEDDA7BCD743BAC0 /* DateInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DateInput.swift; sourceTree = "<group>"; };
 		DAAA0E3973A5E77F172265B60158F670 /* Pods-DARFormBuilder_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DARFormBuilder_Example-dummy.m"; sourceTree = "<group>"; };
 		E47E0893D939459F5331B8EB2AFAEF70 /* Pods-DARFormBuilder_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DARFormBuilder_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		EF3845B9A3DC899936E13DC95EA16F78 /* DARFormBuilder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DARFormBuilder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF3845B9A3DC899936E13DC95EA16F78 /* DARFormBuilder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DARFormBuilder.framework; path = DARFormBuilder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8535ED18112B976CAE912AF14EF636A /* CanMountTextInputAccessoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CanMountTextInputAccessoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		05983F3469D1B13508F0016D412A060F /* Frameworks */ = {
+		0CCB863D968E225BDB356E0990C3F213 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12AED14A1AED763497F3EBC6F331F886 /* Foundation.framework in Frameworks */,
+				2A9D00B84F2648C0F45B3EBCAD3C4CBD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82AE3A8D7345DA3DFD9E42126A1E06E0 /* Frameworks */ = {
+		84A34A54D48D08920BF51E13276E520F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D568FA56566FC35E8AACD95A83E0F80B /* Foundation.framework in Frameworks */,
+				77978BBD44F0E18402A03059E04922A5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F8159050E20FEF4F897C30E47169D87D /* Frameworks */ = {
+		AC5C03E8821D8FD810EF17F856A45C20 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				91AA797BC22E5BAEF6883DFF14F55844 /* Foundation.framework in Frameworks */,
+				E24937EA8A96C107A429F9738B19C0DA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,6 +218,14 @@
 			path = DARFormBuilder/Sources/Traits;
 			sourceTree = "<group>";
 		};
+		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
@@ -268,7 +276,7 @@
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -281,14 +289,6 @@
 			);
 			name = Row;
 			path = DARFormBuilder/Sources/Row;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		E706728728494C7CB28A62C5D9E29123 /* Views */ = {
@@ -323,40 +323,60 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		999AE8A105C6D6BFC8B85B2F3E2E3C35 /* Headers */ = {
+		18163198D2EFC9652474BB41FB292E04 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79D4BEA77336A7496D1021B2AEC1F1D9 /* Pods-DARFormBuilder_Tests-umbrella.h in Headers */,
+				5B10924F2C47C87BF3F3BA4896E0EDC1 /* Pods-DARFormBuilder_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A3EA1A68472F7365DE61855E5CC9CBC8 /* Headers */ = {
+		5BB659C54D41894AFA6660FC9E411925 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				30E96E16AEE4B8468419FC236043F3EE /* Pods-DARFormBuilder_Example-umbrella.h in Headers */,
+				DC6F6D7B212C126A384078534EF618F5 /* DARFormBuilder-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C586B55FAD62ADAD908BC73F3826F026 /* Headers */ = {
+		A899BF7870D4C5653C9646A461A52CEC /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3916383AB6A162F67AABD6499EAD9AC /* DARFormBuilder-umbrella.h in Headers */,
+				F9D9C9D228D91ACB966922C6975B32CF /* Pods-DARFormBuilder_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		336F860F0479E5F7D86496ACECE3D498 /* DARFormBuilder */ = {
+		06147E119328FB5556F62DF3BE4A4FB6 /* Pods-DARFormBuilder_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 4260F13288F5FCD6176AEDC94D6D59C2 /* Build configuration list for PBXNativeTarget "DARFormBuilder" */;
+			buildConfigurationList = C6A9DE3399CFA61D55BF29D6F3287506 /* Build configuration list for PBXNativeTarget "Pods-DARFormBuilder_Tests" */;
 			buildPhases = (
-				F4FDDF4EF0FC9E366E82CF8E602A236F /* Sources */,
-				F8159050E20FEF4F897C30E47169D87D /* Frameworks */,
-				C586B55FAD62ADAD908BC73F3826F026 /* Headers */,
+				18163198D2EFC9652474BB41FB292E04 /* Headers */,
+				606E8192D6BABF0A88B2C622370DCB17 /* Sources */,
+				0CCB863D968E225BDB356E0990C3F213 /* Frameworks */,
+				BCB1A81122A558FF1DB4F7FD411A42C9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C6EDEE21498E0CFBA07CC73CF93C9A1 /* PBXTargetDependency */,
+			);
+			name = "Pods-DARFormBuilder_Tests";
+			productName = "Pods-DARFormBuilder_Tests";
+			productReference = 04B32910B21C1E42C0B02643EC55DEBA /* Pods_DARFormBuilder_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		50D78636958229C98048943AD86CBB5D /* DARFormBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1565C60F7F5460484523817C4CE48F5 /* Build configuration list for PBXNativeTarget "DARFormBuilder" */;
+			buildPhases = (
+				5BB659C54D41894AFA6660FC9E411925 /* Headers */,
+				5A36247FC44F2B79E73B93665D752481 /* Sources */,
+				84A34A54D48D08920BF51E13276E520F /* Frameworks */,
+				3BBEF80E0104D11F1B82136BE10150F8 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -367,36 +387,19 @@
 			productReference = EF3845B9A3DC899936E13DC95EA16F78 /* DARFormBuilder.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		87AA776F115875454562D81686BA2C28 /* Pods-DARFormBuilder_Tests */ = {
+		5EA4EA3C3B5297483A4E30F6261D6E9C /* Pods-DARFormBuilder_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = B8A05DACFA836CD67E0A84DB550F5381 /* Build configuration list for PBXNativeTarget "Pods-DARFormBuilder_Tests" */;
+			buildConfigurationList = 18B4DF98D1625A0CC6F1CFE0104F85E7 /* Build configuration list for PBXNativeTarget "Pods-DARFormBuilder_Example" */;
 			buildPhases = (
-				48D7DEEB260003D5BF438C120E99F2DA /* Sources */,
-				05983F3469D1B13508F0016D412A060F /* Frameworks */,
-				999AE8A105C6D6BFC8B85B2F3E2E3C35 /* Headers */,
+				A899BF7870D4C5653C9646A461A52CEC /* Headers */,
+				33967CCFFA9DFB2EA68A686C68A59EB8 /* Sources */,
+				AC5C03E8821D8FD810EF17F856A45C20 /* Frameworks */,
+				4BCF18BE1778A42C67DDB1E52E114E42 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E9A033484E259A4A1A9D5E099F08C75D /* PBXTargetDependency */,
-			);
-			name = "Pods-DARFormBuilder_Tests";
-			productName = "Pods-DARFormBuilder_Tests";
-			productReference = 04B32910B21C1E42C0B02643EC55DEBA /* Pods_DARFormBuilder_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		CD9C03769B4A64CFCAF93BB3838FCFA5 /* Pods-DARFormBuilder_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CF0BF5A837760C18DF3E7EC1C5C5FC0F /* Build configuration list for PBXNativeTarget "Pods-DARFormBuilder_Example" */;
-			buildPhases = (
-				F4F267947AEB967C118DAB5E44DA5A9F /* Sources */,
-				82AE3A8D7345DA3DFD9E42126A1E06E0 /* Frameworks */,
-				A3EA1A68472F7365DE61855E5CC9CBC8 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				32198E3B17D47AB6CCC7AF150CCEEC3E /* PBXTargetDependency */,
+				BFBC375301D272221E799DFB4BE9435A /* PBXTargetDependency */,
 			);
 			name = "Pods-DARFormBuilder_Example";
 			productName = "Pods-DARFormBuilder_Example";
@@ -424,80 +427,212 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				336F860F0479E5F7D86496ACECE3D498 /* DARFormBuilder */,
-				CD9C03769B4A64CFCAF93BB3838FCFA5 /* Pods-DARFormBuilder_Example */,
-				87AA776F115875454562D81686BA2C28 /* Pods-DARFormBuilder_Tests */,
+				50D78636958229C98048943AD86CBB5D /* DARFormBuilder */,
+				5EA4EA3C3B5297483A4E30F6261D6E9C /* Pods-DARFormBuilder_Example */,
+				06147E119328FB5556F62DF3BE4A4FB6 /* Pods-DARFormBuilder_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		3BBEF80E0104D11F1B82136BE10150F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BCF18BE1778A42C67DDB1E52E114E42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BCB1A81122A558FF1DB4F7FD411A42C9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		48D7DEEB260003D5BF438C120E99F2DA /* Sources */ = {
+		33967CCFFA9DFB2EA68A686C68A59EB8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F393C229AFADAED77B4BE3D556B845D5 /* Pods-DARFormBuilder_Tests-dummy.m in Sources */,
+				41477DFC6331A6BEA4335D160CD67B4A /* Pods-DARFormBuilder_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4F267947AEB967C118DAB5E44DA5A9F /* Sources */ = {
+		5A36247FC44F2B79E73B93665D752481 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0BD28919CF0FC36CC6ABAC5893E2162E /* Pods-DARFormBuilder_Example-dummy.m in Sources */,
+				3CCA729132C46F6B45CF02CF80DCD59B /* CanBeValidated.swift in Sources */,
+				F1D58926C47E318EBFCDD894B92AC396 /* CanCalculateOwnHeight.swift in Sources */,
+				72BBCBBE827F6FD4BF08360909344E4A /* CanMountTextInputAccessoryView.swift in Sources */,
+				97A28EAC3F0A0E160E61EB8DA1335053 /* Config.swift in Sources */,
+				D69B3B2E7ADDF7BCAED5DCD23C32D444 /* DARFormBuilder-dummy.m in Sources */,
+				2309A44C37703379173400CB99DFC65D /* DateInput.swift in Sources */,
+				7BB99F88DB7179DB9060BDEC958A8F85 /* Divider.swift in Sources */,
+				BBE553D52D53418B987ABC995A43F6EB /* FloatLabelTextField.swift in Sources */,
+				3DA764C5EB344EF14E87E98B8BE55D44 /* FormTableViewController.swift in Sources */,
+				EC766E7B5B19EA5207287376ACEE47F6 /* HeadingLabel.swift in Sources */,
+				9C632FBD8977E2094017ED122269FDD2 /* KeyNumDialField.swift in Sources */,
+				69CBB0E5190923B18F8CD7B88DEB2429 /* KeySwitchField.swift in Sources */,
+				7E5DDE772DA4B705CD4893BDAA8FAFB9 /* KeyValueField.swift in Sources */,
+				BB6447EB5924CD2D2FE331D92EED5215 /* PhoneInput.swift in Sources */,
+				7D62ECB33712C3B732E073F08E19516A /* Row.swift in Sources */,
+				4304B9DEAD2928CA45C2996FC509F8EA /* SectionDivider.swift in Sources */,
+				DA8B21506865D494F31BC8F3C968F70E /* SelectField.swift in Sources */,
+				562A80627683613090A0096B1019D407 /* SwiftMaskTextField.swift in Sources */,
+				9E15D484BBACE6ABE83C5501101D5C13 /* TextField.swift in Sources */,
+				8EB21C0554FA5CDEA471B3B964285112 /* TextInput.swift in Sources */,
+				2F754F5D5BC8421BFF2AFB1815BAE12C /* TextInputAccessoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F4FDDF4EF0FC9E366E82CF8E602A236F /* Sources */ = {
+		606E8192D6BABF0A88B2C622370DCB17 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				677534539D7F396A00E374CD7CB4526D /* CanBeValidated.swift in Sources */,
-				3A0E4EA733526E33E1010261388DE383 /* CanCalculateOwnHeight.swift in Sources */,
-				C741CE2D00F15A880295197CBB7EC829 /* CanMountTextInputAccessoryView.swift in Sources */,
-				09FA1B40A60C40181162F8EDCC983A62 /* Config.swift in Sources */,
-				F13BF89F9BC13084FA5918D37AACFE90 /* DARFormBuilder-dummy.m in Sources */,
-				A5C6E439365118F8A5CD4CCCFA405658 /* DateInput.swift in Sources */,
-				C8EBDE630FE345FA27804C3ACDD5C99A /* Divider.swift in Sources */,
-				4C4DE6499B67BC4457E98C430C199EEC /* FloatLabelTextField.swift in Sources */,
-				25715B1821DAC0C30D44CE2C27367AC4 /* FormTableViewController.swift in Sources */,
-				DA935EC6B7A2F3C4104811ACD3EAA02B /* HeadingLabel.swift in Sources */,
-				8A4D6ABBE3BC883787C34393D082562E /* KeyNumDialField.swift in Sources */,
-				B02CF9E6344CA5EF254D109A29187BCE /* KeySwitchField.swift in Sources */,
-				FF65DA5B1B28C7F20D8122329DA78F96 /* KeyValueField.swift in Sources */,
-				117C74F0B96224949DEC7D760E44C1EF /* PhoneInput.swift in Sources */,
-				431A25F7E60BC193F538FA59088F1327 /* Row.swift in Sources */,
-				BAD078BBE6E6FD10D332C00CF1CF7598 /* SectionDivider.swift in Sources */,
-				5269EB283BD9F5558AADB20E81327087 /* SelectField.swift in Sources */,
-				3D1ED66296C7AACF335E89EAC8579874 /* SwiftMaskTextField.swift in Sources */,
-				C572818D62A5BF41D66E84C0290191A4 /* TextField.swift in Sources */,
-				EE05C47301EF3564F4DC1CACC6906B3C /* TextInput.swift in Sources */,
-				2F64AA4AAB69C41373DC1830ED15F65F /* TextInputAccessoryView.swift in Sources */,
+				18A7E3B45330B429D68ECDBE615EE3DC /* Pods-DARFormBuilder_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		32198E3B17D47AB6CCC7AF150CCEEC3E /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DARFormBuilder;
-			target = 336F860F0479E5F7D86496ACECE3D498 /* DARFormBuilder */;
-			targetProxy = C9E38AA873C8DD2C0FADE28BFE54F0A6 /* PBXContainerItemProxy */;
-		};
-		E9A033484E259A4A1A9D5E099F08C75D /* PBXTargetDependency */ = {
+		1C6EDEE21498E0CFBA07CC73CF93C9A1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-DARFormBuilder_Example";
-			target = CD9C03769B4A64CFCAF93BB3838FCFA5 /* Pods-DARFormBuilder_Example */;
-			targetProxy = AF61BE7AFA7433B9D4F0C34565BA605C /* PBXContainerItemProxy */;
+			target = 5EA4EA3C3B5297483A4E30F6261D6E9C /* Pods-DARFormBuilder_Example */;
+			targetProxy = 89451D2A8F072A08C37E3813FAFFAEB9 /* PBXContainerItemProxy */;
+		};
+		BFBC375301D272221E799DFB4BE9435A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DARFormBuilder;
+			target = 50D78636958229C98048943AD86CBB5D /* DARFormBuilder */;
+			targetProxy = DBD6DCAE105CFA1C6E32736D9E4E7FC1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0BEF690C2352B5DC99DC6321C50E8D5B /* Debug */ = {
+		1F797CF61561149E51F7E37D23AB46C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E47E0893D939459F5331B8EB2AFAEF70 /* Pods-DARFormBuilder_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DARFormBuilder_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DARFormBuilder_Tests/Pods-DARFormBuilder_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B7F6AF1D2E5F2EE93D4DB8F99B6C57B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CBF6FC43CF4C59990318DDB32F6E9E4 /* Pods-DARFormBuilder_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DARFormBuilder_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DARFormBuilder_Example/Pods-DARFormBuilder_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		34BCBAE12DFF67AA1559354B02D74276 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEBE480610CF1CFF1FE2DEAD8C3BF467 /* Pods-DARFormBuilder_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DARFormBuilder_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DARFormBuilder_Example/Pods-DARFormBuilder_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		447ADE8C166A07C4511DA2AC39503EAF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF19E6ED60DC029D2DAEC20DBDEAAC39 /* DARFormBuilder.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -526,10 +661,11 @@
 			};
 			name = Debug;
 		};
-		456BA8C260960786F5FA6C1DAFC03EB6 /* Release */ = {
+		558AC46024DC7D076F19BF711DAF72D2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BF19E6ED60DC029D2DAEC20DBDEAAC39 /* DARFormBuilder.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -550,7 +686,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -559,7 +696,42 @@
 			};
 			name = Release;
 		};
-		553022A828EE1991F07D2D73F565AEF8 /* Debug */ = {
+		C0E8E640D77ADA38CBEF08B8E048A035 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23ABAA2FC72439562D13272F4278DEA8 /* Pods-DARFormBuilder_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DARFormBuilder_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DARFormBuilder_Tests/Pods-DARFormBuilder_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C92782E717C52E3633C9A5F211E7987A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -613,7 +785,8 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
@@ -622,7 +795,7 @@
 			};
 			name = Debug;
 		};
-		58CE816B060A41D32CEC095441D0E3E0 /* Release */ = {
+		EA8C7AF90938697605468604B2A17B9F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -674,188 +847,48 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
 		};
-		6951E677912E242EB21C6362BC69A40B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E47E0893D939459F5331B8EB2AFAEF70 /* Pods-DARFormBuilder_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DARFormBuilder_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DARFormBuilder_Tests/Pods-DARFormBuilder_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		70483011632054C529E735AD3D114FAB /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEBE480610CF1CFF1FE2DEAD8C3BF467 /* Pods-DARFormBuilder_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DARFormBuilder_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DARFormBuilder_Example/Pods-DARFormBuilder_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F5B7AE376E6615BFC1F7D32850AE574B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23ABAA2FC72439562D13272F4278DEA8 /* Pods-DARFormBuilder_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DARFormBuilder_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DARFormBuilder_Tests/Pods-DARFormBuilder_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		FFEB49BEE66045C49FB19A40F6B87E48 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CBF6FC43CF4C59990318DDB32F6E9E4 /* Pods-DARFormBuilder_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DARFormBuilder_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DARFormBuilder_Example/Pods-DARFormBuilder_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		18B4DF98D1625A0CC6F1CFE0104F85E7 /* Build configuration list for PBXNativeTarget "Pods-DARFormBuilder_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				34BCBAE12DFF67AA1559354B02D74276 /* Debug */,
+				2B7F6AF1D2E5F2EE93D4DB8F99B6C57B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				553022A828EE1991F07D2D73F565AEF8 /* Debug */,
-				58CE816B060A41D32CEC095441D0E3E0 /* Release */,
+				C92782E717C52E3633C9A5F211E7987A /* Debug */,
+				EA8C7AF90938697605468604B2A17B9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4260F13288F5FCD6176AEDC94D6D59C2 /* Build configuration list for PBXNativeTarget "DARFormBuilder" */ = {
+		C6A9DE3399CFA61D55BF29D6F3287506 /* Build configuration list for PBXNativeTarget "Pods-DARFormBuilder_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0BEF690C2352B5DC99DC6321C50E8D5B /* Debug */,
-				456BA8C260960786F5FA6C1DAFC03EB6 /* Release */,
+				1F797CF61561149E51F7E37D23AB46C9 /* Debug */,
+				C0E8E640D77ADA38CBEF08B8E048A035 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B8A05DACFA836CD67E0A84DB550F5381 /* Build configuration list for PBXNativeTarget "Pods-DARFormBuilder_Tests" */ = {
+		D1565C60F7F5460484523817C4CE48F5 /* Build configuration list for PBXNativeTarget "DARFormBuilder" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6951E677912E242EB21C6362BC69A40B /* Debug */,
-				F5B7AE376E6615BFC1F7D32850AE574B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		CF0BF5A837760C18DF3E7EC1C5C5FC0F /* Build configuration list for PBXNativeTarget "Pods-DARFormBuilder_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				70483011632054C529E735AD3D114FAB /* Debug */,
-				FFEB49BEE66045C49FB19A40F6B87E48 /* Release */,
+				447ADE8C166A07C4511DA2AC39503EAF /* Debug */,
+				558AC46024DC7D076F19BF711DAF72D2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
