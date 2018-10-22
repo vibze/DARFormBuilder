@@ -14,7 +14,7 @@ Framework provides two types of controllers to build forms. One is basic with le
 
 ### FormTableViewController
 
-This controller just renders a layout with the cells you provide. You pass it an array of views for them to be rendered in a table. Framework provides a [full-featured set of inputs](github) that you can use here. 
+This controller just renders a layout with the cells you provide. You pass it an array of views for them to be rendered in a table. Framework provides a [full-featured set of inputs](github) that you can use here.
 
 Example:
 
@@ -32,14 +32,14 @@ tbl.rows = [
 ]
 ```
 
-When using `FormTableViewController` you are responsible for validating fields and reacting to field values changes. For validation purposes built-in input classes have an `errors` property which will return a list of error messages for a given field. `errors` array being empty means that field has passed validation. 
+When using `FormTableViewController` you are responsible for validating fields and reacting to field values changes. For validation purposes built-in input classes have an `errors` property which will return a list of error messages for a given field. `errors` array being empty means that field has passed validation.
 
 
 #### List of available cell types
 
 #### `HeadingLabel`
 Cell for displaying form titles with description. Big font, contrasty color.
-![headingLabelImage](Example/Images/HeadingLabel.png)
+![headingLabelImage](Images/HeadingLabel.png)
 
 #### `KeyNumDialField`
 Label with number dial. Values can be limited by range.
@@ -47,27 +47,27 @@ Label with number dial. Values can be limited by range.
 
 #### `TextInput`
 Simple textField. Can be limited by max length.
-![textInputImage](Example/Images/TextInput.png)
+![textInputImage](Images/TextInput.png)
 
 #### `DateInput`
 Date picker. Supports different input modes.
-![dateInputImage](Example/Images/DateInput.png)
+![dateInputImage](Images/DateInput.png)
 
 #### `PhoneInput`
 Phone input. Can display only digits.
-![phoneInputImage](Example/Images/PhoneInput.png)
+![phoneInputImage](Images/PhoneInput.png)
 
 #### `KeySwitchField`
 Label with switch view on the right.
-![keySwitchFieldImage](Example/Images/KeySwitchField.png)
+![keySwitchFieldImage](Images/KeySwitchField.png)
 
 #### `SelectField`
 Label with disclosure indicator. Clickable.
-![selectFieldImage](Example/Images/SelectField.png)
+![selectFieldImage](Images/SelectField.png)
 
 #### `KeyValueField`
 Label with key and value on the right.
-![keyValueFieldImage](Example/Images/KeyValueField.png)
+![keyValueFieldImage](Images/KeyValueField.png)
 
 
 
