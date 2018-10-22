@@ -7,35 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		09FA1B40A60C40181162F8EDCC983A62 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97309FECCF4FD1BBC0C45B8DC00318F5 /* Config.swift */; };
 		0BD28919CF0FC36CC6ABAC5893E2162E /* Pods-DARFormBuilder_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DAAA0E3973A5E77F172265B60158F670 /* Pods-DARFormBuilder_Example-dummy.m */; };
+		117C74F0B96224949DEC7D760E44C1EF /* PhoneInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A56D6B7943D338B2854B176C838119 /* PhoneInput.swift */; };
 		12AED14A1AED763497F3EBC6F331F886 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		25715B1821DAC0C30D44CE2C27367AC4 /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB275520CB0F9356572C7A880177B029 /* FormTableViewController.swift */; };
+		2F64AA4AAB69C41373DC1830ED15F65F /* TextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53B6E2521680A773AF4036C6DBAC8C8E /* TextInputAccessoryView.swift */; };
 		30E96E16AEE4B8468419FC236043F3EE /* Pods-DARFormBuilder_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 300B8B9E9D91CEE61A879840664CF008 /* Pods-DARFormBuilder_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5FAC7186A03A6C4C2B1AED6CB5297BEC /* DARFormBuilder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FBA3604E9F79B671C52F09B7E692C9A /* DARFormBuilder-dummy.m */; };
+		3A0E4EA733526E33E1010261388DE383 /* CanCalculateOwnHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11043E808CDA0850B312936197F2F442 /* CanCalculateOwnHeight.swift */; };
+		3D1ED66296C7AACF335E89EAC8579874 /* SwiftMaskTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17C0F4FF864AD2B4F1EFC6C2F68CA938 /* SwiftMaskTextField.swift */; };
+		431A25F7E60BC193F538FA59088F1327 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 826351A34F744C0C45EFCD93F794E610 /* Row.swift */; };
+		4C4DE6499B67BC4457E98C430C199EEC /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ADCBA84692E15658D339B7B0ACAB9CC /* FloatLabelTextField.swift */; };
+		5269EB283BD9F5558AADB20E81327087 /* SelectField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472BFF48D037B0F158B954C7B0D4A53D /* SelectField.swift */; };
+		677534539D7F396A00E374CD7CB4526D /* CanBeValidated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC06208EE54554BDB75722EB14CF4B /* CanBeValidated.swift */; };
 		79D4BEA77336A7496D1021B2AEC1F1D9 /* Pods-DARFormBuilder_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A012FF97463F128FB6D064C29AC543D4 /* Pods-DARFormBuilder_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		84478291E919D06A91559B8E538E82B4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		84AEF467216F5ECB0038FFC1 /* FormTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF466216F5ECB0038FFC1 /* FormTableViewController.swift */; };
-		84AEF46A216F5EEC0038FFC1 /* CanBeValidated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF469216F5EEC0038FFC1 /* CanBeValidated.swift */; };
-		84AEF46C216F5EFF0038FFC1 /* CanCalculateOwnHeight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF46B216F5EFF0038FFC1 /* CanCalculateOwnHeight.swift */; };
-		84AEF46E216F5F170038FFC1 /* CanMountTextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF46D216F5F170038FFC1 /* CanMountTextInputAccessoryView.swift */; };
-		84AEF47B216F62430038FFC1 /* KeyValueField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF470216F62430038FFC1 /* KeyValueField.swift */; };
-		84AEF47C216F62430038FFC1 /* SelectField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF471216F62430038FFC1 /* SelectField.swift */; };
-		84AEF47D216F62430038FFC1 /* TextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF472216F62430038FFC1 /* TextInputAccessoryView.swift */; };
-		84AEF47E216F62430038FFC1 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF473216F62430038FFC1 /* TextField.swift */; };
-		84AEF47F216F62430038FFC1 /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF474216F62430038FFC1 /* TextInput.swift */; };
-		84AEF480216F62430038FFC1 /* HeadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF475216F62430038FFC1 /* HeadingLabel.swift */; };
-		84AEF481216F62430038FFC1 /* PhoneInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF476216F62430038FFC1 /* PhoneInput.swift */; };
-		84AEF482216F62430038FFC1 /* KeySwitchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF477216F62430038FFC1 /* KeySwitchField.swift */; };
-		84AEF483216F62430038FFC1 /* SectionDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF478216F62430038FFC1 /* SectionDivider.swift */; };
-		84AEF484216F62430038FFC1 /* KeyNumDialField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF479216F62430038FFC1 /* KeyNumDialField.swift */; };
-		84AEF485216F62430038FFC1 /* DateInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF47A216F62430038FFC1 /* DateInput.swift */; };
-		84AEF488216F62570038FFC1 /* SwiftMaskTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF487216F62570038FFC1 /* SwiftMaskTextField.swift */; };
-		84AEF48C216F626A0038FFC1 /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF48A216F626A0038FFC1 /* Divider.swift */; };
-		84AEF48D216F626A0038FFC1 /* Row.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF48B216F626A0038FFC1 /* Row.swift */; };
-		84AEF48F216F62780038FFC1 /* FloatLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF48E216F62780038FFC1 /* FloatLabelTextField.swift */; };
-		84AEF491216F627D0038FFC1 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEF490216F627D0038FFC1 /* Config.swift */; };
-		C391CF91C72C2DFE564DF984C504DEFB /* DARFormBuilder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6081359A8A29547BAAF77C327F3D0149 /* DARFormBuilder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A4D6ABBE3BC883787C34393D082562E /* KeyNumDialField.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3B937D674781AA6CE3E7206E7CE0052 /* KeyNumDialField.swift */; };
+		91AA797BC22E5BAEF6883DFF14F55844 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		A5C6E439365118F8A5CD4CCCFA405658 /* DateInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = D75BFA6CA03E6E56FEDDA7BCD743BAC0 /* DateInput.swift */; };
+		B02CF9E6344CA5EF254D109A29187BCE /* KeySwitchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1374A9CB65E0B3D16B9BCBE2CCD74DEC /* KeySwitchField.swift */; };
+		BAD078BBE6E6FD10D332C00CF1CF7598 /* SectionDivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E1B4E3CBEC65BBC1F845134173E2069 /* SectionDivider.swift */; };
+		C572818D62A5BF41D66E84C0290191A4 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B848D5B04010901119EF15EF6ECDF083 /* TextField.swift */; };
+		C741CE2D00F15A880295197CBB7EC829 /* CanMountTextInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8535ED18112B976CAE912AF14EF636A /* CanMountTextInputAccessoryView.swift */; };
+		C8EBDE630FE345FA27804C3ACDD5C99A /* Divider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75E33992914002E599806C0AFCB707DF /* Divider.swift */; };
 		D568FA56566FC35E8AACD95A83E0F80B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DA935EC6B7A2F3C4104811ACD3EAA02B /* HeadingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 426D84B209B68828CD6613A9F8F4C3BE /* HeadingLabel.swift */; };
+		EE05C47301EF3564F4DC1CACC6906B3C /* TextInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30142DBB450C805C52267AD5019F297E /* TextInput.swift */; };
+		F13BF89F9BC13084FA5918D37AACFE90 /* DARFormBuilder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D46AE1EC3084F39FA0619DFFFF5D7FB7 /* DARFormBuilder-dummy.m */; };
+		F3916383AB6A162F67AABD6499EAD9AC /* DARFormBuilder-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A1186614CC229F5CEAB4C4592C48D756 /* DARFormBuilder-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F393C229AFADAED77B4BE3D556B845D5 /* Pods-DARFormBuilder_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3597CC302CB07F29849F947FACF5E7 /* Pods-DARFormBuilder_Tests-dummy.m */; };
+		FF65DA5B1B28C7F20D8122329DA78F96 /* KeyValueField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B9F51B5C0F7B574858FC126A3141B9 /* KeyValueField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = FA09B747A5635E1C5B18F95C631F5FA4;
+			remoteGlobalIDString = 336F860F0479E5F7D86496ACECE3D498;
 			remoteInfo = DARFormBuilder;
 		};
 /* End PBXContainerItemProxy section */
@@ -59,57 +59,57 @@
 		02B77646840A3ABD2A500D09B3617B21 /* Pods-DARFormBuilder_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DARFormBuilder_Tests-resources.sh"; sourceTree = "<group>"; };
 		04B32910B21C1E42C0B02643EC55DEBA /* Pods_DARFormBuilder_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DARFormBuilder_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B00C3A732227BB32C309546F3734818 /* Pods-DARFormBuilder_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DARFormBuilder_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		0CCC518F944CE8B5000816EBBAB4A956 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11043E808CDA0850B312936197F2F442 /* CanCalculateOwnHeight.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CanCalculateOwnHeight.swift; sourceTree = "<group>"; };
+		1374A9CB65E0B3D16B9BCBE2CCD74DEC /* KeySwitchField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeySwitchField.swift; sourceTree = "<group>"; };
+		17C0F4FF864AD2B4F1EFC6C2F68CA938 /* SwiftMaskTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SwiftMaskTextField.swift; sourceTree = "<group>"; };
+		21B9F51B5C0F7B574858FC126A3141B9 /* KeyValueField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyValueField.swift; sourceTree = "<group>"; };
 		23ABAA2FC72439562D13272F4278DEA8 /* Pods-DARFormBuilder_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DARFormBuilder_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		2FBA3604E9F79B671C52F09B7E692C9A /* DARFormBuilder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DARFormBuilder-dummy.m"; sourceTree = "<group>"; };
+		2BCC06208EE54554BDB75722EB14CF4B /* CanBeValidated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CanBeValidated.swift; sourceTree = "<group>"; };
 		300B8B9E9D91CEE61A879840664CF008 /* Pods-DARFormBuilder_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DARFormBuilder_Example-umbrella.h"; sourceTree = "<group>"; };
+		30142DBB450C805C52267AD5019F297E /* TextInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
+		4084DE10F3A4519EE37CC4DA5865F53F /* DARFormBuilder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DARFormBuilder-prefix.pch"; sourceTree = "<group>"; };
+		40A56D6B7943D338B2854B176C838119 /* PhoneInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = PhoneInput.swift; sourceTree = "<group>"; };
+		426D84B209B68828CD6613A9F8F4C3BE /* HeadingLabel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HeadingLabel.swift; sourceTree = "<group>"; };
 		430DD01E0355D6B045D4A17C2F71E5D1 /* Pods-DARFormBuilder_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DARFormBuilder_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		438972C427847BAFD131729F5C1F700A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		472BFF48D037B0F158B954C7B0D4A53D /* SelectField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SelectField.swift; sourceTree = "<group>"; };
 		4B68740B475F405003C1C560CC735938 /* Pods-DARFormBuilder_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DARFormBuilder_Tests.modulemap"; sourceTree = "<group>"; };
-		57C4C8CA347AEAA73090AF15CBC9B63C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		53B6E2521680A773AF4036C6DBAC8C8E /* TextInputAccessoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextInputAccessoryView.swift; sourceTree = "<group>"; };
 		5D9CBB7704B3A6967319DAB95EFFC813 /* Pods-DARFormBuilder_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DARFormBuilder_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6081359A8A29547BAAF77C327F3D0149 /* DARFormBuilder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DARFormBuilder-umbrella.h"; sourceTree = "<group>"; };
+		5E1B4E3CBEC65BBC1F845134173E2069 /* SectionDivider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SectionDivider.swift; sourceTree = "<group>"; };
+		62E645E56813FAA866A7703ABA713024 /* DARFormBuilder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DARFormBuilder.modulemap; sourceTree = "<group>"; };
 		657522664E3F5543284F690D8206D15A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		6C81246742320AC0618923F58E369644 /* Pods-DARFormBuilder_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DARFormBuilder_Example-frameworks.sh"; sourceTree = "<group>"; };
 		6C8D4698470F3D151499D62306E4CF20 /* Pods_DARFormBuilder_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DARFormBuilder_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F3597CC302CB07F29849F947FACF5E7 /* Pods-DARFormBuilder_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DARFormBuilder_Tests-dummy.m"; sourceTree = "<group>"; };
-		84892DC54A8FC2020502DD4130679710 /* DARFormBuilder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DARFormBuilder.xcconfig; sourceTree = "<group>"; };
-		84AEF466216F5ECB0038FFC1 /* FormTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormTableViewController.swift; sourceTree = "<group>"; };
-		84AEF469216F5EEC0038FFC1 /* CanBeValidated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanBeValidated.swift; sourceTree = "<group>"; };
-		84AEF46B216F5EFF0038FFC1 /* CanCalculateOwnHeight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanCalculateOwnHeight.swift; sourceTree = "<group>"; };
-		84AEF46D216F5F170038FFC1 /* CanMountTextInputAccessoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanMountTextInputAccessoryView.swift; sourceTree = "<group>"; };
-		84AEF470216F62430038FFC1 /* KeyValueField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyValueField.swift; sourceTree = "<group>"; };
-		84AEF471216F62430038FFC1 /* SelectField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectField.swift; sourceTree = "<group>"; };
-		84AEF472216F62430038FFC1 /* TextInputAccessoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputAccessoryView.swift; sourceTree = "<group>"; };
-		84AEF473216F62430038FFC1 /* TextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
-		84AEF474216F62430038FFC1 /* TextInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInput.swift; sourceTree = "<group>"; };
-		84AEF475216F62430038FFC1 /* HeadingLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeadingLabel.swift; sourceTree = "<group>"; };
-		84AEF476216F62430038FFC1 /* PhoneInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneInput.swift; sourceTree = "<group>"; };
-		84AEF477216F62430038FFC1 /* KeySwitchField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeySwitchField.swift; sourceTree = "<group>"; };
-		84AEF478216F62430038FFC1 /* SectionDivider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SectionDivider.swift; sourceTree = "<group>"; };
-		84AEF479216F62430038FFC1 /* KeyNumDialField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyNumDialField.swift; sourceTree = "<group>"; };
-		84AEF47A216F62430038FFC1 /* DateInput.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateInput.swift; sourceTree = "<group>"; };
-		84AEF487216F62570038FFC1 /* SwiftMaskTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftMaskTextField.swift; sourceTree = "<group>"; };
-		84AEF48A216F626A0038FFC1 /* Divider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
-		84AEF48B216F626A0038FFC1 /* Row.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
-		84AEF48E216F62780038FFC1 /* FloatLabelTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
-		84AEF490216F627D0038FFC1 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		70535EED14CB0445501C62AA7C8E9D8F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		73CEA8E6F26748B26F275F9A0F75AE82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75E33992914002E599806C0AFCB707DF /* Divider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Divider.swift; sourceTree = "<group>"; };
+		7ADCBA84692E15658D339B7B0ACAB9CC /* FloatLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FloatLabelTextField.swift; sourceTree = "<group>"; };
+		826351A34F744C0C45EFCD93F794E610 /* Row.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Row.swift; sourceTree = "<group>"; };
 		8CBF6FC43CF4C59990318DDB32F6E9E4 /* Pods-DARFormBuilder_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DARFormBuilder_Example.release.xcconfig"; sourceTree = "<group>"; };
+		8FFC1AE4CBB0539946BC432C2FCD8498 /* DARFormBuilder.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = DARFormBuilder.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		97309FECCF4FD1BBC0C45B8DC00318F5 /* Config.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Config.swift; path = DARFormBuilder/Sources/Config.swift; sourceTree = "<group>"; };
 		991166A4E233E38D88DE81C506843F62 /* Pods-DARFormBuilder_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DARFormBuilder_Example-resources.sh"; sourceTree = "<group>"; };
 		9DC1F5E92BE79EC90C28B1E28944260E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A012FF97463F128FB6D064C29AC543D4 /* Pods-DARFormBuilder_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DARFormBuilder_Tests-umbrella.h"; sourceTree = "<group>"; };
-		A5C7DEF5BB930A609D62623A4EC0C9BC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		A1186614CC229F5CEAB4C4592C48D756 /* DARFormBuilder-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DARFormBuilder-umbrella.h"; sourceTree = "<group>"; };
+		A3B937D674781AA6CE3E7206E7CE0052 /* KeyNumDialField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KeyNumDialField.swift; sourceTree = "<group>"; };
 		AB966372611A81DBD36F8BADAB9DD7B6 /* Pods-DARFormBuilder_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DARFormBuilder_Example.modulemap"; sourceTree = "<group>"; };
-		AC2C1B4D59835D8FD541FB81D56E5B62 /* DARFormBuilder-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DARFormBuilder-prefix.pch"; sourceTree = "<group>"; };
 		AEBE480610CF1CFF1FE2DEAD8C3BF467 /* Pods-DARFormBuilder_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DARFormBuilder_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		B40B91E75497FBDEC949ED8AE59574D0 /* Pods-DARFormBuilder_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DARFormBuilder_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		B79397DA9B45BDBA874FFE229AB12C5F /* Pods-DARFormBuilder_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DARFormBuilder_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C5AAA3C3A87F3B95D8289CE79F260B0C /* DARFormBuilder.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DARFormBuilder.modulemap; sourceTree = "<group>"; };
+		B848D5B04010901119EF15EF6ECDF083 /* TextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		BF19E6ED60DC029D2DAEC20DBDEAAC39 /* DARFormBuilder.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DARFormBuilder.xcconfig; sourceTree = "<group>"; };
+		CB275520CB0F9356572C7A880177B029 /* FormTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FormTableViewController.swift; path = DARFormBuilder/Sources/FormTableViewController.swift; sourceTree = "<group>"; };
+		D46AE1EC3084F39FA0619DFFFF5D7FB7 /* DARFormBuilder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DARFormBuilder-dummy.m"; sourceTree = "<group>"; };
+		D75BFA6CA03E6E56FEDDA7BCD743BAC0 /* DateInput.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DateInput.swift; sourceTree = "<group>"; };
 		DAAA0E3973A5E77F172265B60158F670 /* Pods-DARFormBuilder_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DARFormBuilder_Example-dummy.m"; sourceTree = "<group>"; };
-		DE3F5596E133EF601BB2497BFB65EE4F /* DARFormBuilder.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = DARFormBuilder.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E47E0893D939459F5331B8EB2AFAEF70 /* Pods-DARFormBuilder_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DARFormBuilder_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		EF3845B9A3DC899936E13DC95EA16F78 /* DARFormBuilder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DARFormBuilder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8535ED18112B976CAE912AF14EF636A /* CanMountTextInputAccessoryView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CanMountTextInputAccessoryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,19 +121,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2C4A3266EC2E19B5EED14DFC4C7120F8 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84478291E919D06A91559B8E538E82B4 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		82AE3A8D7345DA3DFD9E42126A1E06E0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D568FA56566FC35E8AACD95A83E0F80B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8159050E20FEF4F897C30E47169D87D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91AA797BC22E5BAEF6883DFF14F55844 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,6 +148,22 @@
 				04B32910B21C1E42C0B02643EC55DEBA /* Pods_DARFormBuilder_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		22BD2032CA11B1B32711B883B6F8405D /* DARFormBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				97309FECCF4FD1BBC0C45B8DC00318F5 /* Config.swift */,
+				CB275520CB0F9356572C7A880177B029 /* FormTableViewController.swift */,
+				E8286E2D37E633ECB63C961012DB2502 /* Lib */,
+				9D8935E6C5852C84239B764A826D9739 /* Pod */,
+				C0FDF4979E2C31E95A9967852D442787 /* Row */,
+				5008EBE529051175F088822667FE465E /* Support Files */,
+				5D06689E1235A49A0131F1155015F5A8 /* Traits */,
+				E706728728494C7CB28A62C5D9E29123 /* Views */,
+			);
+			name = DARFormBuilder;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		32F864D21E9B9327EED4213974E5A306 /* Pods-DARFormBuilder_Tests */ = {
@@ -168,6 +184,20 @@
 			path = "Target Support Files/Pods-DARFormBuilder_Tests";
 			sourceTree = "<group>";
 		};
+		5008EBE529051175F088822667FE465E /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				62E645E56813FAA866A7703ABA713024 /* DARFormBuilder.modulemap */,
+				BF19E6ED60DC029D2DAEC20DBDEAAC39 /* DARFormBuilder.xcconfig */,
+				D46AE1EC3084F39FA0619DFFFF5D7FB7 /* DARFormBuilder-dummy.m */,
+				4084DE10F3A4519EE37CC4DA5865F53F /* DARFormBuilder-prefix.pch */,
+				A1186614CC229F5CEAB4C4592C48D756 /* DARFormBuilder-umbrella.h */,
+				73CEA8E6F26748B26F275F9A0F75AE82 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/DARFormBuilder";
+			sourceTree = "<group>";
+		};
 		53409843555D08EBA1ABBBA7287210FF /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,85 +207,34 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		66EB7566EF97E3123E401077B4EFA4CC /* DARFormBuilder */ = {
+		5D06689E1235A49A0131F1155015F5A8 /* Traits */ = {
 			isa = PBXGroup;
 			children = (
-				84AEF465216F5EB00038FFC1 /* Sources */,
-				C3C9A97AE25B6C00DC871869892DF184 /* Pod */,
-				B4F1E0427FFC42ABA14C5474B5A1EBB3 /* Support Files */,
+				2BCC06208EE54554BDB75722EB14CF4B /* CanBeValidated.swift */,
+				11043E808CDA0850B312936197F2F442 /* CanCalculateOwnHeight.swift */,
+				F8535ED18112B976CAE912AF14EF636A /* CanMountTextInputAccessoryView.swift */,
 			);
-			name = DARFormBuilder;
-			path = ../..;
+			name = Traits;
+			path = DARFormBuilder/Sources/Traits;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				CA3C710E4C9736C06D6DC7A18321A31E /* Development Pods */,
+				8ED9BCDB536F0E34D272A47AC001FB48 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				12C0757AC802486672D340E75FBE6107 /* Products */,
 				53409843555D08EBA1ABBBA7287210FF /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		84AEF465216F5EB00038FFC1 /* Sources */ = {
+		8ED9BCDB536F0E34D272A47AC001FB48 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				84AEF489216F62600038FFC1 /* Row */,
-				84AEF486216F62510038FFC1 /* Lib */,
-				84AEF46F216F623C0038FFC1 /* Views */,
-				84AEF468216F5EE10038FFC1 /* Traits */,
-				84AEF466216F5ECB0038FFC1 /* FormTableViewController.swift */,
-				84AEF490216F627D0038FFC1 /* Config.swift */,
+				22BD2032CA11B1B32711B883B6F8405D /* DARFormBuilder */,
 			);
-			path = Sources;
-			sourceTree = "<group>";
-		};
-		84AEF468216F5EE10038FFC1 /* Traits */ = {
-			isa = PBXGroup;
-			children = (
-				84AEF469216F5EEC0038FFC1 /* CanBeValidated.swift */,
-				84AEF46B216F5EFF0038FFC1 /* CanCalculateOwnHeight.swift */,
-				84AEF46D216F5F170038FFC1 /* CanMountTextInputAccessoryView.swift */,
-			);
-			path = Traits;
-			sourceTree = "<group>";
-		};
-		84AEF46F216F623C0038FFC1 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				84AEF47A216F62430038FFC1 /* DateInput.swift */,
-				84AEF48E216F62780038FFC1 /* FloatLabelTextField.swift */,
-				84AEF475216F62430038FFC1 /* HeadingLabel.swift */,
-				84AEF479216F62430038FFC1 /* KeyNumDialField.swift */,
-				84AEF477216F62430038FFC1 /* KeySwitchField.swift */,
-				84AEF470216F62430038FFC1 /* KeyValueField.swift */,
-				84AEF476216F62430038FFC1 /* PhoneInput.swift */,
-				84AEF478216F62430038FFC1 /* SectionDivider.swift */,
-				84AEF471216F62430038FFC1 /* SelectField.swift */,
-				84AEF473216F62430038FFC1 /* TextField.swift */,
-				84AEF474216F62430038FFC1 /* TextInput.swift */,
-				84AEF472216F62430038FFC1 /* TextInputAccessoryView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		84AEF486216F62510038FFC1 /* Lib */ = {
-			isa = PBXGroup;
-			children = (
-				84AEF487216F62570038FFC1 /* SwiftMaskTextField.swift */,
-			);
-			path = Lib;
-			sourceTree = "<group>";
-		};
-		84AEF489216F62600038FFC1 /* Row */ = {
-			isa = PBXGroup;
-			children = (
-				84AEF48A216F626A0038FFC1 /* Divider.swift */,
-				84AEF48B216F626A0038FFC1 /* Row.swift */,
-			);
-			path = Row;
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 		8FA38921AB7B86846664097D028472B1 /* Pods-DARFormBuilder_Example */ = {
@@ -276,18 +255,14 @@
 			path = "Target Support Files/Pods-DARFormBuilder_Example";
 			sourceTree = "<group>";
 		};
-		B4F1E0427FFC42ABA14C5474B5A1EBB3 /* Support Files */ = {
+		9D8935E6C5852C84239B764A826D9739 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				C5AAA3C3A87F3B95D8289CE79F260B0C /* DARFormBuilder.modulemap */,
-				84892DC54A8FC2020502DD4130679710 /* DARFormBuilder.xcconfig */,
-				2FBA3604E9F79B671C52F09B7E692C9A /* DARFormBuilder-dummy.m */,
-				AC2C1B4D59835D8FD541FB81D56E5B62 /* DARFormBuilder-prefix.pch */,
-				6081359A8A29547BAAF77C327F3D0149 /* DARFormBuilder-umbrella.h */,
-				0CCC518F944CE8B5000816EBBAB4A956 /* Info.plist */,
+				8FFC1AE4CBB0539946BC432C2FCD8498 /* DARFormBuilder.podspec */,
+				70535EED14CB0445501C62AA7C8E9D8F /* LICENSE */,
+				438972C427847BAFD131729F5C1F700A /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/DARFormBuilder";
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -298,22 +273,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C3C9A97AE25B6C00DC871869892DF184 /* Pod */ = {
+		C0FDF4979E2C31E95A9967852D442787 /* Row */ = {
 			isa = PBXGroup;
 			children = (
-				DE3F5596E133EF601BB2497BFB65EE4F /* DARFormBuilder.podspec */,
-				A5C7DEF5BB930A609D62623A4EC0C9BC /* LICENSE */,
-				57C4C8CA347AEAA73090AF15CBC9B63C /* README.md */,
+				75E33992914002E599806C0AFCB707DF /* Divider.swift */,
+				826351A34F744C0C45EFCD93F794E610 /* Row.swift */,
 			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		CA3C710E4C9736C06D6DC7A18321A31E /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				66EB7566EF97E3123E401077B4EFA4CC /* DARFormBuilder */,
-			);
-			name = "Development Pods";
+			name = Row;
+			path = DARFormBuilder/Sources/Row;
 			sourceTree = "<group>";
 		};
 		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
@@ -324,17 +291,38 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		E706728728494C7CB28A62C5D9E29123 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D75BFA6CA03E6E56FEDDA7BCD743BAC0 /* DateInput.swift */,
+				7ADCBA84692E15658D339B7B0ACAB9CC /* FloatLabelTextField.swift */,
+				426D84B209B68828CD6613A9F8F4C3BE /* HeadingLabel.swift */,
+				A3B937D674781AA6CE3E7206E7CE0052 /* KeyNumDialField.swift */,
+				1374A9CB65E0B3D16B9BCBE2CCD74DEC /* KeySwitchField.swift */,
+				21B9F51B5C0F7B574858FC126A3141B9 /* KeyValueField.swift */,
+				40A56D6B7943D338B2854B176C838119 /* PhoneInput.swift */,
+				5E1B4E3CBEC65BBC1F845134173E2069 /* SectionDivider.swift */,
+				472BFF48D037B0F158B954C7B0D4A53D /* SelectField.swift */,
+				B848D5B04010901119EF15EF6ECDF083 /* TextField.swift */,
+				30142DBB450C805C52267AD5019F297E /* TextInput.swift */,
+				53B6E2521680A773AF4036C6DBAC8C8E /* TextInputAccessoryView.swift */,
+			);
+			name = Views;
+			path = DARFormBuilder/Sources/Views;
+			sourceTree = "<group>";
+		};
+		E8286E2D37E633ECB63C961012DB2502 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				17C0F4FF864AD2B4F1EFC6C2F68CA938 /* SwiftMaskTextField.swift */,
+			);
+			name = Lib;
+			path = DARFormBuilder/Sources/Lib;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0FF746BD57FC9D3EC2D6301F4F0CA4B4 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C391CF91C72C2DFE564DF984C504DEFB /* DARFormBuilder-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		999AE8A105C6D6BFC8B85B2F3E2E3C35 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -351,9 +339,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C586B55FAD62ADAD908BC73F3826F026 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3916383AB6A162F67AABD6499EAD9AC /* DARFormBuilder-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		336F860F0479E5F7D86496ACECE3D498 /* DARFormBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4260F13288F5FCD6176AEDC94D6D59C2 /* Build configuration list for PBXNativeTarget "DARFormBuilder" */;
+			buildPhases = (
+				F4FDDF4EF0FC9E366E82CF8E602A236F /* Sources */,
+				F8159050E20FEF4F897C30E47169D87D /* Frameworks */,
+				C586B55FAD62ADAD908BC73F3826F026 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DARFormBuilder;
+			productName = DARFormBuilder;
+			productReference = EF3845B9A3DC899936E13DC95EA16F78 /* DARFormBuilder.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		87AA776F115875454562D81686BA2C28 /* Pods-DARFormBuilder_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B8A05DACFA836CD67E0A84DB550F5381 /* Build configuration list for PBXNativeTarget "Pods-DARFormBuilder_Tests" */;
@@ -390,23 +403,6 @@
 			productReference = 6C8D4698470F3D151499D62306E4CF20 /* Pods_DARFormBuilder_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		FA09B747A5635E1C5B18F95C631F5FA4 /* DARFormBuilder */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C392EFE1DCD3413C9D7AC8961ACC7829 /* Build configuration list for PBXNativeTarget "DARFormBuilder" */;
-			buildPhases = (
-				94705520DC1534EC3A495B66225D6A8D /* Sources */,
-				2C4A3266EC2E19B5EED14DFC4C7120F8 /* Frameworks */,
-				0FF746BD57FC9D3EC2D6301F4F0CA4B4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = DARFormBuilder;
-			productName = DARFormBuilder;
-			productReference = EF3845B9A3DC899936E13DC95EA16F78 /* DARFormBuilder.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -428,7 +424,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA09B747A5635E1C5B18F95C631F5FA4 /* DARFormBuilder */,
+				336F860F0479E5F7D86496ACECE3D498 /* DARFormBuilder */,
 				CD9C03769B4A64CFCAF93BB3838FCFA5 /* Pods-DARFormBuilder_Example */,
 				87AA776F115875454562D81686BA2C28 /* Pods-DARFormBuilder_Tests */,
 			);
@@ -444,39 +440,39 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		94705520DC1534EC3A495B66225D6A8D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84AEF48F216F62780038FFC1 /* FloatLabelTextField.swift in Sources */,
-				84AEF47C216F62430038FFC1 /* SelectField.swift in Sources */,
-				84AEF488216F62570038FFC1 /* SwiftMaskTextField.swift in Sources */,
-				84AEF480216F62430038FFC1 /* HeadingLabel.swift in Sources */,
-				84AEF47F216F62430038FFC1 /* TextInput.swift in Sources */,
-				5FAC7186A03A6C4C2B1AED6CB5297BEC /* DARFormBuilder-dummy.m in Sources */,
-				84AEF467216F5ECB0038FFC1 /* FormTableViewController.swift in Sources */,
-				84AEF483216F62430038FFC1 /* SectionDivider.swift in Sources */,
-				84AEF47E216F62430038FFC1 /* TextField.swift in Sources */,
-				84AEF48D216F626A0038FFC1 /* Row.swift in Sources */,
-				84AEF484216F62430038FFC1 /* KeyNumDialField.swift in Sources */,
-				84AEF485216F62430038FFC1 /* DateInput.swift in Sources */,
-				84AEF48C216F626A0038FFC1 /* Divider.swift in Sources */,
-				84AEF46A216F5EEC0038FFC1 /* CanBeValidated.swift in Sources */,
-				84AEF47D216F62430038FFC1 /* TextInputAccessoryView.swift in Sources */,
-				84AEF491216F627D0038FFC1 /* Config.swift in Sources */,
-				84AEF481216F62430038FFC1 /* PhoneInput.swift in Sources */,
-				84AEF47B216F62430038FFC1 /* KeyValueField.swift in Sources */,
-				84AEF482216F62430038FFC1 /* KeySwitchField.swift in Sources */,
-				84AEF46E216F5F170038FFC1 /* CanMountTextInputAccessoryView.swift in Sources */,
-				84AEF46C216F5EFF0038FFC1 /* CanCalculateOwnHeight.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		F4F267947AEB967C118DAB5E44DA5A9F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				0BD28919CF0FC36CC6ABAC5893E2162E /* Pods-DARFormBuilder_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4FDDF4EF0FC9E366E82CF8E602A236F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				677534539D7F396A00E374CD7CB4526D /* CanBeValidated.swift in Sources */,
+				3A0E4EA733526E33E1010261388DE383 /* CanCalculateOwnHeight.swift in Sources */,
+				C741CE2D00F15A880295197CBB7EC829 /* CanMountTextInputAccessoryView.swift in Sources */,
+				09FA1B40A60C40181162F8EDCC983A62 /* Config.swift in Sources */,
+				F13BF89F9BC13084FA5918D37AACFE90 /* DARFormBuilder-dummy.m in Sources */,
+				A5C6E439365118F8A5CD4CCCFA405658 /* DateInput.swift in Sources */,
+				C8EBDE630FE345FA27804C3ACDD5C99A /* Divider.swift in Sources */,
+				4C4DE6499B67BC4457E98C430C199EEC /* FloatLabelTextField.swift in Sources */,
+				25715B1821DAC0C30D44CE2C27367AC4 /* FormTableViewController.swift in Sources */,
+				DA935EC6B7A2F3C4104811ACD3EAA02B /* HeadingLabel.swift in Sources */,
+				8A4D6ABBE3BC883787C34393D082562E /* KeyNumDialField.swift in Sources */,
+				B02CF9E6344CA5EF254D109A29187BCE /* KeySwitchField.swift in Sources */,
+				FF65DA5B1B28C7F20D8122329DA78F96 /* KeyValueField.swift in Sources */,
+				117C74F0B96224949DEC7D760E44C1EF /* PhoneInput.swift in Sources */,
+				431A25F7E60BC193F538FA59088F1327 /* Row.swift in Sources */,
+				BAD078BBE6E6FD10D332C00CF1CF7598 /* SectionDivider.swift in Sources */,
+				5269EB283BD9F5558AADB20E81327087 /* SelectField.swift in Sources */,
+				3D1ED66296C7AACF335E89EAC8579874 /* SwiftMaskTextField.swift in Sources */,
+				C572818D62A5BF41D66E84C0290191A4 /* TextField.swift in Sources */,
+				EE05C47301EF3564F4DC1CACC6906B3C /* TextInput.swift in Sources */,
+				2F64AA4AAB69C41373DC1830ED15F65F /* TextInputAccessoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,7 +482,7 @@
 		32198E3B17D47AB6CCC7AF150CCEEC3E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DARFormBuilder;
-			target = FA09B747A5635E1C5B18F95C631F5FA4 /* DARFormBuilder */;
+			target = 336F860F0479E5F7D86496ACECE3D498 /* DARFormBuilder */;
 			targetProxy = C9E38AA873C8DD2C0FADE28BFE54F0A6 /* PBXContainerItemProxy */;
 		};
 		E9A033484E259A4A1A9D5E099F08C75D /* PBXTargetDependency */ = {
@@ -498,9 +494,9 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		211CE992BFB717A83D84A55342139613 /* Debug */ = {
+		0BEF690C2352B5DC99DC6321C50E8D5B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84892DC54A8FC2020502DD4130679710 /* DARFormBuilder.xcconfig */;
+			baseConfigurationReference = BF19E6ED60DC029D2DAEC20DBDEAAC39 /* DARFormBuilder.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -530,9 +526,9 @@
 			};
 			name = Debug;
 		};
-		3EA2BDBF1D481E73C7EEB11CC41B06F2 /* Release */ = {
+		456BA8C260960786F5FA6C1DAFC03EB6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 84892DC54A8FC2020502DD4130679710 /* DARFormBuilder.xcconfig */;
+			baseConfigurationReference = BF19E6ED60DC029D2DAEC20DBDEAAC39 /* DARFormBuilder.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -563,109 +559,7 @@
 			};
 			name = Release;
 		};
-		411416FE75FA16ABD479F83743414C21 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E47E0893D939459F5331B8EB2AFAEF70 /* Pods-DARFormBuilder_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DARFormBuilder_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DARFormBuilder_Tests/Pods-DARFormBuilder_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		5A22504CF4E100DB50DDDC384A6F590A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23ABAA2FC72439562D13272F4278DEA8 /* Pods-DARFormBuilder_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DARFormBuilder_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DARFormBuilder_Tests/Pods-DARFormBuilder_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		695E839F134CDAB06CA1FD5A450324CC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AEBE480610CF1CFF1FE2DEAD8C3BF467 /* Pods-DARFormBuilder_Example.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DARFormBuilder_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DARFormBuilder_Example/Pods-DARFormBuilder_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */ = {
+		553022A828EE1991F07D2D73F565AEF8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -718,7 +612,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -728,42 +622,7 @@
 			};
 			name = Debug;
 		};
-		ACC6E8E691F8EE894AE00C58ACC5054E /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8CBF6FC43CF4C59990318DDB32F6E9E4 /* Pods-DARFormBuilder_Example.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-DARFormBuilder_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-DARFormBuilder_Example/Pods-DARFormBuilder_Example.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		B42B54097A876E8A982CBF5DAA91B1AB /* Release */ = {
+		58CE816B060A41D32CEC095441D0E3E0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -813,11 +672,152 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		6951E677912E242EB21C6362BC69A40B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E47E0893D939459F5331B8EB2AFAEF70 /* Pods-DARFormBuilder_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DARFormBuilder_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DARFormBuilder_Tests/Pods-DARFormBuilder_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		70483011632054C529E735AD3D114FAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEBE480610CF1CFF1FE2DEAD8C3BF467 /* Pods-DARFormBuilder_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DARFormBuilder_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DARFormBuilder_Example/Pods-DARFormBuilder_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F5B7AE376E6615BFC1F7D32850AE574B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23ABAA2FC72439562D13272F4278DEA8 /* Pods-DARFormBuilder_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DARFormBuilder_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DARFormBuilder_Tests/Pods-DARFormBuilder_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		FFEB49BEE66045C49FB19A40F6B87E48 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CBF6FC43CF4C59990318DDB32F6E9E4 /* Pods-DARFormBuilder_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-DARFormBuilder_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-DARFormBuilder_Example/Pods-DARFormBuilder_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -827,8 +827,17 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				8B33C5230DE4A9DFA6D8F46505DD7AF7 /* Debug */,
-				B42B54097A876E8A982CBF5DAA91B1AB /* Release */,
+				553022A828EE1991F07D2D73F565AEF8 /* Debug */,
+				58CE816B060A41D32CEC095441D0E3E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4260F13288F5FCD6176AEDC94D6D59C2 /* Build configuration list for PBXNativeTarget "DARFormBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0BEF690C2352B5DC99DC6321C50E8D5B /* Debug */,
+				456BA8C260960786F5FA6C1DAFC03EB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -836,17 +845,8 @@
 		B8A05DACFA836CD67E0A84DB550F5381 /* Build configuration list for PBXNativeTarget "Pods-DARFormBuilder_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				411416FE75FA16ABD479F83743414C21 /* Debug */,
-				5A22504CF4E100DB50DDDC384A6F590A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C392EFE1DCD3413C9D7AC8961ACC7829 /* Build configuration list for PBXNativeTarget "DARFormBuilder" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				211CE992BFB717A83D84A55342139613 /* Debug */,
-				3EA2BDBF1D481E73C7EEB11CC41B06F2 /* Release */,
+				6951E677912E242EB21C6362BC69A40B /* Debug */,
+				F5B7AE376E6615BFC1F7D32850AE574B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -854,8 +854,8 @@
 		CF0BF5A837760C18DF3E7EC1C5C5FC0F /* Build configuration list for PBXNativeTarget "Pods-DARFormBuilder_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				695E839F134CDAB06CA1FD5A450324CC /* Debug */,
-				ACC6E8E691F8EE894AE00C58ACC5054E /* Release */,
+				70483011632054C529E735AD3D114FAB /* Debug */,
+				FFEB49BEE66045C49FB19A40F6B87E48 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

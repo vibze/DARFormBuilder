@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'DARFormBuilder/Classes/**/*'
+  s.source_files = 'DARFormBuilder/Sources/**/*'
   
   # s.resource_bundles = {
   #   'DARFormBuilder' => ['DARFormBuilder/Assets/*.png']

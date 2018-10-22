@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## DARFormBuilder
 
-Copyright (c) 2018 Viktor Ten <viktor.ten@me.com>
+Copyright (c) 2017 DAR Ecosystem (http://dar.kz/)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

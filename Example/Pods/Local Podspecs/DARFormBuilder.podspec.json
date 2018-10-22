@@ -18,5 +18,5 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "DARFormBuilder/Classes/**/*"
+  "source_files": "DARFormBuilder/Sources/**/*"
 }
