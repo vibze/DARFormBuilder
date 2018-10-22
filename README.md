@@ -39,7 +39,7 @@ When using `FormTableViewController` you are responsible for validating fields a
 
 #### `HeadingLabel`
 Cell for displaying form titles with description. Big font, contrasty color.
-![headingLabelImage](Images/HeadingLabel.png)
+![headingLabelImage](Example/Images/HeadingLabel.png)
 
 #### `KeyNumDialField`
 Label with number dial. Values can be limited by range.
