@@ -51,10 +51,16 @@ class KitchenSinkViewController: UIViewController {
         submitButton.addTarget(self, action: #selector(didTapSubmit), for: .touchUpInside)
         submitButton.frame = CGRect(x: 0, y: 0, width: 320, height: 44)
         
+        
+        let keyValueWithImage = KeyValueWithIconField("Key", value: "Value", isEnabled: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
+        let switcherWithIcon = KeySwitchFieldWithIcon("Delivered", value: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
+        
         formController.rows = [
             Row(headingLabel),
             Row(dialField),
             Divider(style: .stripe(height: 6)),
+            Row(keyValueWithImage),
+            Row(switcherWithIcon),
             Row(streetField),
             Row(verifyTime),
             Divider(),
