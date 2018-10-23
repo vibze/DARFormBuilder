@@ -2,9 +2,12 @@
 
 Library made to cut corners when making complex forms using UITableView.
 
+
+
 ## Installation using cocoapods
 
 Add `pod DARFormBuilder` to your podfile and run `pod install`
+
 
 
 ## Components
@@ -12,9 +15,10 @@ Add `pod DARFormBuilder` to your podfile and run `pod install`
 Framework provides two types of controllers to build forms. One is basic with less abstraction and another one is more feature-packed.
 
 
+
 ### FormTableViewController
 
-This controller just renders a layout with the cells you provide. You pass it an array of views for them to be rendered in a table. Framework provides a [full-featured set of inputs](github) that you can use here.
+This controller just renders a layout with the cells you provide. You pass it an array of views for them to be rendered in a table. Framework provides a full-featured set of fields that you can use here. You can also pass your own views to be rendered inside the cells.
 
 Example:
 
@@ -32,50 +36,86 @@ tbl.rows = [
 ]
 ```
 
+
+
+#### Field Validation
+
 When using `FormTableViewController` you are responsible for validating fields and reacting to field values changes. For validation purposes built-in input classes have an `errors` property which will return a list of error messages for a given field. `errors` array being empty means that field has passed validation.
 
 
-#### List of available cell types
 
-#### `HeadingLabel`
+### List of available field types
+
+#### HeadingLabel 
+
 Cell for displaying form titles with description. Big font, contrasty color.
 
-![headingLabelImage](Images/HeadingLabel.png)
+<img src="Images/HeadingLabel.png" width="235" />
 
-#### `KeyNumDialField`
+```Swift
+let h1 = HeadingLabel(
+    title: "Flower order", 
+    description: "This is a demonstration of framework capabilities on a case of building flower delivery order form."
+)
+```
+
+
+
+#### KeyNumDialField
+
 Label with number dial. Values can be limited by range.
 
-![keyNumDialFieldImage](Images/KeyNumDialField.png)
+<img src="Images/KeyNumDialField.png" width="235" />
 
-#### `TextInput`
+```Swift
+let dialField = KeyNumDialField("Кол-во", value: 2, range: 0..<10)
+dialField.onNumberChange = { [weak self] (value: Int) in
+    // Take this number!            
+}
+```
+
+
+
+#### TextInput
+
 Simple textField. Can be limited by max length.
 
-![textInputImage](Images/TextInput.png)
+<img src="Images/TextInput.png" width="235" />
 
-#### `DateInput`
+
+
+#### DateInput
 Date picker. Supports different input modes.
 
-![dateInputImage](Images/DateInput.png)
+<img src="Images/DateInput.png" width="235" />
 
-#### `PhoneInput`
+
+
+#### PhoneInput
 Phone input. Can display only digits.
 
-![phoneInputImage](Images/PhoneInput.png)
+<img src="Images/PhoneInput.png" width="235" />
 
-#### `KeySwitchField`
+
+
+#### KeySwitchField
 Label with switch view on the right.
 
-![keySwitchFieldImage](Images/KeySwitchField.png)
+<img src="Images/KeySwitchField.png" width="235" />
 
-#### `SelectField`
+
+
+#### SelectField
 Label with disclosure indicator. Clickable.
 
-![selectFieldImage](Images/SelectField.png)
+<img src="Images/SelectField.png" width="235" />
 
-#### `KeyValueField`
+
+
+#### KeyValueField
 Label with key and value on the right.
 
-![keyValueFieldImage](Images/KeyValueField.png)
+<img src="Images/KeyValueField.png" width="235" />
 
 
 
