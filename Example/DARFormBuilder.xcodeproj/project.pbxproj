@@ -16,14 +16,6 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		84AEEFA0216F2B330038FFC1 /* KItechSinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AEEF9F216F2B330038FFC1 /* KItechSinkViewController.swift */; };
-		8E87EE10217DC83A0035EA1A /* KeySwitchField.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E87EE08217DC8390035EA1A /* KeySwitchField.png */; };
-		8E87EE11217DC83A0035EA1A /* DateInput.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E87EE09217DC8390035EA1A /* DateInput.png */; };
-		8E87EE12217DC83A0035EA1A /* PhoneInput.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E87EE0A217DC8390035EA1A /* PhoneInput.png */; };
-		8E87EE13217DC83A0035EA1A /* HeadingLabel.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E87EE0B217DC8390035EA1A /* HeadingLabel.png */; };
-		8E87EE14217DC83A0035EA1A /* KeyValueField.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E87EE0C217DC8390035EA1A /* KeyValueField.png */; };
-		8E87EE15217DC83A0035EA1A /* SelectField.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E87EE0D217DC8390035EA1A /* SelectField.png */; };
-		8E87EE16217DC83A0035EA1A /* TextInput.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E87EE0E217DC83A0035EA1A /* TextInput.png */; };
-		8E87EE17217DC83A0035EA1A /* KeyNumDialField.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E87EE0F217DC83A0035EA1A /* KeyNumDialField.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,14 +46,6 @@
 		6D0FE185C4D6C19F21A92062 /* Pods-DARFormBuilder_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DARFormBuilder_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DARFormBuilder_Example/Pods-DARFormBuilder_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		84AEEF9F216F2B330038FFC1 /* KItechSinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KItechSinkViewController.swift; sourceTree = "<group>"; };
 		8ADAE1FD83FBF9FC9B9EC3AC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		8E87EE08217DC8390035EA1A /* KeySwitchField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeySwitchField.png; sourceTree = "<group>"; };
-		8E87EE09217DC8390035EA1A /* DateInput.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DateInput.png; sourceTree = "<group>"; };
-		8E87EE0A217DC8390035EA1A /* PhoneInput.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PhoneInput.png; sourceTree = "<group>"; };
-		8E87EE0B217DC8390035EA1A /* HeadingLabel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HeadingLabel.png; sourceTree = "<group>"; };
-		8E87EE0C217DC8390035EA1A /* KeyValueField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeyValueField.png; sourceTree = "<group>"; };
-		8E87EE0D217DC8390035EA1A /* SelectField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SelectField.png; sourceTree = "<group>"; };
-		8E87EE0E217DC83A0035EA1A /* TextInput.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TextInput.png; sourceTree = "<group>"; };
-		8E87EE0F217DC83A0035EA1A /* KeyNumDialField.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = KeyNumDialField.png; sourceTree = "<group>"; };
 		9C8103E8D309929AB0DE9BC5 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A0563693E8C4CE0506BE00CC /* Pods-DARFormBuilder_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DARFormBuilder_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DARFormBuilder_Tests/Pods-DARFormBuilder_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F7BEE9C483BEC9AED3C911DD /* DARFormBuilder.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DARFormBuilder.podspec; path = ../DARFormBuilder.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
@@ -99,7 +83,6 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
-				8E87EE07217DC81C0035EA1A /* Images */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for DARFormBuilder */,
 				607FACE81AFB9204008FA782 /* Tests */,
@@ -177,21 +160,6 @@
 				A0563693E8C4CE0506BE00CC /* Pods-DARFormBuilder_Tests.release.xcconfig */,
 			);
 			name = Pods;
-			sourceTree = "<group>";
-		};
-		8E87EE07217DC81C0035EA1A /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				8E87EE09217DC8390035EA1A /* DateInput.png */,
-				8E87EE0B217DC8390035EA1A /* HeadingLabel.png */,
-				8E87EE0F217DC83A0035EA1A /* KeyNumDialField.png */,
-				8E87EE08217DC8390035EA1A /* KeySwitchField.png */,
-				8E87EE0C217DC8390035EA1A /* KeyValueField.png */,
-				8E87EE0A217DC8390035EA1A /* PhoneInput.png */,
-				8E87EE0D217DC8390035EA1A /* SelectField.png */,
-				8E87EE0E217DC83A0035EA1A /* TextInput.png */,
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,17 +248,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E87EE10217DC83A0035EA1A /* KeySwitchField.png in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
-				8E87EE15217DC83A0035EA1A /* SelectField.png in Resources */,
-				8E87EE13217DC83A0035EA1A /* HeadingLabel.png in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
-				8E87EE11217DC83A0035EA1A /* DateInput.png in Resources */,
-				8E87EE17217DC83A0035EA1A /* KeyNumDialField.png in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-				8E87EE16217DC83A0035EA1A /* TextInput.png in Resources */,
-				8E87EE14217DC83A0035EA1A /* KeyValueField.png in Resources */,
-				8E87EE12217DC83A0035EA1A /* PhoneInput.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

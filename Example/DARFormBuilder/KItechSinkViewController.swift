@@ -25,6 +25,11 @@ class KitchenSinkViewController: UIViewController {
         // let selectField = Selectfield("Город")
         // selectField.collection = []
         
+        let dialField = KeyNumDialField("Number of flowers", value: 2, range: 0..<10)
+        dialField.onNumberChange = { [weak self] (value: Int)  in
+            
+        }
+        
         let verifyAddressByPhone = KeySwitchField("Verify address and delivery time by phone call")
         let verifyTime = KeySwitchField("Verify time")
         
@@ -48,6 +53,7 @@ class KitchenSinkViewController: UIViewController {
         
         formController.rows = [
             Row(headingLabel),
+            Row(dialField),
             Divider(style: .stripe(height: 6)),
             Row(streetField),
             Row(verifyTime),
