@@ -99,23 +99,23 @@ Phone input. Can display only digits.
 
 
 #### KeySwitchField
-Label with switch view on the right.
+Label with switch view on the right and can contain image on the left.
 
-<img src="Images/KeySwitchField.png" width="235" />
+<img src="Images/KeySwitchField.png" width="235" />  <img src="Images/KeySwitchFieldWithIcon.png" width="235" />
 
 
 
 #### SelectField
-Label with disclosure indicator. Clickable.
+Label with disclosure indicator, can contain image on left side. Clickable.
 
-<img src="Images/SelectField.png" width="235" />
+<img src="Images/SelectField.png" width="235" />  <img src="Images/SelectFieldWithIcon.png" width="235" />
 
 
 
 #### KeyValueField
-Label with key and value on the right.
+Label with key and value on the right, left side can contain image.
 
-<img src="Images/KeyValueField.png" width="235" />
+<img src="Images/KeyValueField.png" width="235" />  <img src="Images/KeyValueFieldWithIcon.png" width="235" /> 
 
 
 
