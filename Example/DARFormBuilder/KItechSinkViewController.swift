@@ -29,7 +29,7 @@ class KitchenSinkViewController: UIViewController {
         
         let verifyAddressByPhone = KeySwitchField("Verify address and delivery time by phone call")
         let keyValueWithImage = KeyValueField("Key", value: "Value", isEnabled: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
-        let switchValueWithImage = KeySwitchField("Delivered", value: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
+        let switchValueWithImage = KeySwitchField("Verify address and delivery time by phone call", value: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
         
         let options = SelectField.Option(text: "Tomato", value: "1")
         let selectionView = SelectField("Vegetables", value: "", options: [options], icon: #imageLiteral(resourceName: "priceTagIcon"))
