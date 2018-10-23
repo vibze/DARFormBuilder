@@ -25,12 +25,14 @@ class KitchenSinkViewController: UIViewController {
         
         let dialField = KeyNumDialField("Number of flowers", value: 2, range: 0..<10)
         dialField.onNumberChange = { [weak self] (value: Int)  in
-            
         }
         
         let verifyAddressByPhone = KeySwitchField("Verify address and delivery time by phone call")
         let keyValueWithImage = KeyValueField("Key", value: "Value", isEnabled: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
         let switchValueWithImage = KeySwitchField("Delivered", value: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
+        
+        let options = SelectField.Option(text: "Tomato", value: "1")
+        let selectionView = SelectField("Vegetables", value: "", options: [options], icon: #imageLiteral(resourceName: "priceTagIcon"))
         
         let verifyTime = KeySwitchField("Verify time")
         
@@ -56,6 +58,7 @@ class KitchenSinkViewController: UIViewController {
             Row(headingLabel),
             Row(dialField),
             Divider(style: .stripe(height: 6)),
+            Row(selectionView),
             Row(keyValueWithImage),
             Row(switchValueWithImage),
             Divider(style: .stripe(height: 6)),

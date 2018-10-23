@@ -21,16 +21,16 @@ import UIKit
  let field = SelectField("Vegetables")
  
  field.options = [
-    SelectField.Option(text: "Potato", value: 1),
-    SelectField.Option(text: "Carrot", value: 2),
-    SelectField.Option(text: "Cucumber", value: 3)
+ SelectField.Option(text: "Potato", value: 1),
+ SelectField.Option(text: "Carrot", value: 2),
+ SelectField.Option(text: "Cucumber", value: 3)
  ]
  
  field.presentSelector = { [weak self] viewController in
-    self?.navigationController?.push(viewController: vc, animated: true)
+ self?.navigationController?.push(viewController: vc, animated: true)
  }
  field.onChange = { [weak self] option in
-    ...
+ ...
  }
  ```
  
@@ -43,7 +43,7 @@ import UIKit
  
  */
 public class SelectField: KeyValueField, SelectViewControllerDelegate {
-
+    
     public struct Option {
         public let text: String
         public let value: String
@@ -71,7 +71,9 @@ public class SelectField: KeyValueField, SelectViewControllerDelegate {
         }
     }
     
-    public init(_ key: String, value: String = "", options: [Option] = []) {
+    private var selectionImage = UIImageView()
+    
+    public init(_ key: String, value: String = "", options: [Option] = [], icon: UIImage? = nil) {
         super.init(key, value: value, isEnabled: false)
         self.options = options
         
@@ -85,15 +87,27 @@ public class SelectField: KeyValueField, SelectViewControllerDelegate {
         if let index = options.index(where: { $0.value == value }) {
             selectedIndex = index
         }
+        
+        if icon != nil {
+            selectionImage.image = icon
+            self.addSubview(selectionImage)
+        }
     }
     
     public required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
     public override func layoutSubviews() {
         super.layoutSubviews()
-        field.frame = CGRect(x: bounds.width/2, y: 0, width: bounds.width/2 + 8, height: bounds.height)
+        let width = bounds.width
+        guard selectionImage.image != nil else {
+            field.frame = CGRect(x: width/2, y: 0, width: width/2 + 8, height: bounds.height)
+            button.frame = CGRect(x: 0, y: 0, width: 25, height: 0)
+            return
+        }
+        selectionImage.frame = CGRect(x: 0, y: 0, width: width/12 , height: width/12)
+        label.frame = CGRect(x: width/12 + 4, y: 0, width: width/2, height: bounds.height)
+        field.frame = CGRect(x: width/2, y: 0, width: width/2 + 8, height: bounds.height)
         button.frame = CGRect(x: 0, y: 0, width: 25, height: 0)
     }
     
