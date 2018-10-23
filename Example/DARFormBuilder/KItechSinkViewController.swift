@@ -22,11 +22,11 @@ class KitchenSinkViewController: UIViewController {
         
         let headingLabel = HeadingLabel(title: "Flower order", description: "This is a demonstration of framework capabilities on a case of building flower delivery order form.")
         
-        // let selectField = Selectfield("Город")
-        // selectField.collection = []
         
         let verifyAddressByPhone = KeySwitchField("Verify address and delivery time by phone call")
         let keyValueWithImage = KeyValueField("Key", value: "Value", isEnabled: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
+        let switchValueWithImage = KeySwitchField("Delivered", value: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
+        
         let verifyTime = KeySwitchField("Verify time")
         
         let streetField = TextInput("Street")
@@ -51,6 +51,7 @@ class KitchenSinkViewController: UIViewController {
             Row(headingLabel),
             Divider(style: .stripe(height: 6)),
             Row(keyValueWithImage),
+            Row(switchValueWithImage),
             Divider(style: .stripe(height: 6)),
             Row(streetField),
             Row(verifyTime),
