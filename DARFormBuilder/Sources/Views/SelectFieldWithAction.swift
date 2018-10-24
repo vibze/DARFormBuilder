@@ -10,7 +10,7 @@ import UIKit
 public class SelectFieldWithAction: UIView {
     var field = UITextField()
     var button = UIButton()
-    public var action: ((_ action: UITapGestureRecognizer) -> Void)? = nil
+    public var action: ((UITapGestureRecognizer) -> Void)? = nil
 
     public var textAttributes = [NSAttributedStringKey: Any]() {
         didSet {
@@ -19,7 +19,7 @@ public class SelectFieldWithAction: UIView {
         }
     }
     
-    public init(_ title: String, icon: UIImage, action: (() -> Void)? = nil) {
+    public init(_ title: String, icon: UIImage) {
         super.init(frame: .zero)
         field.text = title
         

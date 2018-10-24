@@ -32,8 +32,7 @@ class KitchenSinkViewController: UIViewController {
         keyValueWithImage.keyTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.yellow, NSAttributedString.Key.backgroundColor: UIColor.red]
         keyValueWithImage.valueTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.blue, NSAttributedString.Key.backgroundColor: UIColor.red]
         
-        let sectionTitle = KeyValueField("Flower description")
-        
+        let sectionTitle = KeyValueField("Flower type", value: "rose", isEnabled: false)
         let switchValueWithImage = KeySwitchField("Verify address and delivery time by phone call", value: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
         
         let options = SelectField.Option(text: "Tomato", value: "1")
@@ -52,7 +51,7 @@ class KitchenSinkViewController: UIViewController {
         let recipientNameField = TextInput("Recipient Name")
         let recipientPhoneField = PhoneInput("Recipient Phone")
         
-        let selectActionField = SelectFieldWithAction("Reject", icon: #imageLiteral(resourceName: "priceTagIcon"), action: nil)
+        let selectActionField = SelectFieldWithAction("Reject", icon: #imageLiteral(resourceName: "priceTagIcon"))
         selectActionField.action = { action in
             debugPrint("Hello")
         }

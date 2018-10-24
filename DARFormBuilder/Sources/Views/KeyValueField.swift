@@ -9,7 +9,8 @@
 import UIKit
 
 
-public class KeyValueField: UIView, TextInputAccessoryViewHolder {
+public class KeyValueField: UIView, TextInputAccessoryViewHolder, CanCalculateOwnHeight {
+
     
     let label = UILabel()
     let field = UITextField()
@@ -59,6 +60,8 @@ public class KeyValueField: UIView, TextInputAccessoryViewHolder {
      
         field.inputAccessoryView = textInputAccessoryView
         textInputAccessoryView.holder = self
+        label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
         
         if icon != nil {
             iconImage.image = icon
@@ -95,5 +98,10 @@ public class KeyValueField: UIView, TextInputAccessoryViewHolder {
         }
         label.frame = CGRect(x: 0, y: 0, width: width/2, height: bounds.height)
         field.frame = CGRect(x: width/2, y: 0, width: width/2, height: bounds.height)
+    }
+    
+    var height: CGFloat {
+        let size = label.sizeThatFits(CGSize(width: bounds.width - field.frame.width, height: CGFloat.greatestFiniteMagnitude))
+        return max(size.height, field.frame.height)
     }
 }
