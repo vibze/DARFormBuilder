@@ -15,6 +15,20 @@ public class KeyValueField: UIView, TextInputAccessoryViewHolder {
     let field = UITextField()
     let iconImage = UIImageView()
     
+    public var keyTextAttributes = [NSAttributedString.Key: Any]() {
+        didSet {
+            guard let text = label.text else { return }
+            label.attributedText = NSAttributedString(string: text , attributes: keyTextAttributes)
+        }
+    }
+    
+    public var valueTextAttributes = [NSAttributedString.Key: Any]() {
+        didSet {
+            guard let text = field.text else { return }
+            field.attributedText = NSAttributedString(string: text, attributes: valueTextAttributes)
+        }
+    }
+
     public var isEnabled = true {
         didSet {
             field.isEnabled = isEnabled
@@ -39,10 +53,10 @@ public class KeyValueField: UIView, TextInputAccessoryViewHolder {
         field.text = "\(value)"
         field.textAlignment = .right
         field.isEnabled = isEnabled
-        
+       
         addSubview(label)
         addSubview(field)
-        
+     
         field.inputAccessoryView = textInputAccessoryView
         textInputAccessoryView.holder = self
         

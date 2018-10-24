@@ -22,18 +22,20 @@ class KitchenSinkViewController: UIViewController {
         
         let headingLabel = HeadingLabel(title: "Flower order", description: "This is a demonstration of framework capabilities on a case of building flower delivery order form.")
         
-        
         let dialField = KeyNumDialField("Number of flowers", value: 2, range: 0..<10)
         dialField.onNumberChange = { [weak self] (value: Int)  in
         }
         
         let verifyAddressByPhone = KeySwitchField("Verify address and delivery time by phone call")
-        let keyValueWithImage = KeyValueField("Key", value: "Value", isEnabled: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
+        
+        let keyValueWithImage = KeyValueField("Yelow", value: "Blue", isEnabled: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
+        keyValueWithImage.keyTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.yellow, NSAttributedString.Key.backgroundColor: UIColor.red]
+        keyValueWithImage.valueTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.blue, NSAttributedString.Key.backgroundColor: UIColor.red]
+        
         let switchValueWithImage = KeySwitchField("Verify address and delivery time by phone call", value: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
         
         let options = SelectField.Option(text: "Tomato", value: "1")
-        let selectionView = SelectField("Vegetables", value: "", options: [options], icon: #imageLiteral(resourceName: "priceTagIcon"))
-        
+        let selectionView = SelectField("Vegetables", value: "", options: [options])
         let verifyTime = KeySwitchField("Verify time")
         
         let streetField = TextInput("Street")
