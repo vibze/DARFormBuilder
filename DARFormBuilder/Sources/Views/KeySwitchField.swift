@@ -15,6 +15,13 @@ public class KeySwitchField: UIView, CanCalculateOwnHeight {
     let switchView = UISwitch()
     let iconImage = UIImageView()
     
+    public var textAttributes = [NSAttributedStringKey: Any]() {
+        didSet {
+            guard let text = label.text else { return }
+            label.attributedText = NSAttributedString(string: text , attributes: textAttributes)
+        }
+    }
+    
     public var onChange: ((Bool) -> Void)?
     
     public init(_ key: String, value: Bool = false, icon: UIImage? = nil) {

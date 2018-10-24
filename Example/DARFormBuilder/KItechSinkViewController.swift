@@ -28,9 +28,8 @@ class KitchenSinkViewController: UIViewController {
         
         let verifyAddressByPhone = KeySwitchField("Verify address and delivery time by phone call")
         
-        let keyValueWithImage = KeyValueField("Yelow", value: "Blue", isEnabled: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
-        keyValueWithImage.keyTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.yellow, NSAttributedString.Key.backgroundColor: UIColor.red]
-        keyValueWithImage.valueTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.blue, NSAttributedString.Key.backgroundColor: UIColor.red]
+        let keyValueWithImage = KeyValueField("Flower color", value: "blue", isEnabled: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
+     
         
         let sectionTitle = KeyValueField("Flower type", value: "rose", isEnabled: false)
         let switchValueWithImage = KeySwitchField("Verify address and delivery time by phone call", value: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
@@ -55,7 +54,6 @@ class KitchenSinkViewController: UIViewController {
         selectActionField.action = { action in
             debugPrint("Hello")
         }
-        selectActionField.textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
         
         let submitButton = UIButton()
         submitButton.backgroundColor = UIColor.black
