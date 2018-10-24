@@ -32,14 +32,16 @@ class KitchenSinkViewController: UIViewController {
         keyValueWithImage.keyTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.yellow, NSAttributedString.Key.backgroundColor: UIColor.red]
         keyValueWithImage.valueTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.blue, NSAttributedString.Key.backgroundColor: UIColor.red]
         
+        let sectionTitle = KeyValueField("Flower description")
+        
         let switchValueWithImage = KeySwitchField("Verify address and delivery time by phone call", value: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
         
         let options = SelectField.Option(text: "Tomato", value: "1")
-        let selectionView = SelectField("Vegetables", value: "", options: [options])
+        let selectionView = SelectField("Flower type", value: "", options: [options])
         let verifyTime = KeySwitchField("Verify time")
         
         let streetField = TextInput("Street")
-        streetField.isRequired = true
+        streetField.isRequired = false
         
         let houseField = TextInput("House")
         houseField.isRequired = true
@@ -49,6 +51,12 @@ class KitchenSinkViewController: UIViewController {
         
         let recipientNameField = TextInput("Recipient Name")
         let recipientPhoneField = PhoneInput("Recipient Phone")
+        
+        let selectActionField = SelectFieldWithAction("Reject", icon: #imageLiteral(resourceName: "priceTagIcon"), action: nil)
+        selectActionField.action = { action in
+            debugPrint("Hello")
+        }
+        selectActionField.textAttributes = [NSAttributedString.Key.foregroundColor: UIColor.red]
         
         let submitButton = UIButton()
         submitButton.backgroundColor = UIColor.black
@@ -60,6 +68,8 @@ class KitchenSinkViewController: UIViewController {
             Row(headingLabel),
             Row(dialField),
             Divider(style: .stripe(height: 6)),
+            Row(selectActionField),
+            Row(sectionTitle),
             Row(selectionView),
             Row(keyValueWithImage),
             Row(switchValueWithImage),

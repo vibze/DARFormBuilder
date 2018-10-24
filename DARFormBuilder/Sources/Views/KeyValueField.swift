@@ -15,14 +15,14 @@ public class KeyValueField: UIView, TextInputAccessoryViewHolder {
     let field = UITextField()
     let iconImage = UIImageView()
     
-    public var keyTextAttributes = [NSAttributedString.Key: Any]() {
+    public var keyTextAttributes = [NSAttributedStringKey: Any]() {
         didSet {
             guard let text = label.text else { return }
             label.attributedText = NSAttributedString(string: text , attributes: keyTextAttributes)
         }
     }
     
-    public var valueTextAttributes = [NSAttributedString.Key: Any]() {
+    public var valueTextAttributes = [NSAttributedStringKey: Any]() {
         didSet {
             guard let text = field.text else { return }
             field.attributedText = NSAttributedString(string: text, attributes: valueTextAttributes)
