@@ -7,11 +7,22 @@
 
 import UIKit
 
+/**
+ Select field th action .
+ .
+ 
+ ## Properties:
+ 
+  `textAttributes` - attributes of text(color, font and etc.)
+ 
+ **/
+
 public class SelectFieldWithAction: UIView {
+    
     var field = UITextField()
     var button = UIButton()
     public var action: ((UITapGestureRecognizer) -> Void)? = nil
-
+    
     public var textAttributes = [NSAttributedStringKey: Any]() {
         didSet {
             guard let text = field.text else { return }
@@ -19,20 +30,24 @@ public class SelectFieldWithAction: UIView {
         }
     }
     
-    public init(_ title: String, icon: UIImage) {
+    public init(_ title: String,icon: UIImage? = nil) {
         super.init(frame: .zero)
         field.text = title
-        
         field.isEnabled = false
+
+        if icon != nil {
+            button.setImage(icon, for: .normal)
+        }
+        
         field.rightView = button
         field.rightViewMode = .always
-        button.setImage(icon, for: .normal)
         let tgs = UITapGestureRecognizer(target: self, action: #selector(didTapField))
-
+        
         addSubview(field)
         addGestureRecognizer(tgs)
+        
     }
- 
+    
     @objc func didTapField(_ sender: UITapGestureRecognizer) {
         action?(sender)
     }

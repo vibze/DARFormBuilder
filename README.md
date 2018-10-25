@@ -60,6 +60,34 @@ let h1 = HeadingLabel(
 ```
 
 
+#### TextInput
+
+Simple textField. Can be limited by max length. Placeholder can be floating.
+
+<img src="Images/TextInput.png" width="235" />  <img src="Images/TextInputWihoutPlacholder.png" width="235" />
+
+
+#### DateInput
+
+Date picker. Supports different input modes.
+
+<img src="Images/DateInput.png" width="235" />
+
+
+#### PhoneInput
+
+Phone input. Can display only digits.
+
+<img src="Images/PhoneInput.png" width="235" />
+
+
+
+#### KeyValueField
+
+Label with key and value on the right, left side can contain image.
+
+<img src="Images/KeyValueField.png" width="235" />  <img src="Images/KeyValueFieldWithIcon.png" width="235" /> 
+
 
 #### KeyNumDialField
 
@@ -75,30 +103,8 @@ dialField.onNumberChange = { [weak self] (value: Int) in
 ```
 
 
-
-#### TextInput
-
-Simple textField. Can be limited by max length.
-
-<img src="Images/TextInput.png" width="235" />
-
-
-
-#### DateInput
-Date picker. Supports different input modes.
-
-<img src="Images/DateInput.png" width="235" />
-
-
-
-#### PhoneInput
-Phone input. Can display only digits.
-
-<img src="Images/PhoneInput.png" width="235" />
-
-
-
 #### KeySwitchField
+
 Label with switch view on the right and can contain image on the left.
 
 <img src="Images/KeySwitchField.png" width="235" />  <img src="Images/KeySwitchFieldWithIcon.png" width="235" />
@@ -106,17 +112,24 @@ Label with switch view on the right and can contain image on the left.
 
 
 #### SelectField
-Label with disclosure indicator, can contain image on left side. Clickable.
+
+Label with disclosure indicator, can contain image, detail label on left side. Clickable.
 
 <img src="Images/SelectField.png" width="235" />  <img src="Images/SelectFieldWithIcon.png" width="235" />
 
 
+#### SelectFieldWithAction
 
-#### KeyValueField
-Label with key and value on the right, left side can contain image.
+Label with image on left side. Clickable.
 
-<img src="Images/KeyValueField.png" width="235" />  <img src="Images/KeyValueFieldWithIcon.png" width="235" /> 
+<img src="Images/SelectedFieldWithActionIcon.png" width="235" />  <img src="Images/SelectedFieldWithAction.png" width="235" />
 
+```Swift
+let selectActionField = SelectFieldWithAction("Choose other")
+selectActionField.action = { action in
+   // Do some action
+}
+```
 
 
 ## DARFormController

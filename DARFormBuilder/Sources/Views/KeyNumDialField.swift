@@ -8,6 +8,18 @@
 
 import UIKit
 
+/**
+ Cell for displaying label with number dial.Values can be limited by range.
+ 
+ Example usage:
+ 
+ ```
+ let dialField = KeyNumDialField("Кол-во", value: 2, range: 0..<10)
+ dialField.onNumberChange = { [weak self] (value: Int) in
+ // Take this number!
+ }
+ ```
+ */
 
 public class KeyNumDialField: KeyValueField {
     

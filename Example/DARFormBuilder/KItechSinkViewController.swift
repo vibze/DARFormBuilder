@@ -35,23 +35,24 @@ class KitchenSinkViewController: UIViewController {
         let switchValueWithImage = KeySwitchField("Verify address and delivery time by phone call", value: true, icon: #imageLiteral(resourceName: "priceTagIcon"))
         
         let options = SelectField.Option(text: "Tomato", value: "1")
-        let selectionView = SelectField("Flower type", value: "", options: [options])
+        let selectionView = SelectField("Flower type", value: "room", options: [options], icon: #imageLiteral(resourceName: "priceTagIcon"))
         let verifyTime = KeySwitchField("Verify time")
         
         let streetField = TextInput("Street")
-        streetField.isRequired = false
+        streetField.isRequired = true
+        
         
         let houseField = TextInput("House")
         houseField.isRequired = true
-        
+
         let flatField = TextInput("Flat")
         let deliveryTimeField = DateInput("Delivery time and date", value: Date())
         
         let recipientNameField = TextInput("Recipient Name", isFloat: false)
         let recipientPhoneField = PhoneInput("Recipient Phone")
-        let selectActionField = SelectFieldWithAction("Reject", icon: #imageLiteral(resourceName: "priceTagIcon"))
+        let selectActionField = SelectFieldWithAction("Choose other")
         selectActionField.action = { action in
-            debugPrint("Hello")
+            // Do something
         }
         
         let submitButton = UIButton()

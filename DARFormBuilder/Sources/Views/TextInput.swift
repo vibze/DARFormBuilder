@@ -24,6 +24,8 @@ import UIKit
  
  `text` - Text value of the field
  
+ `isFloating` - For floating placeholder
+ 
  */
 open class TextInput: UIView, UITextFieldDelegate, TextInputAccessoryViewHolder,
                       CanCalculateOwnHeight, CanBeValidated {
@@ -53,6 +55,13 @@ open class TextInput: UIView, UITextFieldDelegate, TextInputAccessoryViewHolder,
         set (v) { textField.isEnabled = v }
     }
     
+    open var textAttributes = [NSAttributedStringKey: Any]() {
+        didSet {
+            guard let text = textField.text else { return }
+            textField.attributedText = NSAttributedString(string: text, attributes: textAttributes)
+        }
+    }
+    
     public var onTextChange: ((String) -> Void)?
     public var textField = UITextField()
     public let countLabel = UILabel()
@@ -60,18 +69,17 @@ open class TextInput: UIView, UITextFieldDelegate, TextInputAccessoryViewHolder,
     public let textInputAccessoryView = TextInputAccessoryView()
     
     public var isRequired = false
-    var isFloating = true
+    public var isFloating = true
     public var maxLength = 0 {
         didSet { updateCountLabel() }
     }
     
     public init(_ placeholder: String = "", isFloat: Bool = true) {
         super.init(frame: CGRect.zero)
-        
+
         addSubview(textField)
         addSubview(countLabel)
         addSubview(placeholderLabel)
-        
         
         countLabel.textAlignment = .right
         countLabel.textColor = config.labelTextColor
@@ -88,7 +96,7 @@ open class TextInput: UIView, UITextFieldDelegate, TextInputAccessoryViewHolder,
         textField.addTarget(self, action: #selector(textDidChange), for: .editingChanged)
         textField.delegate = self
         textField.inputAccessoryView = textInputAccessoryView
-        
+    
         textInputAccessoryView.holder = self
         
         updateCountLabel()
