@@ -47,9 +47,8 @@ class KitchenSinkViewController: UIViewController {
         let flatField = TextInput("Flat")
         let deliveryTimeField = DateInput("Delivery time and date", value: Date())
         
-        let recipientNameField = TextInput("Recipient Name")
+        let recipientNameField = TextInput("Recipient Name", isFloat: false)
         let recipientPhoneField = PhoneInput("Recipient Phone")
-        
         let selectActionField = SelectFieldWithAction("Reject", icon: #imageLiteral(resourceName: "priceTagIcon"))
         selectActionField.action = { action in
             debugPrint("Hello")

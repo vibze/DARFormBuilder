@@ -33,11 +33,11 @@ open class PhoneInput: TextInput {
         return textField as! SwiftMaskTextfield
     }
     
-    public override init(_ placeholder: String) {
-        super.init(placeholder)
+    public override init(_ placeholder: String, isFloat: Bool = true) {
+        super.init(placeholder, isFloat: isFloat)
         
         textField = SwiftMaskTextfield()
-        textMask = "+# ### ###-##-##"
+        textMask = "+# ### ### ## ##"
         textField.keyboardType = .numberPad
         textField.autocorrectionType = .no
         textField.rightViewMode = .always

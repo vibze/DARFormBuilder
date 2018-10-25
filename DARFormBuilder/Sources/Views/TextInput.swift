@@ -52,7 +52,7 @@ open class TextInput: UIView, UITextFieldDelegate, TextInputAccessoryViewHolder,
         get { return textField.isEnabled }
         set (v) { textField.isEnabled = v }
     }
-
+    
     public var onTextChange: ((String) -> Void)?
     public var textField = UITextField()
     public let countLabel = UILabel()
@@ -60,22 +60,25 @@ open class TextInput: UIView, UITextFieldDelegate, TextInputAccessoryViewHolder,
     public let textInputAccessoryView = TextInputAccessoryView()
     
     public var isRequired = false
+    var isFloating = true
     public var maxLength = 0 {
         didSet { updateCountLabel() }
     }
     
-    public init(_ placeholder: String = "") {
+    public init(_ placeholder: String = "", isFloat: Bool = true) {
         super.init(frame: CGRect.zero)
-
+        
         addSubview(textField)
         addSubview(countLabel)
         addSubview(placeholderLabel)
+        
         
         countLabel.textAlignment = .right
         countLabel.textColor = config.labelTextColor
         countLabel.font = UIFont.preferredFont(forTextStyle: .footnote)
         
         placeholderLabel.text = placeholder
+        placeholderLabel.isHidden = false
         placeholderLabel.textColor = config.labelTextColor
         placeholderLabel.font = textField.font
         
@@ -89,6 +92,12 @@ open class TextInput: UIView, UITextFieldDelegate, TextInputAccessoryViewHolder,
         textInputAccessoryView.holder = self
         
         updateCountLabel()
+        
+        guard isFloat else {
+            placeholderLabel.isHidden = true
+            textField.placeholder = placeholder
+            return
+        }
     }
     
     public required init?(coder aDecoder: NSCoder) {
