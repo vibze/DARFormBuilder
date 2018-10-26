@@ -135,9 +135,7 @@ selectActionField.action = { action in
 
 Phone input with button on right side which present contact list. Can display only digits. Clickable.
 
-<img src="Images/PhoneInputWithAction.png" width="235" /> 
-
-<img src="Images/ContactList.png" width="235" />   <img src="Images/SelectedContact.png" width="235" /> 
+<img src="Images/ContactListField.png" width="235" />   <img src="Images/SelectContactField.png" width="235" /> 
 
 ```Swift
 let selectContact = PhoneInputWithActionButton(placeholder: "Contact", icon: iconImage))

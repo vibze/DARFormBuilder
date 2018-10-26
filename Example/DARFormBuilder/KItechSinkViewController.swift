@@ -55,7 +55,7 @@ class KitchenSinkViewController: UIViewController {
             // Do something
         }
         
-        let selectContact = PhoneInputWithActionButton(placeholder: "Contact", icon: #imageLiteral(resourceName: "contactIcon"))
+        let selectContact = PhoneInputWithActionButton(placeholder: "Phone number", icon: #imageLiteral(resourceName: "contactIcon"))
         selectContact.presentSelector = { [weak self] viewController in
             self?.present(viewController, animated: true, completion: nil)
         }
