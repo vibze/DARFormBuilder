@@ -55,6 +55,11 @@ class KitchenSinkViewController: UIViewController {
             // Do something
         }
         
+        let selectContact = PhoneInputWithActionButton(placeholder: "Contact", icon: #imageLiteral(resourceName: "contactIcon"))
+        selectContact.presentSelector = { [weak self] viewController in
+            self?.present(viewController, animated: true, completion: nil)
+        }
+        
         let submitButton = UIButton()
         submitButton.backgroundColor = UIColor.black
         submitButton.setTitle("Place order", for: .normal)
@@ -63,6 +68,7 @@ class KitchenSinkViewController: UIViewController {
         
         formController.rows = [
             Row(headingLabel),
+            Row(selectContact),
             Row(dialField),
             Divider(style: .stripe(height: 6)),
             Row(selectActionField),

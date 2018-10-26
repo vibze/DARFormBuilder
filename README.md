@@ -131,6 +131,19 @@ selectActionField.action = { action in
 }
 ```
 
+#### PhoneInputWithActionButton
+
+Phone input with button on right side which present contact list. Can display only digits. Clickable.
+
+<img src="Images/PhoneInputWithAction.png" width="235" /> 
+
+```Swift
+let selectContact = PhoneInputWithActionButton(placeholder: "Contact", icon: iconImage))
+    selectContact.presentSelector = { [weak self] viewController in
+        self?.present(viewController, animated: true, completion: nil)
+    }
+```
+
 
 ## DARFormController
 
