@@ -137,6 +137,8 @@ Phone input with button on right side which present contact list. Can display on
 
 <img src="Images/PhoneInputWithAction.png" width="235" /> 
 
+<img src="Images/ContactList.png" width="235" />   <img src="Images/SelectedContact.png" width="235" /> 
+
 ```Swift
 let selectContact = PhoneInputWithActionButton(placeholder: "Contact", icon: iconImage))
     selectContact.presentSelector = { [weak self] viewController in
