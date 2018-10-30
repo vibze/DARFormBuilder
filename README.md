@@ -110,6 +110,12 @@ Label with switch view on the right and can contain image on the left.
 <img src="Images/KeySwitchField.png" width="235" />  <img src="Images/KeySwitchFieldWithIcon.png" width="235" />
 
 
+#### KeyValueFieldWithHint
+
+Label with key and value. On the right or left side can contain hint label.
+
+<img src="Images/KeyValueWithHint.png" width="235" /> 
+
 
 #### SelectField
 

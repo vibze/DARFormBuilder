@@ -57,8 +57,8 @@ open class TextInput: UIView, UITextFieldDelegate, TextInputAccessoryViewHolder,
     
     open var textAttributes = [NSAttributedStringKey: Any]() {
         didSet {
-            guard let text = textField.text else { return }
-            textField.attributedText = NSAttributedString(string: text, attributes: textAttributes)
+            guard let textAttribute = textField.text else { return }
+            textField.attributedText = NSAttributedString(string: textAttribute, attributes: textAttributes)
         }
     }
     
