@@ -70,7 +70,7 @@ class KitchenSinkViewController: UIViewController {
         
         formController.rows = [
             Row(headingLabel),
-            Row(selectContact),
+            Row(selectContact,separatorLeading: 16),
             Row(hintLabel, separate: true, separatorLeading: 16),
             Row(dialField),
             Divider(style: .stripe(height: 6)),
