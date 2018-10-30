@@ -55,8 +55,8 @@ class KitchenSinkViewController: UIViewController {
             // Do something
         }
         
-        let fieldWithHintLabel = KeyValueFieldWithHint("Key", value: "Value", isEnabled: true, hint: "Hint", rightView: false)
-        
+      
+        let hintLabel = HintLabel("Hint", rightView: false)
         let selectContact = PhoneInputWithActionButton(placeholder: "Phone number", icon: #imageLiteral(resourceName: "contactIcon"))
         selectContact.presentSelector = { [weak self] viewController in
             self?.present(viewController, animated: true, completion: nil)
@@ -71,10 +71,10 @@ class KitchenSinkViewController: UIViewController {
         formController.rows = [
             Row(headingLabel),
             Row(selectContact),
+            Row(hintLabel),
             Row(dialField),
             Divider(style: .stripe(height: 6)),
             Row(selectActionField),
-            Row(fieldWithHintLabel),
             Row(sectionTitle),
             Row(selectionView),
             Row(keyValueWithImage),

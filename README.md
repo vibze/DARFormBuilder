@@ -60,6 +60,14 @@ let h1 = HeadingLabel(
 ```
 
 
+#### HintLabel
+
+Cell with label on right or left side . Small font.
+
+<img src="Images/HintLabel.png" width="235" /> 
+
+
+
 #### TextInput
 
 Simple textField. Can be limited by max length. Placeholder can be floating.
@@ -109,12 +117,6 @@ Label with switch view on the right and can contain image on the left.
 
 <img src="Images/KeySwitchField.png" width="235" />  <img src="Images/KeySwitchFieldWithIcon.png" width="235" />
 
-
-#### KeyValueFieldWithHint
-
-Label with key and value. On the right or left side can contain hint label.
-
-<img src="Images/KeyValueWithHint.png" width="235" /> 
 
 
 #### SelectField
