@@ -10,7 +10,6 @@ import UIKit
 
 
 public class KeyValueField: UIView, TextInputAccessoryViewHolder, CanCalculateOwnHeight {
-
     
     let label = UILabel()
     let field = UITextField()

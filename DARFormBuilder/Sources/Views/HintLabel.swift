@@ -22,16 +22,7 @@ public class HintLabel: UIView, CanCalculateOwnHeight {
         }
     }
     
-    var rightSide: Bool? {
-        willSet {
-            guard let right = rightSide,
-                  right else {
-                hint.textAlignment = .right
-                return
-            }
-            hint.textAlignment = .right
-        }
-    }
+    var rightSide: Bool?
     
     public init(_ text: String, rightView: Bool) {
         super.init(frame: .zero)
@@ -43,7 +34,6 @@ public class HintLabel: UIView, CanCalculateOwnHeight {
         addSubview(hint)
     }
     
-
     public override func layoutSubviews() {
         super.layoutSubviews()
         let width = bounds.width
